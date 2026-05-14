@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>秦海 · 心理咨询与督导</title>
+    <style>
+        /* ─── Reset & Base ─── */
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: -apple-system, "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+            color: #2c3e50;
+            background: #fafafa;
+            line-height: 1.8;
+        }
+        a { text-decoration: none; color: inherit; }
+        img { max-width: 100%; display: block; }
+
+        .container { max-width: 1040px; margin: 0 auto; padding: 0 24px; }
+
+        /* ─── Navigation ─── */
+        nav {
+            position: fixed; top: 0; left: 0; right: 0;
+            background: rgba(255,255,255,0.94);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid #eee;
+            z-index: 100;
+        }
+        nav .container {
+            display: flex; align-items: center;
+            justify-content: space-between; height: 64px;
+        }
+        .logo {
+            font-size: 1.2rem; font-weight: 700;
+            letter-spacing: 1px; color: #2c6e8f;
+        }
+        .nav-links { display: flex; gap: 28px; list-style: none; font-size: 0.92rem; }
+        .nav-links a { transition: color 0.2s; }
+        .nav-links a:hover { color: #2c6e8f; }
+        .nav-links .home-link { color: #2c6e8f; font-weight: 600; }
+        .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; }
+        .hamburger span { width: 26px; height: 2px; background: #2c3e50; border-radius: 2px; }
+
+        /* ─── Hero ─── */
+        .hero {
+            min-height: 100vh;
+            display: flex; align-items: center;
+            background: linear-gradient(135deg, #eaf4f9 0%, #f5f0eb 50%, #f0e6db 100%);
+            padding-top: 64px;
+        }
+        .hero .container {
+            display: flex; align-items: center; gap: 60px;
+        }
+        .hero-photo {
+            flex-shrink: 0;
+            width: 280px; height: 280px;
+            border-radius: 50%;
+            overflow: hidden;
+            box-shadow: 0 12px 40px rgba(44,110,143,0.15);
+            border: 4px solid rgba(255,255,255,0.6);
+        }
+        .hero-text h1 {
+            font-size: 3rem; font-weight: 700;
+            margin-bottom: 8px; letter-spacing: 2px;
+        }
+        .hero-text .subtitle {
+            font-size: 1.15rem; color: #4a6a7a;
+            margin-bottom: 6px; font-weight: 500;
+        }
+        .hero-text .title-tags {
+            display: flex; flex-wrap: wrap; gap: 10px; margin: 16px 0 24px;
+        }
+        .hero-text .title-tags span {
+            background: rgba(255,255,255,0.7);
+            padding: 5px 16px; border-radius: 20px;
+            font-size: 0.85rem; color: #2c6e8f;
+            border: 1px solid rgba(44,110,143,0.15);
+        }
+        .hero-text p {
+            font-size: 1.05rem; color: #4a5a6a;
+            max-width: 520px;
+        }
+
+        /* ─── Section Common ─── */
+        section { padding: 88px 0; }
+        section:nth-child(even) { background: #fff; }
+        .section-title {
+            font-size: 1.9rem; font-weight: 600;
+            text-align: center; margin-bottom: 16px;
+            color: #1a1a2e;
+        }
+        .section-subtitle {
+            text-align: center; color: #6a7a8a;
+            font-size: 0.98rem; margin-bottom: 48px;
+        }
+        .section-divider {
+            width: 50px; height: 3px; background: #2c6e8f;
+            border-radius: 2px; margin: 0 auto 48px;
+        }
+
+        /* ─── About ─── */
+        .about-content { max-width: 800px; margin: 0 auto; }
+        .about-content p { margin-bottom: 16px; font-size: 1.02rem; }
+
+        .creds-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 16px; margin-top: 32px;
+        }
+        .creds-grid .item {
+            background: linear-gradient(135deg, #eaf4f9, #f5f0eb);
+            padding: 20px 24px; border-radius: 12px;
+            border-left: 4px solid #2c6e8f;
+        }
+        .creds-grid .item .label {
+            font-size: 0.82rem; color: #6a8a9a;
+            text-transform: uppercase; letter-spacing: 1px;
+            margin-bottom: 4px;
+        }
+        .creds-grid .item .value {
+            font-size: 1.05rem; font-weight: 600; color: #1a3a4a;
+        }
+
+        /* ─── Stats ─── */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 24px;
+        }
+        .stat-card {
+            text-align: center; padding: 36px 16px;
+            background: #fafafa; border-radius: 16px;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .stat-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.05);
+        }
+        .stat-card .number {
+            font-size: 2.6rem; font-weight: 700; color: #2c6e8f;
+            line-height: 1.2;
+        }
+        .stat-card .number span { font-size: 1.2rem; font-weight: 400; }
+        .stat-card .desc {
+            font-size: 0.88rem; color: #6a7a8a;
+            margin-top: 6px;
+        }
+
+        /* ─── Training Timeline ─── */
+        .timeline { max-width: 700px; margin: 0 auto; }
+        .timeline-item {
+            display: flex; gap: 24px;
+            padding: 24px 0;
+            border-bottom: 1px solid #eee;
+        }
+        .timeline-item:last-child { border-bottom: none; }
+        .timeline-year {
+            flex-shrink: 0; width: 70px;
+            font-weight: 600; color: #2c6e8f;
+            font-size: 0.95rem; padding-top: 2px;
+        }
+        .timeline-content h4 {
+            font-size: 1.02rem; font-weight: 600;
+            margin-bottom: 4px;
+        }
+        .timeline-content p {
+            font-size: 0.9rem; color: #5a6a7a;
+        }
+
+        /* ─── Services ─── */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+        }
+        .service-card {
+            background: #fafafa; border-radius: 16px;
+            padding: 36px 28px; text-align: center;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .service-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.05);
+        }
+        .service-card .icon {
+            display: inline-flex; align-items: center; justify-content: center;
+            width: 56px; height: 56px; border-radius: 50%;
+            background: #eaf4f9; margin-bottom: 18px;
+        }
+        .service-card .icon svg { width: 28px; height: 28px; stroke: #2c6e8f; fill: none; stroke-width: 1.8; }
+        .service-card h3 { font-size: 1.1rem; margin-bottom: 10px; }
+        .service-card p { font-size: 0.9rem; color: #5a6a7a; }
+
+        /* ─── Philosophy ─── */
+        .philosophy-text {
+            max-width: 720px; margin: 0 auto;
+            font-size: 1.05rem;
+        }
+        .philosophy-text p { margin-bottom: 20px; }
+        .philosophy-text blockquote {
+            font-size: 1.2rem; font-style: italic;
+            color: #3a5a6a;
+            border-left: 4px solid #2c6e8f;
+            padding: 16px 24px; margin: 28px 0;
+            background: #f5f8fa; border-radius: 0 8px 8px 0;
+        }
+
+        /* ─── Contact ─── */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+        .contact-card {
+            background: #fafafa; border-radius: 12px;
+            padding: 28px 20px; text-align: center;
+        }
+        .contact-card .icon {
+            margin-bottom: 12px;
+        }
+        .contact-card .icon svg { width: 24px; height: 24px; stroke: #2c6e8f; fill: none; stroke-width: 1.8; }
+        .contact-card h4 { font-size: 0.92rem; margin-bottom: 6px; color: #3a4a5a; }
+        .contact-card p { font-size: 0.92rem; color: #5a6a7a; }
+
+        /* ─── Footer ─── */
+        footer {
+            text-align: center; padding: 36px 24px;
+            font-size: 0.85rem; color: #8a9aaa;
+            border-top: 1px solid #eee;
+            background: #fff;
+        }
+        footer a { color: #2c6e8f; text-decoration: none; }
+
+        /* ─── Responsive ─── */
+        @media (max-width: 768px) {
+            .hero .container {
+                flex-direction: column; text-align: center;
+                padding-top: 60px; padding-bottom: 60px;
+            }
+            .hero-photo { width: 200px; height: 200px; font-size: 3rem; }
+            .hero-text h1 { font-size: 2.2rem; }
+            .hero-text .title-tags { justify-content: center; }
+            .hero-text p { max-width: 100%; }
+            .stats-grid { grid-template-columns: repeat(2, 1fr); }
+            .nav-links { display: none; }
+            .hamburger { display: flex; }
+            .nav-links.open {
+                display: flex; flex-direction: column;
+                position: absolute; top: 64px; left: 0; right: 0;
+                background: rgba(255,255,255,0.98);
+                padding: 20px 24px; border-bottom: 1px solid #eee;
+                gap: 16px;
+            }
+            section { padding: 64px 0; }
+            .section-title { font-size: 1.6rem; }
+            .timeline-item { flex-direction: column; gap: 6px; }
+        }
+        @media (max-width: 480px) {
+            .stats-grid { grid-template-columns: 1fr 1fr; }
+            .stat-card .number { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ═══ Navigation ═══ -->
+    <nav>
+        <div class="container">
+            <a href="#" class="logo">秦海</a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html" class="home-link">🏠 首页</a></li>
+                <li><a href="#about">关于我</a></li>
+                <li><a href="#credentials">专业资质</a></li>
+                <li><a href="#experience">从业经验</a></li>
+                <li><a href="#training">受训背景</a></li>
+                <li><a href="#services">咨询方向</a></li>
+                <li><a href="#contact">联系方式</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger" onclick="toggleNav()">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ═══ Hero ═══ -->
+    <header class="hero" id="home">
+        <div class="container">
+            <div class="hero-photo">
+                <img src="images/photo-compressed.jpg" alt="秦海" style="width:100%;height:100%;border-radius:50%;object-fit:cover;object-position:center 3%;" />
+            </div>
+            <div class="hero-text">
+                <h1>秦海</h1>
+                <p class="subtitle">心理咨询师 · 注册督导师 · 高级培训师</p>
+                <div class="title-tags">
+                    <span>注册督导师 D-25-212</span>
+                    <span>注册心理师 X-21-705</span>
+                    <span>国家二级心理咨询师</span>
+                    <span>润本健康首席心理师</span>
+                </div>
+                <p>用专业与温暖，陪伴每一段心灵成长的旅程</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- ═══ About ═══ -->
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">关于我</h2>
+            <div class="section-divider"></div>
+            <div class="about-content">
+                <p>
+                    你好，我是秦海。我始终相信，每个人内心都蕴藏着自我成长的力量，
+                    而心理咨询的意义，就是在专业、安全、不加评判的空间里，
+                    陪你一起发现并唤醒它。
+                </p>
+                <p>
+                    我连续从事心理咨询工作15年，累计个体咨询时长逾10000小时，
+                    动力性督导时长逾1000小时。曾接受系统的精神分析与心理动力学连续培训，
+                    并长期从事心理咨询热线、个体咨询、团体带领、督导及心理培训工作。
+                </p>
+                <p>
+                    在临床与教学之外，我也接受过加拿大多伦多大学认证的高效焦点解决教练训练，
+                    熟悉焦点解决取向在助人工作、关系沟通、压力应对与个人成长中的实际应用。
+                </p>
+            </div>
+            <div class="creds-grid">
+                <div class="item">
+                    <div class="label">行业经验</div>
+                    <div class="value">15年</div>
+                </div>
+                <div class="item">
+                    <div class="label">个体咨询</div>
+                    <div class="value">逾 10000 小时</div>
+                </div>
+                <div class="item">
+                    <div class="label">动力性督导</div>
+                    <div class="value">逾 1000 小时</div>
+                </div>
+                <div class="item">
+                    <div class="label">所在城市</div>
+                    <div class="value">上海</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ Credentials ═══ -->
+    <section id="credentials">
+        <div class="container">
+            <h2 class="section-title">专业资质</h2>
+            <div class="section-divider"></div>
+            <p class="section-subtitle">
+                中国心理学会注册系统认证 · 国家职业资格认证
+            </p>
+            <div class="creds-grid">
+                <div class="item">
+                    <div class="label">注册督导师</div>
+                    <div class="value">D-25-212</div>
+                </div>
+                <div class="item">
+                    <div class="label">注册心理师</div>
+                    <div class="value">X-21-705</div>
+                </div>
+                <div class="item">
+                    <div class="label">国家人力资源与社会保障部</div>
+                    <div class="value">心理咨询师二级</div>
+                </div>
+                <div class="item">
+                    <div class="label">焦点解决教练</div>
+                    <div class="value">多伦多大学认证</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ Experience / Stats ═══ -->
+    <section id="experience">
+        <div class="container">
+            <h2 class="section-title">从业经验</h2>
+            <div class="section-divider"></div>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="number">15<span> 年</span></div>
+                    <div class="desc">连续从业</div>
+                </div>
+                <div class="stat-card">
+                    <div class="number">10000<span>+</span></div>
+                    <div class="desc">个体咨询小时</div>
+                </div>
+                <div class="stat-card">
+                    <div class="number">1000<span>+</span></div>
+                    <div class="desc">督导小时</div>
+                </div>
+                <div class="stat-card">
+                    <div class="number">516<span>+</span></div>
+                    <div class="desc">个人精神分析小时</div>
+                </div>
+            </div>
+            <div style="max-width:700px;margin:48px auto 0;font-size:0.95rem;color:#5a6a7a;">
+                <p style="margin-bottom:12px;"><strong>现任职务：</strong></p>
+                <ul style="padding-left:20px;list-style:disc;">
+                    <p>上海润本健康咨询有限公司 / 上海德济医院 / 上海市心理热线（12320-5）资深心理咨询师（10年）</p>
+                </ul>
+                <p style="margin-top:16px;margin-bottom:12px;"><strong>历任机构：</strong></p>
+                <ul style="padding-left:20px;list-style:disc;">
+                    <li>林紫心理 / 德瑞姆心理 / 芒果心理</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ Training ═══ -->
+    <section id="training">
+        <div class="container">
+            <h2 class="section-title">系统受训背景</h2>
+            <div class="section-divider"></div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-year">中德项目</div>
+                    <div class="timeline-content">
+                        <h4>中德精神分析心理治疗师连续培训项目</h4>
+                        <p>初级组 / 高级组 / 督导组 毕业</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">2020–2022</div>
+                    <div class="timeline-content">
+                        <h4>第八期督导师培训</h4>
+                        <p>中国心理学会临床心理学注册工作委员会 毕业</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">个人分析</div>
+                    <div class="timeline-content">
+                        <h4>高频个人精神分析</h4>
+                        <p>接受IPA分析师 516+ 小时高频个人精神分析</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">团体体验</div>
+                    <div class="timeline-content">
+                        <h4>心理动力学团体体验</h4>
+                        <p>300+ 小时心理动力学团体体验</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">焦点解决</div>
+                    <div class="timeline-content">
+                        <h4>高效焦点解决教练训练</h4>
+                        <p>加拿大多伦多大学认证</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">伦理培训</div>
+                    <div class="timeline-content">
+                        <h4>心理咨询与治疗伦理培训</h4>
+                        <p>完成多项伦理培训</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ Services ═══ -->
+    <section id="services">
+        <div class="container">
+            <h2 class="section-title">咨询与督导方向</h2>
+            <div class="section-divider"></div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="icon">
+                        <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                    <h3>个体咨询</h3>
+                    <p>情绪困扰、焦虑抑郁、人际关系、自我探索与成长</p>
+                </div>
+                <div class="service-card">
+                    <div class="icon">
+                        <svg viewBox="0 0 24 24"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="7" r="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                    <h3>专业督导</h3>
+                    <p>为心理咨询师提供个案督导、专业成长支持</p>
+                </div>
+                <div class="service-card">
+                    <div class="icon">
+                        <svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9" cy="7" r="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M23 21v-2a4 4 0 0 0-3-3.87" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 3.13a4 4 0 0 1 0 7.75" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                    <h3>团体带领</h3>
+                    <p>心理动力学团体 / 焦点解决取向团体</p>
+                </div>
+                <div class="service-card">
+                    <div class="icon">
+                        <svg viewBox="0 0 24 24"><path d="M22 10v6M2 10l10-5 10 5-10 5z" stroke-linecap="round" stroke-linejoin="round"/><path d="M6 12v5c3 3 9 3 12 0v-5" stroke-linecap="round"/></svg>
+                    </div>
+                    <h3>专业培训</h3>
+                    <p>心理咨询理论与技术培训 / 焦点解决短期培训</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ Philosophy ═══ -->
+    <section id="philosophy">
+        <div class="container">
+            <h2 class="section-title">咨询理念</h2>
+            <div class="section-divider"></div>
+            <div class="philosophy-text">
+                <p>
+                    咨询关系本身就是疗愈发生的土壤。在这个安全、不加评判的空间里，
+                    你可以自在地呈现真实的自己——无论是脆弱、困惑还是愤怒，
+                    都值得被看见、被倾听。
+                </p>
+                <blockquote>
+                    "心理咨询不是给答案，而是陪你一起找到属于你自己的答案。"
+                </blockquote>
+                <p>
+                    我的工作以精神分析与心理动力学为根基，整合焦点解决短期治疗的理念，
+                    根据来访者的个人特点与当下需求灵活调整。我相信每位来访者都是自己生活的专家，
+                    而咨询师的角色是专业的陪伴者与协助者。
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ Contact ═══ -->
+    <section id="contact">
+        <div class="container">
+            <h2 class="section-title">联系方式</h2>
+            <div class="section-divider"></div>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="icon">
+                        <svg viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 7L2 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                    <h4>邮箱</h4>
+                    <p>qin_hai@189.cn</p>
+                </div>
+                <div class="contact-card">
+                    <div class="icon">
+                        <svg viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="10" r="3"/></svg>
+                    </div>
+                    <h4>微信</h4>
+                    <p>18930979980（助理：胡老师）</p>
+                </div>
+                <div class="contact-card">
+                    <div class="icon">
+                        <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" stroke-linecap="round"/><circle cx="12" cy="9" r="2.5" stroke-linecap="round"/></svg>
+                    </div>
+                    <h4>服务形式</h4>
+                    <p>面询 / 视频咨询 / 督导</p>
+                </div>
+                <div class="contact-card">
+                    <div class="icon">
+                        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </div>
+                    <h4>预约方式</h4>
+                    <p>提前预约，须至少提前一周</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ Footer ═══ -->
+    <footer>
+        <p><a href="index.html">🏠 首页</a> · <a href="news/today.html">📰 今日新闻</a> · <a href="digest/today.html">🧠 行业动态</a> · <a href="https://qinhaic.github.io/101defenses/">🛡️ 101 防御</a></p>
+        <p style="margin-top:6px;">&copy; 2026 秦海 · 心理咨询与督导</p>
+    </footer>
+
+    <!-- ═══ Mobile Nav Toggle ═══ -->
+    <script>
+        function toggleNav() {
+            document.getElementById('navLinks').classList.toggle('open');
+        }
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('navLinks').classList.remove('open');
+            });
+        });
+    </script>
+
+</body>
+</html>
