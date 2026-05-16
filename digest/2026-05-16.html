@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>国际心理咨询行业简报 · 2026-05-16</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+  background: linear-gradient(135deg, #f5f7fa 0%, #e8ecf1 100%);
+  color: #2c3e50; line-height: 1.6; min-height: 100vh;
+}
+.container { max-width: 800px; margin: 0 auto; padding: 32px 20px; }
+.header { text-align: center; padding: 40px 0 32px; position: relative; }
+.header::after {
+  content: ''; display: block; width: 60px; height: 3px;
+  background: linear-gradient(90deg, #3498db, #27ae60); margin: 20px auto 0; border-radius: 2px;
+}
+.header h1 { font-size: 24px; font-weight: 700; color: #1a1a2e; margin-bottom: 6px; }
+.header .subtitle { font-size: 14px; color: #95a5a6; }
+.header .date-badge {
+  display: inline-block; margin-top: 10px; padding: 4px 16px; background: #fff;
+  border-radius: 20px; font-size: 13px; color: #7f8c8d; box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+}
+.section { margin-top: 32px; }
+.section-title {
+  font-size: 17px; font-weight: 700; color: #2c3e50; margin-bottom: 16px;
+  padding-bottom: 10px; display: flex; align-items: center; gap: 8px;
+}
+.section-title .icon { font-size: 20px; }
+.research .section-title { border-bottom: 2px solid #3498db; }
+.industry .section-title { border-bottom: 2px solid #27ae60; }
+.card {
+  display: flex; gap: 14px; background: #fff; border-radius: 12px; padding: 18px 20px;
+  margin-bottom: 14px; box-shadow: 0 1px 6px rgba(0,0,0,0.05);
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+.card:hover { transform: translateY(-1px); box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+.research-card { border-left: 3px solid #3498db; }
+.industry-card { border-left: 3px solid #27ae60; }
+.card-number {
+  flex-shrink: 0; width: 26px; height: 26px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center; font-size: 13px;
+  font-weight: 700; color: #fff;
+}
+.research-card .card-number { background: #3498db; }
+.industry-card .card-number { background: #27ae60; }
+.card-body { flex: 1; min-width: 0; }
+.card-title { font-size: 14px; font-weight: 600; color: #1a1a2e; line-height: 1.5; }
+.card-trans { font-size: 13px; color: #555; margin-top: 6px; line-height: 1.6; }
+.card-summary { margin-top: 10px; font-size: 13px; line-height: 1.8; }
+.card-summary summary {
+  cursor: pointer; font-size: 12px; font-weight: 500; color: #7f8c8d;
+  padding: 6px 12px; background: #f5f7fa; border-radius: 6px; border: 1px solid #e8ecf1;
+  user-select: none; display: inline-block; transition: background 0.15s;
+}
+.card-summary summary:hover { background: #eef2f7; }
+.card-summary[open] summary { margin-bottom: 8px; background: #e8ecf1; border-color: #d0d8e0; }
+.summary-zh {
+  padding: 10px 14px; background: #f0f6fc; border-radius: 8px 8px 0 0;
+  border: 1px solid #d0d8e0; border-bottom: none; color: #2c3e50;
+}
+.summary-zh::before { content: "🇨🇳 中文摘要"; display: block; font-size: 11px; color: #7f8c8d; margin-bottom: 4px; }
+.summary-en {
+  padding: 10px 14px; background: #fafafa; border-radius: 0 0 8px 8px;
+  border: 1px solid #e8e8e8; border-top: 1px dashed #d0d8e0; color: #444;
+}
+.summary-en::before { content: "🇬🇧 English"; display: block; font-size: 11px; color: #7f8c8d; margin-bottom: 4px; }
+.card-meta { display: flex; align-items: center; gap: 10px; margin-top: 10px; font-size: 12px; }
+.source-tag { padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 500; }
+.research-tag { background: #e8f4f8; color: #2980b9; }
+.industry-tag { background: #e8f8ee; color: #27ae60; }
+.read-link { text-decoration: none; font-size: 12px; font-weight: 500; transition: opacity 0.15s; }
+.read-link:hover { opacity: 0.7; }
+.research-link { color: #3498db; }
+.industry-link { color: #27ae60; }
+.footer { text-align: center; padding: 40px 0 20px; color: #bbb; font-size: 12px; }
+.footer a { color: #95a5a6; text-decoration: none; }
+.footer a:hover { color: #3498db; }
+@media (max-width: 600px) { .container { padding: 16px 12px; } .card { padding: 14px 16px; } .header h1 { font-size: 20px; } }
+</style>
+</head>
+<body>
+<div class="container">
+<header class="header">
+<h1>🧠 国际心理咨询行业简报</h1>
+<p class="subtitle">心理学研究 · 心理咨询 · 心理治疗 · 行业动态</p>
+<div class="date-badge">2026 年 05 月 16 日</div>
+</header>
+
+<section class="section research">
+<h2 class="section-title"><span class="icon">🔬</span> 心理学与临床研究进展</h2>
+
+<article class="card research-card">
+<div class="card-number">1</div>
+<div class="card-body">
+<h3 class="card-title">Positive Affect Treatment (PAT) outperforms standard therapy for depression and anxiety</h3>
+<p class="card-trans">《JAMA Network Open》：积极情绪治疗（PAT）优于传统消极情绪治疗——心理治疗的范式转变</p>
+<details class="card-summary">
+<summary>📖 阅读摘要</summary>
+<div class="summary-zh">5月4日发表于《JAMA Network Open》的随机临床试验证实，由南卫理公会大学Alicia Meuret博士主持的"积极情绪治疗"（PAT），在治疗抑郁和焦虑方面优于传统聚焦消极情绪的治疗（NAT）。PAT侧重于培养乐观、规划愉悦活动、激发积极情绪和奖赏加工，而非单纯减少痛苦。该研究支持心理治疗从"减少痛苦"向"增加奖赏"的范式转变。</div>
+<div class="summary-en">A randomized clinical trial published May 4 in JAMA Network Open, led by Dr. Alicia Meuret (Southern Methodist University), confirmed that Positive Affect Treatment (PAT) — targeting reward processing and anhedonia — produced small but significant improvements over standard negative-affect-focused treatment (NAT) for depression and anxiety. The study supports a paradigm shift toward activating reward systems in psychotherapy.</div>
+</details>
+<div class="card-meta">
+<span class="source-tag research-tag">JAMA Network Open</span>
+<a class="read-link research-link" href="https://jamanetwork.com/journals/jamanetworkopen" target="_blank" rel="noopener">阅读原文 ↗</a>
+</div></div></article>
+
+<article class="card research-card">
+<div class="card-number">2</div>
+<div class="card-body">
+<h3 class="card-title">Duke's LinCx: rewiring brain circuits with engineered electrical synapses to boost stress resilience</h3>
+<p class="card-trans">《Nature》：Duke大学突破——工程化电突触重建抗压脑回路</p>
+<details class="card-summary">
+<summary>📖 阅读摘要</summary>
+<div class="summary-zh">5月13日发表于《Nature》，Duke大学Kafui Dzirasa团队利用源自鱼类的工程化蛋白，开发了名为LinCx的定制生物电子技术，可在特定神经元之间精确创建新的电"旁路"连接。小鼠实验显示该技术可增强抗压回路功能、改善社交行为，指向无需长期药物或外部刺激的"神经回路编辑"新时代。</div>
+<div class="summary-en">Published May 13 in Nature, Duke University's Dr. Kafui Dzirasa and team developed LinCx — a technology using engineered proteins (originally from fish) to create precise new electrical "bypass" connections between specific neurons. In mice, this rewiring strengthened stress-resilience circuits and altered behavior, pointing toward a future of "circuit editing" without chronic medication or external stimulation.</div>
+</details>
+<div class="card-meta">
+<span class="source-tag research-tag">Nature</span>
+<a class="read-link research-link" href="https://www.nature.com/" target="_blank" rel="noopener">阅读原文 ↗</a>
+</div></div></article>
+
+<article class="card research-card">
+<div class="card-number">3</div>
+<div class="card-body">
+<h3 class="card-title">Surprising finding: better cognitive function predicts higher depression relapse risk</h3>
+<p class="card-trans">《BMJ Mental Health》：反直觉发现——"脑雾"越轻，抑郁复发风险反而越高？</p>
+<details class="card-summary">
+<summary>📖 阅读摘要</summary>
+<div class="summary-zh">5月7日发表于《BMJ Mental Health》，伯明翰大学Angharad de Cates团队发现，有抑郁病史但认知表现更好的人群反而更容易复发；而在健康对照组中，较差认知预测了首次抑郁发作。研究者推测更好的认知功能可能带来更高的洞察力和求助意愿，暗示认知与抑郁复发的关系远比"越差越危险"的直觉复杂。</div>
+<div class="summary-en">Published May 7 in BMJ Mental Health, Dr. Angharad de Cates (University of Birmingham) found that individuals with a history of depression who had better cognitive performance were more likely to relapse — contrary to expectations. Among healthy controls, poorer cognition predicted first depression onset. Better cognitive function may enhance insight and help-seeking behavior, complicating the simple "brain fog = worse" narrative.</div>
+</details>
+<div class="card-meta">
+<span class="source-tag research-tag">BMJ Mental Health</span>
+<a class="read-link research-link" href="https://mentalhealth.bmj.com/" target="_blank" rel="noopener">阅读原文 ↗</a>
+</div></div></article>
+
+<article class="card research-card">
+<div class="card-number">4</div>
+<div class="card-body">
+<h3 class="card-title">Lesion network mapping enables personalized TMS for psychiatric disorders</h3>
+<p class="card-trans">《Brain Medicine》：病灶网络映射实现精神科个性化经颅磁刺激</p>
+<details class="card-summary">
+<summary>📖 阅读摘要</summary>
+<div class="summary-zh">5月5日发表于《Brain Medicine》，里斯本Champalimaud基金会Gonçalo Cotovio博士利用脑病灶网络映射识别躁狂和强迫症的因果神经回路，再据此制定个性化TMS方案，推动精神科神经调控从"经验导向"走向"机制导向"。</div>
+<div class="summary-en">Published May 5 in Brain Medicine, Dr. Gonçalo Cotovio (Champalimaud Foundation, Lisbon) used lesion network mapping to identify causal brain circuits underlying mania and OCD, then targeted those circuits with personalized TMS — moving psychiatric neuromodulation from symptom-based prescribing toward mechanism-based precision.</div>
+</details>
+<div class="card-meta">
+<span class="source-tag research-tag">Brain Medicine</span>
+<a class="read-link research-link" href="https://brainmedicinejournal.org/" target="_blank" rel="noopener">阅读原文 ↗</a>
+</div></div></article>
+
+<article class="card research-card">
+<div class="card-number">5</div>
+<div class="card-body">
+<h3 class="card-title">Early engagement with smartphone CBT drives sustained depression improvement</h3>
+<p class="card-trans">《Psychological Medicine》：数字干预的"关键窗口期"——前3周决定长期疗效</p>
+<details class="card-summary">
+<summary>📖 阅读摘要</summary>
+<div class="summary-zh">5月13日发表于《Psychological Medicine》，日本RESiLIENT试验二次分析发现，早期（0-3周）与智能手机行为激活的积极互动可驱动26周时持续的抑郁改善，而后期参与度影响甚微。提示数字干预的初始投入和引导支持可能决定长期疗效。</div>
+<div class="summary-en">A secondary analysis from the Japanese RESiLIENT trial, published May 13 in Psychological Medicine, found that early engagement (weeks 0–3) with smartphone behavioral activation drove sustained depression reduction at 26 weeks, while later engagement had little impact — suggesting a "critical window" for digital intervention effectiveness.</div>
+</details>
+<div class="card-meta">
+<span class="source-tag research-tag">Psychological Medicine</span>
+<a class="read-link research-link" href="https://www.cambridge.org/core/journals/psychological-medicine" target="_blank" rel="noopener">阅读原文 ↗</a>
+</div></div></article>
+
+<article class="card research-card">
+<div class="card-number">6</div>
+<div class="card-body">
+<h3 class="card-title">Computational framework reveals hidden biomarkers in neuropsychiatric disorders</h3>
+<p class="card-trans">Georgia Tech：粒度因子分解框架发现精神疾病隐藏生物标志物</p>
+<details class="card-summary">
+<summary>📖 阅读摘要</summary>
+<div class="summary-zh">Georgia Tech博士生Md Abdur Rahaman开发了"粒度因子分解"计算框架，可将复杂神经影像、基因组和行为数据分层为亚组，在精神分裂症、自闭症和阿尔茨海默病中发现隐藏的生物标志物，为精准诊断和治疗提供新方法。</div>
+<div class="summary-en">A Georgia Tech team developed a "granular factoring" framework that stratifies complex neuroimaging, genomics, and behavioral data into subgroups to find hidden biomarkers for schizophrenia, autism, and Alzheimer's — enabling more personalized diagnosis and treatment.</div>
+</details>
+<div class="card-meta">
+<span class="source-tag research-tag">Georgia Tech</span>
+<a class="read-link research-link" href="https://hg.gatech.edu/" target="_blank" rel="noopener">阅读原文 ↗</a>
+</div></div></article>
+
+<article class="card research-card">
+<div class="card-number">7</div>
+<div class="card-body">
+<h3 class="card-title">Metaverse-based counseling for adolescents: complementary, not a replacement</h3>
+<p class="card-trans">韩国研究：元宇宙心理咨询应作为混合平台补充，非独立替代</p>
+<details class="card-summary">
+<summary>📖 阅读摘要</summary>
+<div class="summary-zh">韩国生物精神治疗学会综述48项研究发现，基于元宇宙的咨询应作为"互补性混合平台"，连接远程筛查、结构化数字干预和面对面临床照护，而非独立替代方案。这对青少年心理服务数字化转型提供了重要参考框架。</div>
+<div class="summary-en">A Korean review of 48 studies concluded that metaverse-based counseling should serve as a "complementary hybrid platform" linking remote screening, structured digital intervention, and in-person clinical care — not as an independent replacement.</div>
+</details>
+<div class="card-meta">
+<span class="source-tag research-tag">J. Korean Soc. Biol. Ther. Psychiatry</span>
+<a class="read-link research-link" href="https://journals.koreamed.org/" target="_blank" rel="noopener">阅读原文 ↗</a>
+</div></div></article>
+
+<article class="card research-card">
+<div class="card-number">8</div>
+<div class="card-body">
+<h3 class="card-title">Nature review: the technological revolution in mental health — promise and perils</h3>
+<p class="card-trans">《Nature》子刊综述：AI、VR、在线治疗、AI辅助——四大技术的机遇与陷阱</p>
+<details class="card-summary">
+<summary>📖 阅读摘要</summary>
+<div class="summary-zh">发表于《Humanities and Social Sciences Communications》的跨学科综述剖析了AI检测诊断、VR心理治疗、在线咨询和AI辅助心理治疗四大技术领域，警告诊断通胀、边界模糊、隐私自主权侵蚀等风险，为从业者、研究者和政策制定者提供了实操建议框架。</div>
+<div class="summary-en">A comprehensive interdisciplinary review in Humanities and Social Sciences Communications (Nature portfolio) examined AI-driven detection, VR psychotherapy, online therapy, and AI-assisted treatment. The authors warned about diagnostic inflation, boundary blurring, and privacy risks while offering practical recommendations for clinicians, researchers, and policymakers.</div>
+</details>
+<div class="card-meta">
+<span class="source-tag research-tag">Humanities & Social Sciences Communications</span>
+<a class="read-link research-link" href="https://www.nature.com/palcomms/" target="_blank" rel="noopener">阅读原文 ↗</a>
+</div></div></article>
+
+</section>
+
+<section class="section industry">
+<h2 class="section-title"><span class="icon">💬</span> 心理咨询与治疗行业动态</h2>
+
+<article class="card industry-card">
+<div class="card-number">1</div>
+<div class="card-body">
+<h3 class="card-title">Rejoyn launches in US: first FDA-authorized prescription digital therapeutic for depression</h3>
+<p class="card-trans">🔥 Rejoyn正式上市：FDA首个抑郁症处方数字疗法，定价$50起</p>
+<details class="card-summary">
+<summary>📖 阅读摘要</summary>
+<div class="summary-zh">Otsuka与Click Therapeutics联合开发的Rejoyn于5月在美国正式上市，这是FDA批准的首个用于重性抑郁障碍的处方数字治疗。该App通过6周结构化认知情绪训练课程实现MADRS评分平均下降8.78分（对照组6.66分），患者自付仅$50，是目前价格最低的处方数字疗法之一。Lumos Labs的ADHD数字疗法Prismira也同期获FDA 510(k)批准，数字精神医学赛道正加速成形。</div>
+<div class="summary-en">Rejoyn (Otsuka & Click Therapeutics) — the first FDA-authorized prescription digital therapeutic for major depressive disorder — launched in the US in May 2026. The 6-week smartphone-based cognitive-emotional training program showed an average 8.78-point MADRS reduction vs. 6.66 for controls. Introductory pricing of $50 for patients makes it one of the most accessible DTx products. Lumos Labs' Prismira ADHD DTx also received FDA 510(k) clearance.</div>
+</details>
+<div class="card-meta">
+<span class="source-tag industry-tag">PharmaPhorum / Click Therapeutics</span>
+<a class="read-link industry-link" href="https://pharmaphorum.com/news/otsuka-clicks-depression-dtx-launches-us" target="_blank" rel="noopener">阅读原文 ↗</a>
+</div></div></article>
+
+<article class="card industry-card">
+<div class="card-number">2</div>
+<div class="card-body">
+<h3 class="card-title">HHS "Rational Prescribing" plan escalates: CMS releases deprescribing billing codes</h3>
+<p class="card-trans">HHS「合理处方」行动计划升级：CMS发布减药编码指南，七大机构联合推进</p>
+<details class="card-summary">
+<summary>📖 阅读摘要</summary>
+<div class="summary-zh">美国HHS部长RFK Jr.推动的联邦处方审查计划5月4日正式启动跨部门工作组，联合ACF、SAMHSA、HRSA、FDA、NIH、CMS七大机构。CMS同步发布精神科减药/停药计费编码指南，SAMHSA将于6-7月举办药物不良反应及非药物治疗替代方案系列网络研讨会。APA表示担忧，AFSP警告突然停药可能增加自杀风险。</div>
+<div class="summary-en">HHS formally launched an interagency working group on May 4 across seven agencies to evaluate psychiatric prescribing patterns. CMS released guidance on billing codes for deprescribing/discontinuation services. SAMHSA will host webinars (June–July) on adverse effects and non-medication alternatives. The APA expressed concerns about framing the mental health crisis as primarily an "overprescribing" problem, while AFSP warned abrupt discontinuation can increase suicide risk.</div>
+</details>
+<div class="card-meta">
+<span class="source-tag industry-tag">Psychiatric Times / CMS / LeadingAge</span>
+<a class="read-link industry-link" href="https://www.psychiatrictimes.com/view/hhs-launches-action-plan-to-promote-appropriate-psychiatric-prescribing" target="_blank" rel="noopener">阅读原文 ↗</a>
+</div></div></article>
+
+<article class="card industry-card">
+<div class="card-number">3</div>
+<div class="card-body">
+<h3 class="card-title">Ireland enacts landmark 268-section Mental Health Act 2026</h3>
+<p class="card-trans">爱尔兰颁布268条《2026精神卫生法》：禁止18岁以下ECT、赋予青少年治疗同意权</p>
+<details class="card-summary">
+<summary>📖 阅读摘要</summary>
+<div class="summary-zh">爱尔兰总统5月7日签署268条新精神卫生法，核心改革：首次将社区儿童青少年心理健康服务纳入监管、赋予16-17岁青少年与成人同等的治疗同意权、禁止对18岁以下使用ECT、首次建立药物约束监管制度。被誉为全球精神卫生人权立法的标杆。</div>
+<div class="summary-en">Ireland enacted a landmark 268-section Mental Health Act on May 7, featuring: first regulation of community CAMHS by the Mental Health Commission, consent rights for 16-17 year-olds equal to adults, prohibition of ECT for under-18s, and regulation of pharmacological restraint. Described as a "new era" for Irish mental healthcare.</div>
+</details>
+<div class="card-meta">
+<span class="source-tag industry-tag">Gov.ie / Cork County PPN</span>
+<a class="read-link industry-link" href="https://www.gov.ie/en/department-of-health/press-releases/mental-health-act-2026-signed-into-law-by-president-connolly/" target="_blank" rel="noopener">阅读原文 ↗</a>
+</div></div></article>
+
+<article class="card industry-card">
+<div class="card-number">4</div>
+<div class="card-body">
+<h3 class="card-title">German statutory insurance plans blanket 10% fee reduction for psychotherapy</h3>
+<p class="card-trans">德国法定健康保险拟统一削减心理治疗费用10%，从业者强烈反弹</p>
+<details class="card-summary">
+<summary>📖 阅读摘要</summary>
+<div class="summary-zh">德国法定健康保险基金联合会计划对各类型心理治疗服务实施统一10%费用削减，引发德国心理治疗师协会强烈反弹。若实施，可能威胁大量私人执业的生存，并进一步拉长已近5个月的心理治疗等待名单。</div>
+<div class="summary-en">Germany's statutory health insurance funds are planning a blanket 10% fee reduction for all psychotherapeutic services, triggering strong opposition from the German Psychotherapists Association. If implemented, it could threaten private practice viability and further extend already 5-month-long waiting lists.</div>
+</details>
+<div class="card-meta">
+<span class="source-tag industry-tag">MedLabPortal</span>
+<a class="read-link industry-link" href="https://medlabportal.com/" target="_blank" rel="noopener">阅读原文 ↗</a>
+</div></div></article>
+
+<article class="card industry-card">
+<div class="card-number">5</div>
+<div class="card-body">
+<h3 class="card-title">FDA clears multiple non-invasive neuromodulation devices for at-home depression treatment</h3>
+<p class="card-trans">非侵入性神经调控进入"居家时代"：Flow、Neurolief、Motif三款设备获批</p>
+<details class="card-summary">
+<summary>📖 阅读摘要</summary>
+<div class="summary-zh">短短数周内三大里程碑：Flow Neuroscience获FDA批准可居家使用的抑郁神经刺激可穿戴设备（10周缓解率58%）；Neurolief的ProlivRx获批为首个处方级居家多通道电刺激MDD治疗设备（16周缓解率32%）；Motif Neurotech的DOT无线脑植入物获FDA临床试验豁免，由Baylor、MGH、Emory等顶级中心参与首个人体试验。</div>
+<div class="summary-en">Three milestones in rapid succession: Flow Neuroscience received FDA clearance for an at-home wearable depression device (58% remission at 10 weeks); Neurolief's ProlivRx became the first prescription at-home multi-channel electrical stimulation therapy for MDD (32% remission at 16 weeks); Motif Neurotech's DOT wireless implant received FDA IDE approval for first-in-human trials at Baylor, MGH, and Emory.</div>
+</details>
+<div class="card-meta">
+<span class="source-tag industry-tag">Mass Device / Medgate Today</span>
+<a class="read-link industry-link" href="https://www.massdevice.com/" target="_blank" rel="noopener">阅读原文 ↗</a>
+</div></div></article>
+
+<article class="card industry-card">
+<div class="card-number">6</div>
+<div class="card-body">
+<h3 class="card-title">BPS study: video therapy equals face-to-face quality, phone therapy falls short</h3>
+<p class="card-trans">BPS研究：视频心理治疗与面询质量相当，电话治疗显著逊色</p>
+<details class="card-summary">
+<summary>📖 阅读摘要</summary>
+<div class="summary-zh">英国心理学会发表涉及1,175名成人、1,933次治疗会谈的大型研究（发表于《British Journal of Clinical Psychology》），发现视频治疗在治疗关系核心指标上与面对面无显著差异，但电话治疗在情感连接、目标一致性方面均显著偏低，劣势在长程和高强度治疗中更突出。提示视频应为远程心理服务的最低技术标准。</div>
+<div class="summary-en">A major BPS study (1,175 adults, 1,933 sessions) published in the British Journal of Clinical Psychology found video therapy produced therapeutic-relationship outcomes comparable to in-person therapy, while phone sessions showed significantly weaker connection, goal agreement, and positive feelings toward therapists — especially in longer-term, intensive treatment.</div>
+</details>
+<div class="card-meta">
+<span class="source-tag industry-tag">BPS Research Digest</span>
+<a class="read-link industry-link" href="https://www.bps.org.uk/research-digest/virtual-therapy-video-performs-similarly-face-face-sessions" target="_blank" rel="noopener">阅读原文 ↗</a>
+</div></div></article>
+
+<article class="card industry-card">
+<div class="card-number">7</div>
+<div class="card-body">
+<h3 class="card-title">TimelyCare wins "Best Overall TeleHealth Solution" at 2026 MedTech Breakthrough Awards</h3>
+<p class="card-trans">TimelyCare获2026 MedTech突破奖最佳远程医疗方案：76%学生康复率</p>
+<details class="card-summary">
+<summary>📖 阅读摘要</summary>
+<div class="summary-zh">TimelyCare服务近500所美国大学校园，76%的学生经3次以上咨询后抑郁/焦虑获得可靠改善或缓解，采用PHQ-9、GAD-7等标准化评估工具，成为高校心理健康领域"测量导向护理"的标杆案例。</div>
+<div class="summary-en">TimelyCare, serving nearly 500 US college campuses, won the top telehealth award. Using validated tools (PHQ-9, GAD-7) in a measurement-based model, 76% of students achieve reliable improvement or remission after 3+ counseling visits.</div>
+</details>
+<div class="card-meta">
+<span class="source-tag industry-tag">GlobeNewswire / Markets Insider</span>
+<a class="read-link industry-link" href="https://www.globenewswire.com/news-release/2026/05/07/3290218/0/en/timelycare-wins-best-overall-telehealth-solution-in-2026-medtech-breakthrough-awards.html" target="_blank" rel="noopener">阅读原文 ↗</a>
+</div></div></article>
+
+<article class="card industry-card">
+<div class="card-number">8</div>
+<div class="card-body">
+<h3 class="card-title">ACA 2026 consensus: AI is reshaping counseling, but therapeutic alliance remains irreplaceable</h3>
+<p class="card-trans">ACA 2026年会共识：AI重塑咨询行业，但治疗同盟不可替代</p>
+<details class="card-summary">
+<summary>📖 阅读摘要</summary>
+<div class="summary-zh">美国心理咨询协会2026年会形成共识——治疗同盟不可替代，但53%从业者尚未在工作中使用AI。倦怠最严重的从业者反而是AI工具采纳率最高的人群（高出17个百分点）。大量咨询师在无意中使用非HIPAA合规的通用AI处理临床工作，行业规范亟待建立。</div>
+<div class="summary-en">ACA 2026 consensus: the therapeutic alliance remains irreplaceable, but 53% of clinicians haven't adopted AI. Paradoxically, clinicians with highest burnout are 17 percentage points more likely to adopt AI tools. Many counselors unknowingly use non-HIPAA-compliant AI for clinical work — industry standards are urgently needed.</div>
+</details>
+<div class="card-meta">
+<span class="source-tag industry-tag">Ensora Health / Psychiatric Times</span>
+<a class="read-link industry-link" href="https://ensorahealth.com/blog/5-things-we-learned-at-aca-2026/" target="_blank" rel="noopener">阅读原文 ↗</a>
+</div></div></article>
+
+<article class="card industry-card">
+<div class="card-number">9</div>
+<div class="card-body">
+<h3 class="card-title">Online psychology counseling market hits $5.97B in 2026, growing at 22.4% CAGR</h3>
+<p class="card-trans">全球在线心理咨询市场达59.7亿美元：Teladoc收购UpLift，行业整合加速</p>
+<details class="card-summary">
+<summary>📖 阅读摘要</summary>
+<div class="summary-zh">据最新市场报告，全球在线心理咨询市场已达59.7亿美元（年增22.4%），预计2030年达132亿美元。行业整合加速：Teladoc收购UpLift，Spring Health收购Alma，NOCD收购Rebound Health。独立执业者完成1.136亿次心理健康服务，继续主导门诊心理服务供给。</div>
+<div class="summary-en">The global online psychology counseling market reached $5.97B in 2026 (22.4% CAGR), projected to hit $13.2B by 2030. Consolidation accelerates: Teladoc acquired UpLift, Spring Health acquired Alma, NOCD acquired Rebound Health. Independent practitioners delivered 113.6M mental health sessions, continuing to dominate outpatient care delivery.</div>
+</details>
+<div class="card-meta">
+<span class="source-tag industry-tag">GII Research / SimplePractice</span>
+<a class="read-link industry-link" href="https://www.giiresearch.com/report/tbrc1960670-online-psychology-counseling-global-market-report.html" target="_blank" rel="noopener">阅读原文 ↗</a>
+</div></div></article>
+
+</section>
+
+<footer class="footer">
+<p><a href="../index.html">🏠 门户首页</a> · <a href="../news/today.html">📰 今日新闻</a></p>
+<p>每日更新 · 来源：JAMA Network Open / Nature / BMJ Mental Health / Psychiatric Times / FDA / BPS / Gov.ie</p>
+<p style="margin-top:4px;"><a href="#">返回顶部 ↑</a></p>
+</footer>
+</div>
+</body>
+</html>
