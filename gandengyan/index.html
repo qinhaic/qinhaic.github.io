@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>干瞪眼</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <section id="startScreen" class="start-screen" aria-label="开始游戏">
+      <div class="start-panel">
+        <h2>选择几家玩</h2>
+        <div class="start-options" role="group" aria-label="选择人数">
+          <button class="start-choice" data-seats="2">2家</button>
+          <button class="start-choice" data-seats="3">3家</button>
+          <button class="start-choice" data-seats="4">4家</button>
+        </div>
+      </div>
+    </section>
+    <main class="app">
+      <section class="topbar" aria-label="游戏设置">
+        <div>
+          <h1>干瞪眼</h1>
+          <p id="roundText">第一局随机先手</p>
+        </div>
+        <div class="controls">
+          <label class="debug-toggle">
+            <input id="showNpcHands" type="checkbox" />
+            显示NPC手牌
+          </label>
+          <div class="segmented" role="group" aria-label="人数">
+            <button class="seat-choice active" data-seats="2">2人</button>
+            <button class="seat-choice" data-seats="3">3人</button>
+            <button class="seat-choice" data-seats="4">4人</button>
+          </div>
+          <button id="newGameBtn" class="primary">重新选择</button>
+          <button id="exitBtn">退出</button>
+        </div>
+      </section>
+
+      <section class="table" aria-label="牌桌">
+        <div id="scoreboard" class="scoreboard" aria-label="计分器"></div>
+        <div id="opponents" class="opponents"></div>
+
+        <div class="center">
+          <div class="pile">
+            <span>牌堆</span>
+            <strong id="deckCount">0</strong>
+          </div>
+          <div class="last-play">
+            <span>当前牌</span>
+            <div id="currentPlay" class="played-cards empty">等待开牌</div>
+            <small id="currentMeta">领先者可以出任意合法牌型</small>
+          </div>
+          <div class="pile">
+            <span>轮到</span>
+            <strong id="turnName">你</strong>
+          </div>
+        </div>
+
+        <div id="message" class="message">选择人数后开始。</div>
+      </section>
+
+      <section class="player-area" aria-label="你的手牌">
+        <div class="actionbar">
+          <div>
+            <strong>你的手牌</strong>
+            <span id="selectionHint">点牌选择，再出牌</span>
+          </div>
+          <div class="actions">
+            <button id="playBtn" class="primary" disabled>出牌</button>
+            <button id="passBtn" disabled>不要</button>
+          </div>
+        </div>
+        <div id="hand" class="hand"></div>
+      </section>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
