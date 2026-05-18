@@ -171,6 +171,9 @@ function getCombos(cards) {
   }
 
   if (len === 2) {
+    if (jokers === 2) {
+      combos.push({ type: "bomb", rank: RANKS.length, bombSize: 5, length: 2, cards: sorted, jokerBomb: true });
+    }
     for (let rank = 0; rank < RANKS.length; rank += 1) {
       if (counts[rank] > 0 && counts[rank] + jokers === 2 && realRanks.every((r) => r.value === rank)) {
         combos.push({ type: "pair", rank, length: 2, cards: sorted });
@@ -222,8 +225,9 @@ function comboLabel(combo) {
     pair: "对子",
     straight: "顺子",
     consecutivePairs: "连对",
-    bomb: combo.bombSize === 4 ? "四张炸弹" : "三张炸弹",
+    bomb: combo.jokerBomb ? "王炸" : combo.bombSize === 4 ? "四张炸弹" : "三张炸弹",
   };
+  if (combo.jokerBomb) return labelByType.bomb;
   if (combo.type === "straight") return `${labelByType[combo.type]} ${RANKS[combo.start]}-${RANKS[combo.end]}`;
   if (combo.type === "consecutivePairs") return `${labelByType[combo.type]} ${RANKS[combo.start]}-${RANKS[combo.end]}`;
   return `${labelByType[combo.type]} ${RANKS[combo.rank]}`;
@@ -232,6 +236,8 @@ function comboLabel(combo) {
 function canBeat(candidate, current) {
   if (!current) return true;
   if (candidate.type === "bomb") {
+    if (candidate.jokerBomb) return !current.jokerBomb;
+    if (current.jokerBomb) return false;
     if (current.type !== "bomb") return true;
     if (candidate.bombSize !== current.bombSize) return candidate.bombSize > current.bombSize;
     return candidate.rank > current.rank;
@@ -258,6 +264,7 @@ function bestPlayableCombo(cards, current) {
 }
 
 function comboPower(combo) {
+  if (combo.jokerBomb) return 10000;
   if (combo.type === "bomb") return 1000 + combo.bombSize * 100 + combo.rank;
   return combo.rank + combo.length * 0.01;
 }
@@ -403,15 +410,46 @@ function chooseNpcMove(player) {
     const combo = bestPlayableCombo(cards, state.current);
     if (combo) candidates.push({ cards, combo });
   }
-  candidates.sort((a, b) => comboPower(a.combo) - comboPower(b.combo) || a.cards.length - b.cards.length);
+  candidates.sort((a, b) => moveCost(a) - moveCost(b));
 
-  if (!state.current) return candidates.find((item) => item.combo.type !== "bomb") ?? candidates[0] ?? null;
-  const nonBomb = candidates.find((item) => item.combo.type !== "bomb");
-  if (nonBomb) return nonBomb;
+  const finishMove = candidates.find((item) => item.cards.length === hand.length);
+  if (finishMove) return finishMove;
 
-  const canFinish = candidates.find((item) => item.cards.length === hand.length);
-  if (canFinish) return canFinish;
+  if (!state.current) {
+    return chooseNpcOpening(candidates);
+  }
+
+  const normalMove = candidates.find((item) => item.combo.type !== "bomb");
+  if (normalMove) return normalMove;
+
+  if (state.current.type === "bomb") return candidates[0] ?? null;
+
+  const danger = player.hand.length <= 2 || opponentCanWinSoon();
+  if (danger) return candidates[0] ?? null;
   return null;
+}
+
+function chooseNpcOpening(candidates) {
+  if (!candidates.length) return null;
+  const normalMoves = candidates.filter((item) => item.combo.type !== "bomb");
+  if (normalMoves.length) {
+    const multiCard = normalMoves.find((item) => item.cards.length > 1);
+    return multiCard ?? normalMoves[0];
+  }
+  return candidates[0];
+}
+
+function opponentCanWinSoon() {
+  return state.players.some((player) => player !== state.players[state.turn] && player.hand.length <= 2);
+}
+
+function moveCost(move) {
+  const combo = move.combo;
+  let cost = comboPower(combo);
+  if (combo.type === "bomb") cost += 5000;
+  if (combo.jokerBomb) cost += 5000;
+  cost -= move.cards.length * 8;
+  return cost;
 }
 
 function maybeNpcTurn() {
@@ -430,6 +468,7 @@ function maybeNpcTurn() {
 
 function selectedCards() {
   const player = state.players[0];
+  if (!player) return [];
   return player.hand.filter((card) => state.selected.has(card.id));
 }
 
@@ -507,6 +546,10 @@ function renderCenter() {
 function renderHand() {
   const player = state.players[0];
   el.hand.innerHTML = "";
+  if (!player) {
+    el.selectionHint.textContent = "先选择几家玩";
+    return;
+  }
   for (const card of player.hand) {
     const button = document.createElement("button");
     button.className = cardClass(card, state.selected.has(card.id));
