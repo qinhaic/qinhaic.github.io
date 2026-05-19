@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>国际心理学资讯速递 · 2026-05-19</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+  background: linear-gradient(135deg, #f5f7fa 0%, #e8ecf1 100%);
+  color: #2c3e50; line-height: 1.6; min-height: 100vh;
+}
+.container { max-width: 800px; margin: 0 auto; padding: 32px 20px; }
+.header { text-align: center; padding: 40px 0 32px; position: relative; }
+.header::after {
+  content: ''; display: block; width: 60px; height: 3px;
+  background: linear-gradient(90deg, #3498db, #27ae60); margin: 20px auto 0; border-radius: 2px;
+}
+.header h1 { font-size: 24px; font-weight: 700; color: #1a1a2e; margin-bottom: 6px; }
+.header .subtitle { font-size: 14px; color: #95a5a6; }
+.header .date-badge {
+  display: inline-block; margin-top: 10px; padding: 4px 16px; background: #fff;
+  border-radius: 20px; font-size: 13px; color: #7f8c8d; box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+}
+.section { margin-top: 32px; }
+.section-title {
+  font-size: 17px; font-weight: 700; color: #2c3e50; margin-bottom: 16px;
+  padding-bottom: 10px; display: flex; align-items: center; gap: 8px;
+}
+.section-title .icon { font-size: 20px; }
+.research .section-title { border-bottom: 2px solid #3498db; }
+.industry .section-title { border-bottom: 2px solid #27ae60; }
+.card {
+  display: flex; gap: 14px; background: #fff; border-radius: 12px; padding: 18px 20px;
+  margin-bottom: 14px; box-shadow: 0 1px 6px rgba(0,0,0,0.05);
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+.card:hover { transform: translateY(-1px); box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+.research-card { border-left: 3px solid #3498db; }
+.industry-card { border-left: 3px solid #27ae60; }
+.card-number {
+  flex-shrink: 0; width: 26px; height: 26px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center; font-size: 13px;
+  font-weight: 700; color: #fff;
+}
+.research-card .card-number { background: #3498db; }
+.industry-card .card-number { background: #27ae60; }
+.card-body { flex: 1; min-width: 0; }
+.card-title { font-size: 14px; font-weight: 600; color: #1a1a2e; line-height: 1.5; }
+.card-trans { font-size: 13px; color: #555; margin-top: 6px; line-height: 1.6; }
+.card-summary { margin-top: 10px; font-size: 13px; line-height: 1.8; }
+.card-summary summary {
+  cursor: pointer; font-size: 12px; font-weight: 500; color: #7f8c8d;
+  padding: 6px 12px; background: #f5f7fa; border-radius: 6px; border: 1px solid #e8ecf1;
+  user-select: none; display: inline-block; transition: background 0.15s;
+}
+.card-summary summary:hover { background: #eef2f7; }
+.card-summary[open] summary { margin-bottom: 8px; background: #e8ecf1; border-color: #d0d8e0; }
+.summary-zh {
+  padding: 10px 14px; background: #f0f6fc; border-radius: 8px 8px 0 0;
+  border: 1px solid #d0d8e0; border-bottom: none; color: #2c3e50;
+}
+.summary-zh::before { content: "🇨🇳 中文摘要"; display: block; font-size: 11px; color: #7f8c8d; margin-bottom: 4px; }
+.summary-en {
+  padding: 10px 14px; background: #fafafa; border-radius: 0 0 8px 8px;
+  border: 1px solid #e8e8e8; border-top: 1px dashed #d0d8e0; color: #444;
+}
+.summary-en::before { content: "🇬🇧 English"; display: block; font-size: 11px; color: #7f8c8d; margin-bottom: 4px; }
+.card-meta { display: flex; align-items: center; gap: 10px; margin-top: 10px; font-size: 12px; }
+.source-tag { padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 500; }
+.research-tag { background: #e8f4f8; color: #2980b9; }
+.industry-tag { background: #e8f8ee; color: #27ae60; }
+.read-link { text-decoration: none; font-size: 12px; font-weight: 500; transition: opacity 0.15s; }
+.read-link:hover { opacity: 0.7; }
+.research-link { color: #3498db; }
+.industry-link { color: #27ae60; }
+.footer { text-align: center; padding: 40px 0 20px; color: #bbb; font-size: 12px; }
+.footer a { color: #95a5a6; text-decoration: none; }
+.footer a:hover { color: #3498db; }
+@media (max-width: 600px) { .container { padding: 16px 12px; } .card { padding: 14px 16px; } .header h1 { font-size: 20px; } }
+</style>
+</head>
+<body>
+<div class="container">
+<header class="header">
+<h1>🧠 国际心理学资讯速递</h1>
+<p class="subtitle">心理学研究 · 心理咨询 · 心理治疗 · 行业动态</p>
+<div class="date-badge">2026 年 05 月 19 日</div>
+</header>
+
+<section class="section research">
+<h2 class="section-title"><span class="icon">🔬</span> 心理学与临床研究进展</h2>
+
+<article class="card research-card">
+<div class="card-number">1</div>
+<div class="card-body">
+<h3 class="card-title">Combining Cannabis and Tobacco Triples Psychosis Risk in At-Risk Youth</h3>
+<p class="card-trans">大麻与烟草联用使精神病高风险人群发病风险骤升近三倍</p>
+<details class="card-summary">
+<summary>📖 阅读摘要</summary>
+<div class="summary-zh">5月17日发表的多中心大样本研究发现，在已处于临床精神病高风险（CHR）的人群中，同时使用大麻和烟草可将精神病发作风险提高近300%。该发现对物质滥用咨询与早期干预具有直接的临床指导意义，提示临床工作者应在高危青少年中常规筛查并干预多种物质的联用行为。</div>
+<div class="summary-en">A multi-site study published May 17 found that co-use of cannabis and tobacco triggers a nearly threefold increased risk of developing psychotic disorders in those already at clinical high risk (CHR) for schizophrenia. The finding has direct implications for substance use counseling and early intervention programs.</div>
+</details>
+<div class="card-meta">
+<span class="source-tag research-tag">Neuroscience News</span>
+<a class="read-link research-link" href="https://neurosciencenews.com/" target="_blank" rel="noopener">阅读原文 ↗</a>
+</div></div></article>
+
+<article class="card research-card">
+<div class="card-number">2</div>
+<div class="card-body">
+<h3 class="card-title">Brain Nutrient Deficit (Choline) Linked to Anxiety Disorders</h3>
+<p class="card-trans">脑扫描揭示：焦虑障碍患者前额叶胆碱水平显著偏低</p>
+<details class="card-summary">
+<summary>📖 阅读摘要</summary>
+<div class="summary-zh">5月16日发表的脑扫描分析研究发现，焦虑障碍患者前额叶皮层中胆碱（choline）——一种对脑功能至关重要的营养素——水平明显低于健康对照。这一发现提示营养干预或可成为焦虑治疗的辅助手段，为"营养精神病学"领域提供了新的生物学证据。</div>
+<div class="summary-en">Published May 16, brain scan analysis revealed that people with anxiety disorders have noticeably lower levels of choline — a nutrient crucial for healthy brain function — in the prefrontal cortex. This points toward nutritional interventions as a potential adjunctive treatment for anxiety and strengthens the emerging field of nutritional psychiatry.</div>
+</details>
+<div class="card-meta">
+<span class="source-tag research-tag">ScienceDaily</span>
+<a class="read-link research-link" href="https://www.sciencedaily.com/" target="_blank" rel="noopener">阅读原文 ↗</a>
+</div></div></article>
+
+<article class="card research-card">
+<div class="card-number">3</div>
+<div class="card-body">
+<h3 class="card-title">Psilocybin Rebuilds the Brain's Physical Wiring (UCSF Study)</h3>
+<p class="card-trans">UCSF：单剂量裸盖菇素可在大脑白质中产生持久解剖学改变</p>
+<details class="card-summary">
+<summary>📖 阅读摘要</summary>
+<div class="summary-zh">5月7日发表的UCSF研究显示，单次高剂量裸盖菇素（psilocybin）可在大脑白质纤维束中产生持久的解剖学连接改变，松动僵化思维模式，改善心理洞察力持续一个月以上。该发现从神经可塑性角度解释了致幻剂辅助心理治疗的持久疗效机制。</div>
+<div class="summary-en">Published May 7, UCSF researchers showed that a single high dose of psilocybin creates lasting anatomical changes in brain white-matter tracts, loosens rigid thought patterns, and improves psychological insight for over a month — providing a neuroplasticity-based explanation for the durable effects of psychedelic-assisted psychotherapy.</div>
+</details>
+<div class="card-meta">
+<span class="source-tag research-tag">UCSF / Neuroscience News</span>
+<a class="read-link research-link" href="https://neurosciencenews.com/" target="_blank" rel="noopener">阅读原文 ↗</a>
+</div></div></article>
+
+<article class="card research-card">
+<div class="card-number">4</div>
+<div class="card-body">
+<h3 class="card-title">Three Genetic Pathways Linking Cannabis Use Disorder to Psychosis Identified</h3>
+<p class="card-trans">大麻使用障碍至精神病的三条遗传通路被锁定，涉及500+遗传标记</p>
+<details class="card-summary">
+<summary>📖 阅读摘要</summary>
+<div class="summary-zh">5月13日发表的研究识别出三条将大麻使用障碍（CUD）与精神病联系起来的独特遗传通路，分析了500余个遗传标记及谷氨酸系统。该发现为精神病的精准预防和个性化干预提供了新的分子靶点。</div>
+<div class="summary-en">Published May 13, scientists identified three distinct genetic pathways explaining how Cannabis Use Disorder leads to psychosis, analyzing over 500 genetic markers and the glutamate system — opening new molecular targets for precision prevention of psychosis.</div>
+</details>
+<div class="card-meta">
+<span class="source-tag research-tag">Neuroscience News</span>
+<a class="read-link research-link" href="https://neurosciencenews.com/" target="_blank" rel="noopener">阅读原文 ↗</a>
+</div></div></article>
+
+<article class="card research-card">
+<div class="card-number">5</div>
+<div class="card-body">
+<h3 class="card-title">Brain Histamine System Atlas Links Molecule to ADHD and Depression</h3>
+<p class="card-trans">全脑组胺系统图谱揭示ADHD与抑郁症的新治疗靶点</p>
+<details class="card-summary">
+<summary>📖 阅读摘要</summary>
+<div class="summary-zh">5月12日发表的脑内组胺系统完整图谱研究发现，组胺在情绪调节与认知控制中发挥关键作用。研究者指出组胺相关通路可能是ADHD、抑郁症及精神分裂症治疗的"缺失环节"，为开发新型精神药物提供了方向。</div>
+<div class="summary-en">A comprehensive atlas of the brain histamine system, published May 12, revealed its critical role in emotional regulation and cognitive control. Researchers suggest histamine-related pathways could be the "missing link" for new treatments targeting ADHD, depression, and schizophrenia.</div>
+</details>
+<div class="card-meta">
+<span class="source-tag research-tag">Neuroscience News</span>
+<a class="read-link research-link" href="https://neurosciencenews.com/" target="_blank" rel="noopener">阅读原文 ↗</a>
+</div></div></article>
+
+<article class="card research-card">
+<div class="card-number">6</div>
+<div class="card-body">
+<h3 class="card-title">Accelerated TMS Repairs Stress-Damaged Synapses at Cellular Level</h3>
+<p class="card-trans">加速TMS可在24小时内从细胞层面修复压力损伤的突触连接</p>
+<details class="card-summary">
+<summary>📖 阅读摘要</summary>
+<div class="summary-zh">5月7日发表的研究揭示了加速经颅磁刺激（TMS）的细胞机制：可选择性靶向IT神经元，在24小时内重新生长因压力丧失的突触连接。该发现从细胞层面解释了磁刺激修复脑回路的作用原理，为TMS治疗方案的优化提供了生物学依据。</div>
+<div class="summary-en">Research published May 7 showed that accelerated TMS selectively targets IT neurons to regrow lost synaptic connections within 24 hours, providing the first cellular-level evidence of how magnetic stimulation repairs stress-damaged brains — a mechanistic foundation for optimizing TMS protocols.</div>
+</details>
+<div class="card-meta">
+<span class="source-tag research-tag">Neuroscience News</span>
+<a class="read-link research-link" href="https://neurosciencenews.com/" target="_blank" rel="noopener">阅读原文 ↗</a>
+</div></div></article>
+
+<article class="card research-card">
+<div class="card-number">7</div>
+<div class="card-body">
+<h3 class="card-title">Even Minor Head Injuries Disrupt the Gut Microbiome</h3>
+<p class="card-trans">轻度头部损伤亦可通过破坏肠道菌群产生长期后遗效应</p>
+<details class="card-summary">
+<summary>📖 阅读摘要</summary>
+<div class="summary-zh">5月18日发表于Psychology Today，研究指出即使是轻度脑损伤，也可通过破坏肠道菌群（gut microbiome）产生长期后遗效应，为创伤后心理康复提供了肠—脑轴的新视角和干预思路。</div>
+<div class="summary-en">Published May 18 in Psychology Today, research indicates that even mild brain injuries can produce lingering effects by disrupting the gut microbiome, offering a new gut-brain axis perspective for post-traumatic psychological rehabilitation.</div>
+</details>
+<div class="card-meta">
+<span class="source-tag research-tag">Psychology Today</span>
+<a class="read-link research-link" href="https://www.psychologytoday.com/" target="_blank" rel="noopener">阅读原文 ↗</a>
+</div></div></article>
+
+<article class="card research-card">
+<div class="card-number">8</div>
+<div class="card-body">
+<h3 class="card-title">GLP-1 Drugs Reshape Desire Systems Beyond Appetite</h3>
+<p class="card-trans">GLP-1类药物重塑欲望系统：不仅抑制食欲，还改变大脑奖赏编码</p>
+<details class="card-summary">
+<summary>📖 阅读摘要</summary>
+<div class="summary-zh">5月13日报道的研究显示，GLP-1类药物不仅抑制食欲，还会改变大脑对"欲望"的编码方式。新型口服版本可在不依赖恶心反应的情况下减少渴求，提示此类药物在成瘾治疗等领域具有潜在的跨诊断应用价值。</div>
+<div class="summary-en">Reported May 13, GLP-1 drugs appear to alter how strongly rewards "pull" on the brain — beyond appetite suppression. Newer oral versions curb desire without relying on nausea, suggesting transdiagnostic potential in addiction treatment and other impulse-control disorders.</div>
+</details>
+<div class="card-meta">
+<span class="source-tag research-tag">Psychology Today</span>
+<a class="read-link research-link" href="https://www.psychologytoday.com/" target="_blank" rel="noopener">阅读原文 ↗</a>
+</div></div></article>
+
+<article class="card research-card">
+<div class="card-number">9</div>
+<div class="card-body">
+<h3 class="card-title">"The Body Doesn't Keep the Score?" — Classic Trauma Theory Challenged</h3>
+<p class="card-trans">创伤治疗经典理论"身体记得一切"遭遇学术挑战</p>
+<details class="card-summary">
+<summary>📖 阅读摘要</summary>
+<div class="summary-zh">5月15日，一篇新论文对van der Kolk的经典创伤理论框架"身体记得一切"（The Body Keeps the Score）提出质疑，在专业圈内引发对创伤躯体记忆理论的重新审视与激烈讨论。</div>
+<div class="summary-en">A provocative new paper published May 15 challenges the widely-accepted "body keeps the score" trauma framework by Bessel van der Kolk, sparking intense debate among trauma clinicians about the somatic memory theory of psychological trauma.</div>
+</details>
+<div class="card-meta">
+<span class="source-tag research-tag">Psychology Today</span>
+<a class="read-link research-link" href="https://www.psychologytoday.com/" target="_blank" rel="noopener">阅读原文 ↗</a>
+</div></div></article>
+
+<article class="card research-card">
+<div class="card-number">10</div>
+<div class="card-body">
+<h3 class="card-title">New SSRI Prescribing Guidelines Could Affect Millions of Patients</h3>
+<p class="card-trans">SSRI处方新指南发布：近年来抑郁症药物治疗最重大的政策调整之一</p>
+<details class="card-summary">
+<summary>📖 阅读摘要</summary>
+<div class="summary-zh">5月11日报道，抗抑郁药物SSRI的处方指南出现重大调整，被视为"近年来抑郁症医疗领域最值得关注的政策变动之一"。新指南涉及撤药管理、长期维持治疗策略等关键变更，可能影响数百万患者的治疗方案。</div>
+<div class="summary-en">Reported May 11, significant shifts in SSRI prescribing guidelines — covering withdrawal management and long-term maintenance strategies — could affect millions of patients and represent one of the most notable depression care policy changes in recent years.</div>
+</details>
+<div class="card-meta">
+<span class="source-tag research-tag">Psychology Today</span>
+<a class="read-link research-link" href="https://www.psychologytoday.com/" target="_blank" rel="noopener">阅读原文 ↗</a>
+</div></div></article>
+
+</section>
+
+<section class="section industry">
+<h2 class="section-title"><span class="icon">💬</span> 心理咨询与治疗行业动态</h2>
+
+<article class="card industry-card">
+<div class="card-number">1</div>
+<div class="card-body">
+<h3 class="card-title">UK Government Launches Cross-Department National Mental Health Strategy</h3>
+<p class="card-trans">英国政府正式启动首个跨部门国家心理健康战略制定，BACP呼吁"大胆行动"</p>
+<details class="card-summary">
+<summary>📖 阅读摘要</summary>
+<div class="summary-zh">5月15日，英国政府正式发起"证据征集"（call for evidence），拟推出首个跨部门全国心理健康战略。BACP（英国心理咨询与心理治疗协会）呼吁"须在治疗可及性与选择权上采取立即可行的大胆行动"。Mental Health Foundation CEO Mark Rowland称此为"英格兰心理健康的重大时刻"，预计将对心理咨询服务的财政预算、人才配置和保险覆盖产生深远影响。</div>
+<div class="summary-en">On May 15, the UK Government launched a call for evidence toward its first cross-department national mental health strategy. BACP called for "immediate and bold action on access and choice of therapy." Mental Health Foundation CEO Mark Rowland hailed it as "a big moment for England's mental health," with wide-ranging implications for service funding, workforce, and insurance coverage.</div>
+</details>
+<div class="card-meta">
+<span class="source-tag industry-tag">BACP / Mental Health Foundation</span>
+<a class="read-link industry-link" href="https://www.bacp.co.uk/news/" target="_blank" rel="noopener">阅读原文 ↗</a>
+</div></div></article>
+
+<article class="card industry-card">
+<div class="card-number">2</div>
+<div class="card-body">
+<h3 class="card-title">BACP Partners with Kenya Association of Professional Counsellors</h3>
+<p class="card-trans">BACP与肯尼亚心理咨询师协会达成国际合作协议</p>
+<details class="card-summary">
+<summary>📖 阅读摘要</summary>
+<div class="summary-zh">5月1日，英国最大心理咨询行业协会BACP与肯尼亚专业心理咨询师协会（KAPC）正式建立国际合作伙伴关系，旨在研究不同文化背景下的多元化治疗实践模式。此举标志着英国心理咨询行业向全球南方拓展的重要一步。</div>
+<div class="summary-en">On May 1, BACP and the Kenya Association of Professional Counsellors (KAPC) launched a formal partnership to study diverse therapeutic practices across international contexts — a significant step in expanding UK counseling expertise to the Global South.</div>
+</details>
+<div class="card-meta">
+<span class="source-tag industry-tag">BACP</span>
+<a class="read-link industry-link" href="https://www.bacp.co.uk/news/" target="_blank" rel="noopener">阅读原文 ↗</a>
+</div></div></article>
+
+<article class="card industry-card">
+<div class="card-number">3</div>
+<div class="card-body">
+<h3 class="card-title">AI Interactions Alter Human Performance and Motivation in Just 10 Minutes</h3>
+<p class="card-trans">新研究：AI交互仅需10分钟即可改变人类认知表现与动机</p>
+<details class="card-summary">
+<summary>📖 阅读摘要</summary>
+<div class="summary-zh">5月16日发表于Psychology Today，一项新研究发现AI交互仅需10分钟即可改变人类表现与动机水平。与此同时，APA Monitor最新调查显示，AI工具在心理咨询实务中的使用快速增长，但从业者对准确性、透明度及潜在伤害的顾虑同步上升。这对心理咨询中AI辅助工具的伦理边界提出了紧迫问题。</div>
+<div class="summary-en">Published May 16 in Psychology Today, a new study found that AI interactions begin to alter human performance and motivation in just 10 minutes. Meanwhile, APA Monitor reports surging AI use among psychologists alongside growing concerns about accuracy, transparency, and unintended harm — raising urgent ethical questions for AI-assisted psychotherapy.</div>
+</details>
+<div class="card-meta">
+<span class="source-tag industry-tag">Psychology Today / APA Monitor</span>
+<a class="read-link industry-link" href="https://www.psychologytoday.com/" target="_blank" rel="noopener">阅读原文 ↗</a>
+</div></div></article>
+
+<article class="card industry-card">
+<div class="card-number">4</div>
+<div class="card-body">
+<h3 class="card-title">In-Person Care Still Dominates Mental Health Treatment (APA Data)</h3>
+<p class="card-trans">APA最新数据：面对面治疗仍主导心理服务，远程模式呈分化趋势</p>
+<details class="card-summary">
+<summary>📖 阅读摘要</summary>
+<div class="summary-zh">APA Monitor 2026年4/5月刊数据显示，尽管远程心理服务在后疫情时代持续普及，面对面治疗仍是心理健康服务的主要形态。值得注意的是，部分人群——如农村居民、行动不便者及低收入群体——更倾向使用远程或混合模式，提示"一人一策"的多元化服务交付模式将成为行业标配。</div>
+<div class="summary-en">APA Monitor (Apr/May 2026) reports that in-person care still dominates mental health treatment despite telehealth proliferation. However, certain populations — rural residents, those with mobility issues, and lower-income groups — are more likely to use remote or hybrid models, suggesting that diversified service delivery will become standard.</div>
+</details>
+<div class="card-meta">
+<span class="source-tag industry-tag">APA Monitor</span>
+<a class="read-link industry-link" href="https://www.apa.org/monitor" target="_blank" rel="noopener">阅读原文 ↗</a>
+</div></div></article>
+
+<article class="card industry-card">
+<div class="card-number">5</div>
+<div class="card-body">
+<h3 class="card-title">Contingency Management Gains New Policy Momentum for Substance Use Treatment</h3>
+<p class="card-trans">权变管理（行为激励干预）在物质滥用治疗中获得政策新动能</p>
+<details class="card-summary">
+<summary>📖 阅读摘要</summary>
+<div class="summary-zh">APA Monitor报道，权变管理（contingency management）——一种通过奖励强化治疗依从性的循证行为干预手段——被证实"高度有效"，且近期美国新政策与项目正在快速扩大其可及性。该疗法在甲基苯丙胺和可卡因使用障碍等"无药可用"的领域尤为关键。</div>
+<div class="summary-en">APA Monitor reports that contingency management — a behavioral approach using rewards for treatment adherence — is "highly effective" and gaining policy momentum, with new programs expanding access. It is especially critical for stimulant use disorders where no pharmacological treatments exist.</div>
+</details>
+<div class="card-meta">
+<span class="source-tag industry-tag">APA Monitor</span>
+<a class="read-link industry-link" href="https://www.apa.org/monitor" target="_blank" rel="noopener">阅读原文 ↗</a>
+</div></div></article>
+
+<article class="card industry-card">
+<div class="card-number">6</div>
+<div class="card-body">
+<h3 class="card-title">BACP Launches U-PIC Tool to Empower Youth in Counseling</h3>
+<p class="card-trans">BACP推出"理解咨询偏好"工具（U-PIC），赋权青少年塑造咨询体验</p>
+<details class="card-summary">
+<summary>📖 阅读摘要</summary>
+<div class="summary-zh">5月8日，BACP发布全新"理解咨询偏好"（U-PIC）工具，旨在赋权青少年参与和塑造自己的咨询体验。该工具通过结构化的偏好评估，帮助青少年与服务提供者之间实现更好的治疗匹配，有望提升青少年心理咨询的参与度和效果。</div>
+<div class="summary-en">On May 8, BACP launched the "Understanding Preferences in Counselling" (U-PIC) tool, designed to empower young people to shape their counseling experience. The structured preference assessment tool aims to improve therapeutic matching and engagement in youth mental health services.</div>
+</details>
+<div class="card-meta">
+<span class="source-tag industry-tag">BACP</span>
+<a class="read-link industry-link" href="https://www.bacp.co.uk/news/" target="_blank" rel="noopener">阅读原文 ↗</a>
+</div></div></article>
+
+<article class="card industry-card">
+<div class="card-number">7</div>
+<div class="card-body">
+<h3 class="card-title">BACP Survey: 70% of Men Only Seek Therapy at Crisis Point</h3>
+<p class="card-trans">BACP调查：七成英国男性到"崩溃临界点"才考虑心理咨询</p>
+<details class="card-summary">
+<summary>📖 阅读摘要</summary>
+<div class="summary-zh">4月29日，BACP发布调查显示70%的英国男性仅在濒临危机时才考虑心理咨询。协会据此发起专项运动以扭转"危机点文化"，呼吁从学校、职场和社区三个层面降低男性求助的心理门槛。</div>
+<div class="summary-en">A BACP survey released April 29 revealed that 70% of men in the UK would only consider therapy once hitting a breaking point. The association launched a campaign to tackle this "crisis point culture" by lowering psychological barriers to help-seeking in schools, workplaces, and communities.</div>
+</details>
+<div class="card-meta">
+<span class="source-tag industry-tag">BACP</span>
+<a class="read-link industry-link" href="https://www.bacp.co.uk/news/" target="_blank" rel="noopener">阅读原文 ↗</a>
+</div></div></article>
+
+<article class="card industry-card">
+<div class="card-number">8</div>
+<div class="card-body">
+<h3 class="card-title">Mental Health Awareness Week: UK Widespread Harmful Coping Habits Revealed</h3>
+<p class="card-trans">英国心理健康意识周揭示全民不良应对习惯：自我隔离与"卧床腐烂"居首</p>
+<details class="card-summary">
+<summary>📖 阅读摘要</summary>
+<div class="summary-zh">5月11—15日英国心理健康意识周期间，Mental Health Foundation发布全国性数据，揭示"自我隔离"和"卧床腐烂"（bed rotting）是英国人最常见的两种不良心理应对习惯。同时有三分之一英国成年人主动通过接触自然改善心理健康，为生态心理治疗提供了公共卫生层面的支持证据。</div>
+<div class="summary-en">During UK Mental Health Awareness Week (May 11–15), the Mental Health Foundation released nationwide data showing "self-isolation" and "bed rotting" as the most common harmful coping habits. Meanwhile, one in three UK adults actively use nature to support their mental health — providing public-health evidence for ecotherapy approaches.</div>
+</details>
+<div class="card-meta">
+<span class="source-tag industry-tag">Mental Health Foundation</span>
+<a class="read-link industry-link" href="https://www.mentalhealth.org.uk/news" target="_blank" rel="noopener">阅读原文 ↗</a>
+</div></div></article>
+
+<article class="card industry-card">
+<div class="card-number">9</div>
+<div class="card-body">
+<h3 class="card-title">APA: Anthropomorphism Encourages Gratitude Toward Nonhuman Entities</h3>
+<p class="card-trans">APA最新研究：拟人化思维促进对自然、宠物和AI伴侣的感恩与保护欲</p>
+<details class="card-summary">
+<summary>📖 阅读摘要</summary>
+<div class="summary-zh">APA 2026年5月发布的最新研究发现，以拟人化方式看待非人实体（如自然、宠物、AI伴侣）可激发感恩、信任与保护欲。该发现对生态心理治疗、宠物辅助治疗及人机关系咨询等领域具有启示意义。</div>
+<div class="summary-en">New APA research (May 2026) found that anthropomorphism — treating nonhuman entities in humanlike ways — generates gratitude, trust, and protective urges. This has implications for ecotherapy, animal-assisted therapy, and counseling around human-AI relationships.</div>
+</details>
+<div class="card-meta">
+<span class="source-tag industry-tag">APA</span>
+<a class="read-link industry-link" href="https://www.apa.org/news" target="_blank" rel="noopener">阅读原文 ↗</a>
+</div></div></article>
+
+<article class="card industry-card">
+<div class="card-number">10</div>
+<div class="card-body">
+<h3 class="card-title">Plant-Based Diet Linked to Lower Depression Risk in New Meta-Analysis</h3>
+<p class="card-trans">新荟萃分析：植物性饮食模式与抑郁风险降低显著相关</p>
+<details class="card-summary">
+<summary>📖 阅读摘要</summary>
+<div class="summary-zh">最新荟萃分析发现，以植物为基础的饮食模式与较低的抑郁风险显著相关。该研究为心理咨询中生活方式干预（营养、运动、睡眠）的整合提供了新的循证依据，进一步推动了"生活方式精神病学"作为心理治疗辅助手段的发展。</div>
+<div class="summary-en">A new meta-analysis found that plant-based dietary patterns are significantly associated with lower depression risk, adding to the evidence base for integrating nutritional interventions into psychotherapy — advancing "lifestyle psychiatry" as an adjunctive approach.</div>
+</details>
+<div class="card-meta">
+<span class="source-tag industry-tag">Psychology Today</span>
+<a class="read-link industry-link" href="https://www.psychologytoday.com/" target="_blank" rel="noopener">阅读原文 ↗</a>
+</div></div></article>
+
+</section>
+
+<footer class="footer">
+<p>每日自动更新 · 来源：ScienceDaily / Google News / Neuroscience News / BACP / APA / Mental Health Foundation / Psychology Today</p>
+<p style="margin-top:6px;">
+<a href="index.html">门户首页</a> · <a href="today.html">今日新闻</a>
+</p>
+<p style="margin-top:4px;"><a href="#">返回顶部 ↑</a></p>
+</footer>
+</div>
+</body>
+</html>
