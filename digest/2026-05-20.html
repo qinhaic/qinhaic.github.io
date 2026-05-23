@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>国际心理学资讯速递 · 2026-05-20</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+  background: linear-gradient(135deg, #f5f7fa 0%, #e8ecf1 100%);
+  color: #2c3e50; line-height: 1.6; min-height: 100vh;
+}
+.container { max-width: 800px; margin: 0 auto; padding: 32px 20px; }
+.header { text-align: center; padding: 40px 0 32px; position: relative; }
+.header::after {
+  content: ''; display: block; width: 60px; height: 3px;
+  background: linear-gradient(90deg, #3498db, #27ae60); margin: 20px auto 0; border-radius: 2px;
+}
+.header h1 { font-size: 24px; font-weight: 700; color: #1a1a2e; margin-bottom: 6px; }
+.header .subtitle { font-size: 14px; color: #95a5a6; }
+.header .date-badge {
+  display: inline-block; margin-top: 10px; padding: 4px 16px; background: #fff;
+  border-radius: 20px; font-size: 13px; color: #7f8c8d; box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+}
+.section { margin-top: 32px; }
+.section-title {
+  font-size: 17px; font-weight: 700; color: #2c3e50; margin-bottom: 16px;
+  padding-bottom: 10px; display: flex; align-items: center; gap: 8px;
+}
+.section-title .icon { font-size: 20px; }
+.research .section-title { border-bottom: 2px solid #3498db; }
+.industry .section-title { border-bottom: 2px solid #27ae60; }
+.card {
+  display: flex; gap: 14px; background: #fff; border-radius: 12px; padding: 18px 20px;
+  margin-bottom: 14px; box-shadow: 0 1px 6px rgba(0,0,0,0.05);
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+.card:hover { transform: translateY(-1px); box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+.research-card { border-left: 3px solid #3498db; }
+.industry-card { border-left: 3px solid #27ae60; }
+.card-number {
+  flex-shrink: 0; width: 26px; height: 26px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center; font-size: 13px;
+  font-weight: 700; color: #fff;
+}
+.research-card .card-number { background: #3498db; }
+.industry-card .card-number { background: #27ae60; }
+.card-body { flex: 1; min-width: 0; }
+.card-title { font-size: 14px; font-weight: 600; color: #1a1a2e; line-height: 1.5; }
+.card-trans { font-size: 13px; color: #555; margin-top: 6px; line-height: 1.6; }
+.card-summary { margin-top: 10px; font-size: 13px; line-height: 1.8; }
+.card-summary summary {
+  cursor: pointer; font-size: 12px; font-weight: 500; color: #7f8c8d;
+  padding: 6px 12px; background: #f5f7fa; border-radius: 6px; border: 1px solid #e8ecf1;
+  user-select: none; display: inline-block; transition: background 0.15s;
+}
+.card-summary summary:hover { background: #eef2f7; }
+.card-summary[open] summary { margin-bottom: 8px; background: #e8ecf1; border-color: #d0d8e0; }
+.summary-zh {
+  padding: 10px 14px; background: #f0f6fc; border-radius: 8px 8px 0 0;
+  border: 1px solid #d0d8e0; border-bottom: none; color: #2c3e50;
+}
+.summary-zh::before { content: "🇨🇳 中文摘要"; display: block; font-size: 11px; color: #7f8c8d; margin-bottom: 4px; }
+.summary-en {
+  padding: 10px 14px; background: #fafafa; border-radius: 0 0 8px 8px;
+  border: 1px solid #e8e8e8; border-top: 1px dashed #d0d8e0; color: #444;
+}
+.summary-en::before { content: "🇬🇧 English"; display: block; font-size: 11px; color: #7f8c8d; margin-bottom: 4px; }
+.card-meta { display: flex; align-items: center; gap: 10px; margin-top: 10px; font-size: 12px; }
+.source-tag { padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 500; }
+.research-tag { background: #e8f4f8; color: #2980b9; }
+.industry-tag { background: #e8f8ee; color: #27ae60; }
+.read-link { text-decoration: none; font-size: 12px; font-weight: 500; transition: opacity 0.15s; }
+.read-link:hover { opacity: 0.7; }
+.research-link { color: #3498db; }
+.industry-link { color: #27ae60; }
+.footer { text-align: center; padding: 40px 0 20px; color: #bbb; font-size: 12px; }
+.footer a { color: #95a5a6; text-decoration: none; }
+.footer a:hover { color: #3498db; }
+@media (max-width: 600px) { .container { padding: 16px 12px; } .card { padding: 14px 16px; } .header h1 { font-size: 20px; } }
+</style>
+</head>
+<body>
+<div class="container">
+<header class="header">
+<h1>🧠 国际心理学资讯速递</h1>
+<p class="subtitle">心理学研究 · 心理咨询 · 心理治疗 · 行业动态</p>
+<div class="date-badge">2026 年 05 月 20 日</div>
+</header>
+
+<section class="section research">
+<h2 class="section-title"><span class="icon">🔬</span> 心理学与临床研究进展</h2>
+
+<article class="card research-card">
+<div class="card-number">1</div>
+<div class="card-body">
+<h3 class="card-title">Peripheral Neutrophils Identified as "Secret Factories" for Schizophrenia Risk Protein C4A</h3>
+<p class="card-trans">突破性发现：外周中性粒细胞是精神分裂症最强遗传风险蛋白C4A的主要来源</p>
+<details class="card-summary">
+<summary>📖 阅读摘要</summary>
+<div class="summary-zh">5月19日发表的突破性研究发现，中性粒细胞（一种外周白细胞）是C4A蛋白的主要来源。C4A是迄今已知与精神分裂症关联最强的常见遗传风险蛋白，此前学界一直认为其来源仅限于脑内。该发现颠覆了"精神分裂症纯属脑部疾病"的传统范式，将免疫系统推至病因学核心，为生物标志物检测和免疫靶向干预开辟全新方向。</div>
+<div class="summary-en">Published May 19, a breakthrough study found that peripheral neutrophils serve as "hidden factories" for C4A — the single strongest common genetic risk protein linked to schizophrenia — shifting the paradigm from a pure brain disorder toward a neuroimmune systemic disease and opening new avenues for biomarker detection and immune-targeted intervention.</div>
+</details>
+<div class="card-meta">
+<span class="source-tag research-tag">Neuroscience News</span>
+<a class="read-link research-link" href="https://neurosciencenews.com/neutrophils-c4a-schizophrenia-30723/" target="_blank" rel="noopener">阅读原文 ↗</a>
+</div></div></article>
+
+<article class="card research-card">
+<div class="card-number">2</div>
+<div class="card-body">
+<h3 class="card-title">Buprenorphine + Ketamine Sequential Therapy Extends Anti-Suicidal Effect Beyond One Month</h3>
+<p class="card-trans">丁丙诺啡联合氯胺酮序贯治疗将抗自杀效果从一周延长至一个月以上</p>
+<details class="card-summary">
+<summary>📖 阅读摘要</summary>
+<div class="summary-zh">最新随机对照试验显示，单次氯胺酮输注后续以四周低剂量丁丙诺啡的序贯治疗方案，可大幅延长氯胺酮的抗自杀效应窗口——从短暂的7天扩展至超过30天，为急诊精神科的自杀预防提供了新的药物联合策略。</div>
+<div class="summary-en">A recent RCT demonstrated that sequential treatment — a single ketamine infusion followed by four weeks of low-dose buprenorphine — extended the antisuicidal effect from one fleeting week to over a month, offering a new combination strategy for emergency psychiatric suicide prevention.</div>
+</details>
+<div class="card-meta">
+<span class="source-tag research-tag">Neuroscience News</span>
+<a class="read-link research-link" href="https://neurosciencenews.com/" target="_blank" rel="noopener">阅读原文 ↗</a>
+</div></div></article>
+
+<article class="card research-card">
+<div class="card-number">3</div>
+<div class="card-body">
+<h3 class="card-title">Salt-Nicotine E-Cigarettes Triple Smoking Cessation Success in Randomized Trial</h3>
+<p class="card-trans">随机试验：盐碱尼古丁电子烟使戒烟成功率提高三倍</p>
+<details class="card-summary">
+<summary>📖 阅读摘要</summary>
+<div class="summary-zh">随机安慰剂对照试验证实，转换至5%盐碱尼古丁电子烟可在六周内将成功戒烟概率提升三倍。鉴于精神障碍人群吸烟率远高于一般人群（部分研究估计高达2-3倍），该发现对心理卫生领域的控烟干预具有特殊临床价值。</div>
+<div class="summary-en">A randomized placebo-controlled trial showed switching to 5% salt-nicotine e-cigarettes tripled the likelihood of successful smoking cessation within six weeks — findings of particular relevance to mental health populations, where smoking rates are 2-3x higher than the general public.</div>
+</details>
+<div class="card-meta">
+<span class="source-tag research-tag">Neuroscience News</span>
+<a class="read-link research-link" href="https://neurosciencenews.com/" target="_blank" rel="noopener">阅读原文 ↗</a>
+</div></div></article>
+
+<article class="card research-card">
+<div class="card-number">4</div>
+<div class="card-body">
+<h3 class="card-title">Cooperation Emerges Naturally Through Recognition, Upending 75 Years of Game Theory</h3>
+<p class="card-trans">合作行为通过对手识别自然涌现——颠覆75年博弈论经典假设</p>
+<details class="card-summary">
+<summary>📖 阅读摘要</summary>
+<div class="summary-zh">最新研究发现当个体能够识别对手时，合作行为会自然涌现，挑战了博弈论中关于自私策略占优的经典假设。该发现对社会心理学、群体动力治疗及人际信任研究具有潜在启示。</div>
+<div class="summary-en">New research demonstrates that cooperation emerges naturally when individuals can recognize their opponents — upending 75 years of game theory assumptions about selfish strategy dominance, with implications for social psychology, group therapy dynamics, and interpersonal trust research.</div>
+</details>
+<div class="card-meta">
+<span class="source-tag research-tag">Neuroscience News</span>
+<a class="read-link research-link" href="https://neurosciencenews.com/" target="_blank" rel="noopener">阅读原文 ↗</a>
+</div></div></article>
+
+<article class="card research-card">
+<div class="card-number">5</div>
+<div class="card-body">
+<h3 class="card-title">Brain Nutrient Choline Deficit Linked to Anxiety Disorders</h3>
+<p class="card-trans">脑扫描揭示：焦虑障碍患者前额叶胆碱水平显著偏低</p>
+<details class="card-summary">
+<summary>📖 阅读摘要</summary>
+<div class="summary-zh">5月16日发表的脑扫描分析研究发现，焦虑障碍患者前额叶皮层中胆碱水平明显低于健康对照。这一发现为"营养精神病学"（nutritional psychiatry）提供了新的生物学证据，提示营养干预或可成为焦虑治疗的辅助手段。</div>
+<div class="summary-en">Published May 16, brain scan analysis revealed that anxiety disorder patients have noticeably lower choline levels in the prefrontal cortex, providing new biological evidence for nutritional psychiatry and suggesting dietary interventions as potential adjunctive anxiety treatments.</div>
+</details>
+<div class="card-meta">
+<span class="source-tag research-tag">ScienceDaily</span>
+<a class="read-link research-link" href="https://www.sciencedaily.com/" target="_blank" rel="noopener">阅读原文 ↗</a>
+</div></div></article>
+
+<article class="card research-card">
+<div class="card-number">6</div>
+<div class="card-body">
+<h3 class="card-title">Psychedelic-Like Drugs Without Hallucinations Developed at UC Davis</h3>
+<p class="card-trans">UC Davis合成非致幻类致幻剂：抗抑郁而不"致幻"</p>
+<details class="card-summary">
+<summary>📖 阅读摘要</summary>
+<div class="summary-zh">5月13日，UC Davis科学家发布新型化合物，可精准激活与脑可塑性和心理健康益处相关的关键血清素受体，但不会诱发幻觉体验。该成果指向可广泛处方、无需全程医疗监护的新一代抗抑郁药物。</div>
+<div class="summary-en">Published May 13, UC Davis scientists created novel compounds that activate key serotonin receptors tied to brain plasticity and mental health benefits — but without producing psychedelic trips — pointing toward a new generation of broadly prescribable antidepressants.</div>
+</details>
+<div class="card-meta">
+<span class="source-tag research-tag">ScienceDaily</span>
+<a class="read-link research-link" href="https://www.sciencedaily.com/" target="_blank" rel="noopener">阅读原文 ↗</a>
+</div></div></article>
+
+<article class="card research-card">
+<div class="card-number">7</div>
+<div class="card-body">
+<h3 class="card-title">Harsh Parenting Biologically Distorts Child Stress Regulation Development</h3>
+<p class="card-trans">严厉教养方式在生物学层面扭曲儿童压力调节能力的发育轨迹</p>
+<details class="card-summary">
+<summary>📖 阅读摘要</summary>
+<div class="summary-zh">通过呼吸性窦性心律不齐（RSA）监测，研究者发现攻击性教养行为破坏了儿童逐步建立自主压力调节能力的正常发展过程，为亲子心理治疗中"教养方式—生物应激系统"的关联提供了硬证据。</div>
+<div class="summary-en">Using respiratory sinus arrhythmia (RSA) monitoring, researchers found that aggressive parenting disrupts the natural developmental process through which children gradually learn independent stress self-regulation — providing hard biological evidence for parent-child psychotherapy interventions.</div>
+</details>
+<div class="card-meta">
+<span class="source-tag research-tag">Neuroscience News</span>
+<a class="read-link research-link" href="https://neurosciencenews.com/" target="_blank" rel="noopener">阅读原文 ↗</a>
+</div></div></article>
+
+<article class="card research-card">
+<div class="card-number">8</div>
+<div class="card-body">
+<h3 class="card-title">47.1% of American Teens Experience Digital or Emotional Harm from Conversational AI</h3>
+<p class="card-trans">青少年对话式AI使用：47.1%报告遭受数字或情感伤害</p>
+<details class="card-summary">
+<summary>📖 阅读摘要</summary>
+<div class="summary-zh">一项美国全国性研究揭示了共情型聊天机器人对青少年心理发展的潜在风险——47.1%的受访青少年报告经历过数字或情感伤害，为AI在青少年心理服务中的应用伦理提供了关键数据支持。</div>
+<div class="summary-en">A national US study found that 47.1% of teens have experienced digital or emotional harm while using conversational AI, providing critical data for ongoing ethical debates about deploying empathetic chatbots in youth mental health services.</div>
+</details>
+<div class="card-meta">
+<span class="source-tag research-tag">Neuroscience News</span>
+<a class="read-link research-link" href="https://neurosciencenews.com/" target="_blank" rel="noopener">阅读原文 ↗</a>
+</div></div></article>
+
+<article class="card research-card">
+<div class="card-number">9</div>
+<div class="card-body">
+<h3 class="card-title">Single Psilocybin Dose Sparks Rapid Depression Remission in 48 Hours</h3>
+<p class="card-trans">单剂量裸盖菇素48小时快速缓解抑郁症：随机临床试验新证据</p>
+<details class="card-summary">
+<summary>📖 阅读摘要</summary>
+<div class="summary-zh">随机临床试验显示25mg裸盖菇素可在48小时内对普通抑郁症产生快速、有临床意义的症状减轻效果，持续推动致幻剂辅助心理治疗的监管审批进程。</div>
+<div class="summary-en">A randomized clinical trial showed that a 25 mg dose of psilocybin delivers rapid, clinically meaningful symptom reductions for common depression in just 48 hours, further propelling the regulatory momentum for psychedelic-assisted psychotherapy.</div>
+</details>
+<div class="card-meta">
+<span class="source-tag research-tag">Neuroscience News</span>
+<a class="read-link research-link" href="https://neurosciencenews.com/" target="_blank" rel="noopener">阅读原文 ↗</a>
+</div></div></article>
+
+<article class="card research-card">
+<div class="card-number">10</div>
+<div class="card-body">
+<h3 class="card-title">Childhood Adversity Blunts the Social Benefits of Intelligence</h3>
+<p class="card-trans">童年逆境如同"音量旋钮"，削弱甚至消除高智商的社交优势</p>
+<details class="card-summary">
+<summary>📖 阅读摘要</summary>
+<div class="summary-zh">新研究表明童年环境如同一个"音量旋钮"，调节甚至抵消高智商通常带来的信任与合作等社交优势。该发现强调在对高功能来访者进行心理评估时，必须将童年经历纳入核心考量。</div>
+<div class="summary-en">New research suggests childhood environment acts as a "volume knob" on the social advantages typically associated with higher IQ — such as trust and cooperation — underscoring the critical importance of developmental history even when assessing high-functioning clients.</div>
+</details>
+<div class="card-meta">
+<span class="source-tag research-tag">Neuroscience News</span>
+<a class="read-link research-link" href="https://neurosciencenews.com/" target="_blank" rel="noopener">阅读原文 ↗</a>
+</div></div></article>
+
+</section>
+
+<section class="section industry">
+<h2 class="section-title"><span class="icon">💬</span> 心理咨询与治疗行业动态</h2>
+
+<article class="card industry-card">
+<div class="card-number">1</div>
+<div class="card-body">
+<h3 class="card-title">BACP Calls for Mental Health Support for Jurors After Traumatic Trials</h3>
+<p class="card-trans">BACP呼吁为经历创伤性庭审的陪审员提供心理咨询支持</p>
+<details class="card-summary">
+<summary>📖 阅读摘要</summary>
+<div class="summary-zh">5月19日，BACP发布新评估报告，指出陪审员在参与重大刑事案件审理后面临显著心理创伤风险，现迫切需要改善其心理治疗可及性并建立持续支持机制。该报告填补了司法系统中心理健康服务的一项长期空白。</div>
+<div class="summary-en">On May 19, BACP released a new evaluation highlighting the urgent need for improved therapy access and ongoing support for jurors exposed to traumatic trial content — addressing a long-standing gap in mental health provision within the justice system.</div>
+</details>
+<div class="card-meta">
+<span class="source-tag industry-tag">BACP</span>
+<a class="read-link industry-link" href="https://www.bacp.co.uk/news/" target="_blank" rel="noopener">阅读原文 ↗</a>
+</div></div></article>
+
+<article class="card industry-card">
+<div class="card-number">2</div>
+<div class="card-body">
+<h3 class="card-title">New Study Reveals Surprising Well-Being Benefits in Narcissists' Subjective Experience</h3>
+<p class="card-trans">新研究揭示自恋者主观体验中存在意外的幸福感获益</p>
+<details class="card-summary">
+<summary>📖 阅读摘要</summary>
+<div class="summary-zh">5月19日发表于Psychology Today的新研究首次深入探索了自恋者的主观内在体验，发现其在幸福感维度上存在"令人意外的积极面"，可能挑战"自恋必然等同于心理痛苦"的传统临床假设，对人格障碍心理治疗具有参考价值。</div>
+<div class="summary-en">Published May 19 in Psychology Today, a new study exploring the subjective inner experience of narcissistic individuals found "surprising benefits on well-being" — potentially challenging the clinical assumption that narcissism is invariably linked to psychological distress, with implications for personality disorder treatment.</div>
+</details>
+<div class="card-meta">
+<span class="source-tag industry-tag">Psychology Today</span>
+<a class="read-link industry-link" href="https://www.psychologytoday.com/" target="_blank" rel="noopener">阅读原文 ↗</a>
+</div></div></article>
+
+<article class="card industry-card">
+<div class="card-number">3</div>
+<div class="card-body">
+<h3 class="card-title">How Are Older Adults Perceived When They Don't "Act Their Age"?</h3>
+<p class="card-trans">年龄角色期待研究：不按年龄行事的老年人如何被公众看待？</p>
+<details class="card-summary">
+<summary>📖 阅读摘要</summary>
+<div class="summary-zh">5月19日发表的研究考察了公众对未按年龄行事老年人的正负面评判，为老年心理咨询中的年龄歧视（ageism）议题和社会角色期待提供了实证数据参考。</div>
+<div class="summary-en">Published May 19, this study investigated how older adults who behave inconsistently with their age are perceived — providing empirical data on ageism and social role expectations relevant to gerontological counseling practice.</div>
+</details>
+<div class="card-meta">
+<span class="source-tag industry-tag">Psychology Today</span>
+<a class="read-link industry-link" href="https://www.psychologytoday.com/" target="_blank" rel="noopener">阅读原文 ↗</a>
+</div></div></article>
+
+<article class="card industry-card">
+<div class="card-number">4</div>
+<div class="card-body">
+<h3 class="card-title">UK Government Cross-Department Mental Health Strategy: Call for Evidence Underway</h3>
+<p class="card-trans">英国跨部门国家心理健康战略证据征集持续推进</p>
+<details class="card-summary">
+<summary>📖 阅读摘要</summary>
+<div class="summary-zh">英国政府首个跨部门心理健康战略的"证据征集"（call for evidence）持续推进中。BACP强调治疗可及性与选择权必须是首要议题。Mental Health Foundation CEO Mark Rowland称此为"英格兰心理健康的重大时刻"。</div>
+<div class="summary-en">The UK Government's call for evidence toward its first cross-department national mental health strategy is underway. BACP emphasized that "immediate and bold action on access and choice of therapy" must be the priority. Mental Health Foundation CEO Mark Rowland called it "a big moment for England's mental health."</div>
+</details>
+<div class="card-meta">
+<span class="source-tag industry-tag">BACP / Mental Health Foundation</span>
+<a class="read-link industry-link" href="https://www.bacp.co.uk/news/" target="_blank" rel="noopener">阅读原文 ↗</a>
+</div></div></article>
+
+<article class="card industry-card">
+<div class="card-number">5</div>
+<div class="card-body">
+<h3 class="card-title">Contingency Management Gains Policy Momentum for Substance Use Treatment</h3>
+<p class="card-trans">APA Monitor：权变管理在物质滥用治疗中获政策新动能</p>
+<details class="card-summary">
+<summary>📖 阅读摘要</summary>
+<div class="summary-zh">APA Monitor报道，以行为奖励强化治疗依从性的权变管理（contingency management）被证实高度有效，尤其对甲基苯丙胺和可卡因等缺乏药物治疗选择的兴奋剂使用障碍意义重大。美国新政策正快速扩大其可及性。</div>
+<div class="summary-en">APA Monitor reports that contingency management — a behavioral approach using incentives for treatment adherence — is "highly effective" and gaining policy momentum in the US, especially for stimulant use disorders where no pharmacological alternatives exist.</div>
+</details>
+<div class="card-meta">
+<span class="source-tag industry-tag">APA Monitor</span>
+<a class="read-link industry-link" href="https://www.apa.org/monitor" target="_blank" rel="noopener">阅读原文 ↗</a>
+</div></div></article>
+
+<article class="card industry-card">
+<div class="card-number">6</div>
+<div class="card-body">
+<h3 class="card-title">In-Person Care Still Dominates Mental Health Treatment, Telehealth Use Stratified</h3>
+<p class="card-trans">面对面心理治疗仍占主导，远程服务在不同人群中呈差异化分布</p>
+<details class="card-summary">
+<summary>📖 阅读摘要</summary>
+<div class="summary-zh">APA最新数据显示，面对面模式仍是心理治疗主流形态，但农村居民、行动不便者及低收入群体更倾向远程或混合服务。提示"一人一策"的多元化服务交付模式正在成为行业标配。</div>
+<div class="summary-en">APA's latest data confirms in-person care remains dominant, but rural residents, those with mobility issues, and lower-income groups are more likely to use telehealth or hybrid services — suggesting diversified, stratified service delivery is becoming the industry norm.</div>
+</details>
+<div class="card-meta">
+<span class="source-tag industry-tag">APA Monitor</span>
+<a class="read-link industry-link" href="https://www.apa.org/monitor" target="_blank" rel="noopener">阅读原文 ↗</a>
+</div></div></article>
+
+<article class="card industry-card">
+<div class="card-number">7</div>
+<div class="card-body">
+<h3 class="card-title">BACP Survey: 70% of UK Men Only Seek Therapy at Crisis Point</h3>
+<p class="card-trans">BACP调查：七成英国男性到"崩溃临界点"才考虑心理咨询</p>
+<details class="card-summary">
+<summary>📖 阅读摘要</summary>
+<div class="summary-zh">BACP调查显示70%的英国男性仅在濒临危机时才考虑心理咨询，协会据此发起专项运动以扭转"危机点文化"，呼吁从学校、职场和社区三个层面系统降低男性求助的心理门槛。</div>
+<div class="summary-en">A BACP survey found that 70% of UK men would only consider therapy when they hit a breaking point. The association launched a campaign to tackle this "crisis point culture" through systematic barrier-reduction in schools, workplaces, and communities.</div>
+</details>
+<div class="card-meta">
+<span class="source-tag industry-tag">BACP</span>
+<a class="read-link industry-link" href="https://www.bacp.co.uk/news/" target="_blank" rel="noopener">阅读原文 ↗</a>
+</div></div></article>
+
+<article class="card industry-card">
+<div class="card-number">8</div>
+<div class="card-body">
+<h3 class="card-title">Mental Health Awareness Week Data: UK Widespread Harmful Coping Habits</h3>
+<p class="card-trans">英国心理健康意识周：自我隔离和"卧床腐烂"成最常见不良应对习惯</p>
+<details class="card-summary">
+<summary>📖 阅读摘要</summary>
+<div class="summary-zh">Mental Health Foundation在英国心理健康意识周期间发布全国数据，"自我隔离"和"卧床腐烂"（bed rotting）是英国人最常见的两种不良心理应对习惯。同时三分之一成年人主动通过接触自然改善心理健康。</div>
+<div class="summary-en">During UK Mental Health Awareness Week, the Mental Health Foundation revealed "self-isolation" and "bed rotting" as the most common harmful coping habits. Meanwhile, one in three UK adults actively use nature to support their mental health — providing public-health evidence for ecotherapy.</div>
+</details>
+<div class="card-meta">
+<span class="source-tag industry-tag">Mental Health Foundation</span>
+<a class="read-link industry-link" href="https://www.mentalhealth.org.uk/news" target="_blank" rel="noopener">阅读原文 ↗</a>
+</div></div></article>
+
+</section>
+
+<footer class="footer">
+<p>每日自动更新 · 来源：ScienceDaily / Neuroscience News / Psychology Today / BACP / APA / Mental Health Foundation</p>
+<p style="margin-top:6px;">
+<a href="index.html">门户首页</a> · <a href="today.html">今日新闻</a>
+</p>
+<p style="margin-top:4px;"><a href="#">返回顶部 ↑</a></p>
+</footer>
+</div>
+</body>
+</html>
