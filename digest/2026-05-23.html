@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>国际心理学资讯速递 · 2026-05-23</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+  background: linear-gradient(135deg, #f5f7fa 0%, #e8ecf1 100%);
+  color: #2c3e50; line-height: 1.6; min-height: 100vh;
+}
+.container { max-width: 800px; margin: 0 auto; padding: 32px 20px; }
+.header { text-align: center; padding: 40px 0 32px; position: relative; }
+.header::after {
+  content: ''; display: block; width: 60px; height: 3px;
+  background: linear-gradient(90deg, #3498db, #27ae60); margin: 20px auto 0; border-radius: 2px;
+}
+.header h1 { font-size: 24px; font-weight: 700; color: #1a1a2e; margin-bottom: 6px; }
+.header .subtitle { font-size: 14px; color: #95a5a6; }
+.header .date-badge {
+  display: inline-block; margin-top: 10px; padding: 4px 16px; background: #fff;
+  border-radius: 20px; font-size: 13px; color: #7f8c8d; box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+}
+.section { margin-top: 32px; }
+.section-title {
+  font-size: 17px; font-weight: 700; color: #2c3e50; margin-bottom: 16px;
+  padding-bottom: 10px; display: flex; align-items: center; gap: 8px;
+}
+.section-title .icon { font-size: 20px; }
+.research .section-title { border-bottom: 2px solid #3498db; }
+.industry .section-title { border-bottom: 2px solid #27ae60; }
+.card {
+  display: flex; gap: 14px; background: #fff; border-radius: 12px; padding: 18px 20px;
+  margin-bottom: 14px; box-shadow: 0 1px 6px rgba(0,0,0,0.05);
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+.card:hover { transform: translateY(-1px); box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+.research-card { border-left: 3px solid #3498db; }
+.industry-card { border-left: 3px solid #27ae60; }
+.card-number {
+  flex-shrink: 0; width: 26px; height: 26px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center; font-size: 13px;
+  font-weight: 700; color: #fff;
+}
+.research-card .card-number { background: #3498db; }
+.industry-card .card-number { background: #27ae60; }
+.card-body { flex: 1; min-width: 0; }
+.card-title { font-size: 14px; font-weight: 600; color: #1a1a2e; line-height: 1.5; }
+.card-trans { font-size: 13px; color: #555; margin-top: 6px; line-height: 1.6; }
+.card-summary { margin-top: 10px; font-size: 13px; line-height: 1.8; }
+.card-summary summary {
+  cursor: pointer; font-size: 12px; font-weight: 500; color: #7f8c8d;
+  padding: 6px 12px; background: #f5f7fa; border-radius: 6px; border: 1px solid #e8ecf1;
+  user-select: none; display: inline-block; transition: background 0.15s;
+}
+.card-summary summary:hover { background: #eef2f7; }
+.card-summary[open] summary { margin-bottom: 8px; background: #e8ecf1; border-color: #d0d8e0; }
+.summary-zh {
+  padding: 10px 14px; background: #f0f6fc; border-radius: 8px 8px 0 0;
+  border: 1px solid #d0d8e0; border-bottom: none; color: #2c3e50;
+}
+.summary-zh::before { content: "🇨🇳 中文摘要"; display: block; font-size: 11px; color: #7f8c8d; margin-bottom: 4px; }
+.summary-en {
+  padding: 10px 14px; background: #fafafa; border-radius: 0 0 8px 8px;
+  border: 1px solid #e8e8e8; border-top: 1px dashed #d0d8e0; color: #444;
+}
+.summary-en::before { content: "🇬🇧 English"; display: block; font-size: 11px; color: #7f8c8d; margin-bottom: 4px; }
+.card-meta { display: flex; align-items: center; gap: 10px; margin-top: 10px; font-size: 12px; }
+.source-tag { padding: 2px 8px; border-radius: 4px; font-size: 11px; font-weight: 500; }
+.research-tag { background: #e8f4f8; color: #2980b9; }
+.industry-tag { background: #e8f8ee; color: #27ae60; }
+.read-link { text-decoration: none; font-size: 12px; font-weight: 500; transition: opacity 0.15s; }
+.read-link:hover { opacity: 0.7; }
+.research-link { color: #3498db; }
+.industry-link { color: #27ae60; }
+.footer { text-align: center; padding: 40px 0 20px; color: #bbb; font-size: 12px; }
+.footer a { color: #95a5a6; text-decoration: none; }
+.footer a:hover { color: #3498db; }
+@media (max-width: 600px) { .container { padding: 16px 12px; } .card { padding: 14px 16px; } .header h1 { font-size: 20px; } }
+</style>
+</head>
+<body>
+<div class="container">
+<header class="header">
+<h1>🧠 国际心理学资讯速递</h1>
+<p class="subtitle">心理学研究 · 心理咨询 · 心理治疗 · 行业动态</p>
+<div class="date-badge">2026 年 05 月 23 日（周末版）</div>
+</header>
+
+<section class="section research">
+<h2 class="section-title"><span class="icon">🔬</span> 心理学与临床研究进展</h2>
+
+<article class="card research-card">
+<div class="card-number">1</div>
+<div class="card-body">
+<h3 class="card-title">Serotonin Proven to Reduce Cognitive "Belief Stickiness" in OCD</h3>
+<p class="card-trans">血清素被证实可降低强迫症中的认知"信念黏性"——揭示SSRI治疗OCD的机制</p>
+<details class="card-summary">
+<summary>📖 阅读摘要</summary>
+<div class="summary-zh">5月20日发表的研究首次证明血清素是认知灵活性的关键化学驱动因素，通过主动降低"信念黏性"（belief stickiness）促进思维转换。该发现从神经化学层面解释了SSRI治疗强迫症的核心机制——不仅是情绪调节，更是认知可塑性增强。</div>
+<div class="summary-en">Published May 20, new research demonstrated for the first time that serotonin is a key driver of cognitive flexibility by actively reducing "belief stickiness" — providing a neurochemical mechanism for how SSRIs treat OCD beyond mood regulation into cognitive plasticity enhancement.</div>
+</details>
+<div class="card-meta">
+<span class="source-tag research-tag">Neuroscience News</span>
+<a class="read-link research-link" href="https://neurosciencenews.com/" target="_blank" rel="noopener">阅读原文 ↗</a>
+</div></div></article>
+
+<article class="card research-card">
+<div class="card-number">2</div>
+<div class="card-body">
+<h3 class="card-title">Even Positive Life Transitions (Marriage, Parenthood) Linked to Heightened Suicide Risk</h3>
+<p class="card-trans">正面人生转折也可能引发心理危机：结婚、为人父母与自杀风险的隐秘关联</p>
+<details class="card-summary">
+<summary>📖 阅读摘要</summary>
+<div class="summary-zh">5月23日发表的研究指出，结婚、成为父母等传统意义上的"正面人生里程碑"，对某些个体而言反而与自杀风险升高相关。该发现挑战了"只有负面事件才触发心理危机"的临床直觉，提示心理咨询师在接访经历重大人生转折的来访者时需主动评估自杀风险。</div>
+<div class="summary-en">Published May 23, research indicated that major positive life milestones — marriage, parenthood — may carry heightened suicide risk for certain individuals. This challenges the clinical assumption that only negative events trigger crises, urging practitioners to assess suicide risk even around "happy" life transitions.</div>
+</details>
+<div class="card-meta">
+<span class="source-tag research-tag">Psychology Today</span>
+<a class="read-link research-link" href="https://www.psychologytoday.com/" target="_blank" rel="noopener">阅读原文 ↗</a>
+</div></div></article>
+
+<article class="card research-card">
+<div class="card-number">3</div>
+<div class="card-body">
+<h3 class="card-title">Schizophrenia Risk Gene Linked to Hyper-Excitable Neurons</h3>
+<p class="card-trans">精神分裂症风险基因与超兴奋性神经元关联被功能基因组学锁定</p>
+<details class="card-summary">
+<summary>📖 阅读摘要</summary>
+<div class="summary-zh">5月20日发表的功能基因组学研究成功桥接了精神分裂症遗传学与细胞神经生物学之间的鸿沟，发现风险基因通过使特定神经元过度兴奋来驱动病理过程，为精准药物靶点开发提供了细胞层面的依据。</div>
+<div class="summary-en">Published May 20, a functional genomics study bridged the gap between schizophrenia genetics and cellular neurobiology, showing risk genes drive pathology through neuronal hyper-excitability — offering cellular-level targets for precision drug development.</div>
+</details>
+<div class="card-meta">
+<span class="source-tag research-tag">Neuroscience News</span>
+<a class="read-link research-link" href="https://neurosciencenews.com/" target="_blank" rel="noopener">阅读原文 ↗</a>
+</div></div></article>
+
+<article class="card research-card">
+<div class="card-number">4</div>
+<div class="card-body">
+<h3 class="card-title">Common Pesticide (Chlorpyrifos) Linked to Hidden Prenatal Brain Damage</h3>
+<p class="card-trans">常见杀虫剂毒死蜱与产前暴露致儿童脑损伤：纽约市队列新证据</p>
+<details class="card-summary">
+<summary>📖 阅读摘要</summary>
+<div class="summary-zh">5月21日发表的研究发现"令人警觉的新证据"——常见杀虫剂毒死蜱（chlorpyrifos）可在儿童出生前对其发育中的大脑留下持久损伤，研究基于纽约市儿童的前瞻性队列数据，对孕期环境暴露与神经发育的公共卫生政策具有重要启示。</div>
+<div class="summary-en">Published May 21, scientists found "alarming new evidence" that prenatal chlorpyrifos exposure leaves lasting marks on developing brains — based on a New York City prospective child cohort — with major implications for environmental health policy and neurodevelopment.</div>
+</details>
+<div class="card-meta">
+<span class="source-tag research-tag">ScienceDaily</span>
+<a class="read-link research-link" href="https://www.sciencedaily.com/" target="_blank" rel="noopener">阅读原文 ↗</a>
+</div></div></article>
+
+<article class="card research-card">
+<div class="card-number">5</div>
+<div class="card-body">
+<h3 class="card-title">Junk Food May Rewire Young Brains</h3>
+<p class="card-trans">垃圾食品可能重塑青少年大脑回路</p>
+<details class="card-summary">
+<summary>📖 阅读摘要</summary>
+<div class="summary-zh">5月22日的突破性研究发现高加工食品对发育期大脑神经回路具有潜在重塑效应。该发现对青少年心理健康的饮食干预策略提出了新课题，也为心理咨询中的生活方式整合干预提供了营养神经科学的新证据。</div>
+<div class="summary-en">Breaking research from May 22 suggests highly processed foods may rewire developing brain circuits — opening new questions for dietary interventions in youth mental health and providing nutritional neuroscience support for lifestyle-integrated psychotherapy.</div>
+</details>
+<div class="card-meta">
+<span class="source-tag research-tag">ScienceDaily</span>
+<a class="read-link research-link" href="https://www.sciencedaily.com/" target="_blank" rel="noopener">阅读原文 ↗</a>
+</div></div></article>
+
+<article class="card research-card">
+<div class="card-number">6</div>
+<div class="card-body">
+<h3 class="card-title">Higher Vitamin D Intake in Pregnancy Linked to Cognitive Benefits in Children</h3>
+<p class="card-trans">孕期维生素D摄入较高与子代认知功能改善相关</p>
+<details class="card-summary">
+<summary>📖 阅读摘要</summary>
+<div class="summary-zh">CNN 5月21日报道的新研究显示孕期较高维生素D摄入量与儿童认知功能的部分改善存在关联，为围产期心理健康与儿童认知发展的营养干预提供了进一步证据。</div>
+<div class="summary-en">Reported by CNN on May 21, new research linked higher prenatal vitamin D intake to select cognitive benefits in children, adding to the evidence base for nutritional interventions in perinatal mental health and child cognitive development.</div>
+</details>
+<div class="card-meta">
+<span class="source-tag research-tag">CNN / APA News</span>
+<a class="read-link research-link" href="https://www.apa.org/news" target="_blank" rel="noopener">阅读原文 ↗</a>
+</div></div></article>
+
+<article class="card research-card">
+<div class="card-number">7</div>
+<div class="card-body">
+<h3 class="card-title">Peripheral Neutrophils Identified as C4A "Secret Factories" for Schizophrenia Risk</h3>
+<p class="card-trans">外周中性粒细胞是精神分裂症最强遗传风险蛋白C4A的"秘密工厂"</p>
+<details class="card-summary">
+<summary>📖 阅读摘要</summary>
+<div class="summary-zh">5月19日发表的突破性发现颠覆了"精神分裂症纯属脑部疾病"的传统范式——中性粒细胞（外周白细胞）被发现是C4A蛋白的主要来源，将免疫系统推至病因学核心，开辟了生物标志物检测和免疫靶向干预的全新方向。</div>
+<div class="summary-en">Published May 19, a paradigm-shifting discovery found that peripheral neutrophils — not brain cells — are the primary source of C4A, schizophrenia's strongest genetic risk protein, repositioning the disorder as a neuroimmune condition and opening new intervention avenues.</div>
+</details>
+<div class="card-meta">
+<span class="source-tag research-tag">Neuroscience News</span>
+<a class="read-link research-link" href="https://neurosciencenews.com/" target="_blank" rel="noopener">阅读原文 ↗</a>
+</div></div></article>
+
+<article class="card research-card">
+<div class="card-number">8</div>
+<div class="card-body">
+<h3 class="card-title">Buprenorphine + Ketamine Extends Anti-Suicidal Window from 1 Week to Over 1 Month</h3>
+<p class="card-trans">丁丙诺啡联合氯胺酮将抗自杀效果从一周延长至一个月以上</p>
+<details class="card-summary">
+<summary>📖 阅读摘要</summary>
+<div class="summary-zh">5月19日发表的随机试验显示，单次氯胺酮输注后续以四周低剂量丁丙诺啡的序贯方案，可大幅延长氯胺酮的抗自杀效应窗口——从7天扩展至超过30天，为急诊精神科自杀危机管理提供了新策略。</div>
+<div class="summary-en">A May 19 RCT showed sequential ketamine + low-dose buprenorphine therapy extends the antisuicidal window from one fleeting week to over a month — a potential new standard for emergency psychiatric suicide prevention.</div>
+</details>
+<div class="card-meta">
+<span class="source-tag research-tag">Neuroscience News</span>
+<a class="read-link research-link" href="https://neurosciencenews.com/" target="_blank" rel="noopener">阅读原文 ↗</a>
+</div></div></article>
+
+</section>
+
+<section class="section industry">
+<h2 class="section-title"><span class="icon">💬</span> 心理咨询与治疗行业动态</h2>
+
+<article class="card industry-card">
+<div class="card-number">1</div>
+<div class="card-body">
+<h3 class="card-title">BACP Reaches 60%+ of Newly Elected Politicians in Scotland and Wales</h3>
+<p class="card-trans">BACP成功触达苏格兰与威尔士六成以上新当选议员，推动心理咨询入议程</p>
+<details class="card-summary">
+<summary>📖 阅读摘要</summary>
+<div class="summary-zh">5月22日，BACP报告称在苏格兰与威尔士地方选举后，已成功与超过60%的新当选议员建立联系，将心理咨询服务可及性和资金保障等议题推入地方立法议程，标志着行业政治游说能力的显著提升。</div>
+<div class="summary-en">On May 22, BACP reported reaching more than 60% of newly elected politicians in Scotland and Wales — a major advocacy success pushing counseling accessibility and funding into regional legislative agendas.</div>
+</details>
+<div class="card-meta">
+<span class="source-tag industry-tag">BACP</span>
+<a class="read-link industry-link" href="https://www.bacp.co.uk/news/" target="_blank" rel="noopener">阅读原文 ↗</a>
+</div></div></article>
+
+<article class="card industry-card">
+<div class="card-number">2</div>
+<div class="card-body">
+<h3 class="card-title">BACP Urges UK Government to End Uncertainty Over Adoption Support Funding</h3>
+<p class="card-trans">BACP敦促英国政府终止领养支持资金的政策不确定性</p>
+<details class="card-summary">
+<summary>📖 阅读摘要</summary>
+<div class="summary-zh">5月21日，BACP正式回应政府"适用于所有人的领养支持"咨询案，强烈要求就领养家庭心理支持服务的长期拨款做出明确和稳定的承诺，以保障领养家庭儿童和父母获得持续的心理治疗服务。</div>
+<div class="summary-en">On May 21, BACP responded to the Government's adoption support consultation, pressing for clarity and long-term funding commitment to ensure sustained therapeutic services for adoptive families.</div>
+</details>
+<div class="card-meta">
+<span class="source-tag industry-tag">BACP</span>
+<a class="read-link industry-link" href="https://www.bacp.co.uk/news/" target="_blank" rel="noopener">阅读原文 ↗</a>
+</div></div></article>
+
+<article class="card industry-card">
+<div class="card-number">3</div>
+<div class="card-body">
+<h3 class="card-title">Parents' Phone Habits Impact Child-Parent Relationship Quality</h3>
+<p class="card-trans">研究揭示父母手机习惯如何影响亲子关系质量</p>
+<details class="card-summary">
+<summary>📖 阅读摘要</summary>
+<div class="summary-zh">5月22日发表的研究为家庭心理咨询中"数字设备使用边界"的干预策略提供了新的实证依据——放下手机可显著改善亲子依恋关系，为治疗师在亲子治疗中引入数字排毒策略提供了循证支持。</div>
+<div class="summary-en">Published May 22, new research provided empirical evidence that putting down phones improves parent-child bonds — offering evidence-based support for digital detox interventions in family therapy and parent counseling.</div>
+</details>
+<div class="card-meta">
+<span class="source-tag industry-tag">Psychology Today</span>
+<a class="read-link industry-link" href="https://www.psychologytoday.com/" target="_blank" rel="noopener">阅读原文 ↗</a>
+</div></div></article>
+
+<article class="card industry-card">
+<div class="card-number">4</div>
+<div class="card-body">
+<h3 class="card-title">New Evaluation: Mental Health Support Needed for Jurors After Traumatic Trials</h3>
+<p class="card-trans">BACP新评估：陪审员心理创伤支持亟待改善</p>
+<details class="card-summary">
+<summary>📖 阅读摘要</summary>
+<div class="summary-zh">BACP 5月20日发布评估报告，填补了司法系统中心理健康服务的一项长期空白——指出参与重大刑事案件审理对陪审员造成显著心理创伤风险，呼吁改善治疗可及性并建立持续支持机制。</div>
+<div class="summary-en">A May 20 BACP evaluation highlighted the urgent need for therapy access and ongoing support for jurors exposed to traumatic trial content, addressing a long-standing gap in justice-system mental health provision.</div>
+</details>
+<div class="card-meta">
+<span class="source-tag industry-tag">BACP</span>
+<a class="read-link industry-link" href="https://www.bacp.co.uk/news/" target="_blank" rel="noopener">阅读原文 ↗</a>
+</div></div></article>
+
+<article class="card industry-card">
+<div class="card-number">5</div>
+<div class="card-body">
+<h3 class="card-title">APA Monitor: In-Person Therapy Still Dominates, Telehealth Stratified by Population</h3>
+<p class="card-trans">APA Monitor：面对面治疗仍占主导，远程呈差异化分布</p>
+<details class="card-summary">
+<summary>📖 阅读摘要</summary>
+<div class="summary-zh">APA 2026年4/5月刊最新数据显示，面对面模式仍是心理治疗主流形态，但农村居民、行动不便者及低收入群体更倾向远程或混合服务，行业正走向"一人一策"的多元化交付模式。</div>
+<div class="summary-en">APA Monitor (Apr/May 2026) confirms in-person care dominates, but rural, mobility-limited, and lower-income patients favor telehealth or hybrid models — pointing toward stratified, personalized service delivery as the new standard.</div>
+</details>
+<div class="card-meta">
+<span class="source-tag industry-tag">APA Monitor</span>
+<a class="read-link industry-link" href="https://www.apa.org/monitor" target="_blank" rel="noopener">阅读原文 ↗</a>
+</div></div></article>
+
+</section>
+
+<footer class="footer">
+<p>每日自动更新 · 来源：ScienceDaily / Neuroscience News / Psychology Today / BACP / APA Monitor</p>
+<p style="margin-top:6px;">
+<a href="index.html">门户首页</a> · <a href="today.html">今日新闻</a>
+</p>
+<p style="margin-top:4px;"><a href="#">返回顶部 ↑</a></p>
+</footer>
+</div>
+</body>
+</html>
