@@ -21,6 +21,8 @@ DIGEST_DIR = os.path.join(SCRIPT_DIR, "digest")
 
 
 def load_config():
+    if not os.path.exists(CONFIG_PATH):
+        return None
     with open(CONFIG_PATH) as f:
         return json.load(f)
 
@@ -411,6 +413,11 @@ def save_webpage(html):
     filepath = os.path.join(DIGEST_DIR, filename)
     with open(filepath, "w", encoding="utf-8") as f:
         f.write(html)
+    # 更新 today.html 重定向到当天页面
+    today_path = os.path.join(DIGEST_DIR, "today.html")
+    today_html = f'<!DOCTYPE html>\n<html><head><meta http-equiv="refresh" content="0; url={filename}"></head>\n<body><p>跳转至 <a href="{filename}">今日心理学资讯</a>...</p></body>\n</html>'
+    with open(today_path, "w", encoding="utf-8") as f:
+        f.write(today_html)
     return filepath, date_str
 
 
@@ -536,12 +543,15 @@ def main():
     print(f"   获取到 {len(ind_news)} 条行业动态")
 
     print("🔄 正在翻译并生成内容...")
-    email_body = build_email_body(sci_news, ind_news)
     webpage_html = build_webpage(sci_news, ind_news)
 
-    print("📧 正在发送邮件...")
-    send_email(config, email_body)
-    print(f"✅ 邮件已发送至 {config['to_email']}")
+    if config:
+        print("📧 正在发送邮件...")
+        email_body = build_email_body(sci_news, ind_news)
+        send_email(config, email_body)
+        print(f"✅ 邮件已发送至 {config['to_email']}")
+    else:
+        print("📧 跳过邮件（未配置 email_config.json）")
 
     filepath, date_str = save_webpage(webpage_html)
     print(f"✅ 网页已生成: {filepath}")
