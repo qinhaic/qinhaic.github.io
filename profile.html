@@ -122,7 +122,70 @@
             font-size: 1.05rem; font-weight: 600; color: #1a3a4a;
         }
 
-        /* ─── Stats ─── */
+        /* ─── Cert Gallery ─── */
+        .cert-gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+            margin-top: 40px;
+        }
+        .cert-card {
+            background: #fff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .cert-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+        }
+        .cert-card img {
+            width: 100%;
+            height: 240px;
+            object-fit: contain;
+            background: #f8f9fa;
+        }
+        .cert-card .cert-label {
+            padding: 12px 16px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: #2c3e50;
+            text-align: center;
+        }
+        /* Lightbox */
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0,0,0,0.88);
+            z-index: 999;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .lightbox.active { display: flex; }
+        .lightbox img {
+            max-width: 92vw;
+            max-height: 82vh;
+            border-radius: 8px;
+            box-shadow: 0 8px 40px rgba(0,0,0,0.3);
+        }
+        .lightbox .lb-close {
+            position: absolute;
+            top: 20px; right: 28px;
+            font-size: 2rem;
+            color: #fff;
+            cursor: pointer;
+            transition: opacity 0.2s;
+        }
+        .lightbox .lb-close:hover { opacity: 0.7; }
+        .lightbox .lb-label {
+            color: #fff;
+            margin-top: 16px;
+            font-size: 0.95rem;
+        }
         .stats-grid {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
@@ -353,22 +416,22 @@
             <p class="section-subtitle">
                 中国心理学会注册系统认证 · 国家职业资格认证
             </p>
-            <div class="creds-grid">
-                <div class="item">
-                    <div class="label">注册督导师</div>
-                    <div class="value">D-25-212</div>
+            <div class="cert-gallery">
+                <div class="cert-card" onclick="openLightbox('images/certs/秦海注册督导师证书.jpg', '注册督导师 D-25-212')">
+                    <img src="images/certs/秦海注册督导师证书.jpg" alt="注册督导师证书" loading="lazy" />
+                    <div class="cert-label">注册督导师 · D-25-212</div>
                 </div>
-                <div class="item">
-                    <div class="label">注册心理师</div>
-                    <div class="value">X-21-705</div>
+                <div class="cert-card" onclick="openLightbox('images/certs/秦海注册心理师证书.jpg', '注册心理师 X-21-705')">
+                    <img src="images/certs/秦海注册心理师证书.jpg" alt="注册心理师证书" loading="lazy" />
+                    <div class="cert-label">注册心理师 · X-21-705</div>
                 </div>
-                <div class="item">
-                    <div class="label">国家人力资源与社会保障部</div>
-                    <div class="value">心理咨询师二级</div>
+                <div class="cert-card" onclick="openLightbox('images/certs/秦海心理咨询师证书.jpg', '心理咨询师二级')">
+                    <img src="images/certs/秦海心理咨询师证书.jpg" alt="心理咨询师证书" loading="lazy" />
+                    <div class="cert-label">国家心理咨询师二级</div>
                 </div>
-                <div class="item">
-                    <div class="label">焦点解决教练</div>
-                    <div class="value">多伦多大学认证</div>
+                <div class="cert-card" onclick="openLightbox('images/certs/秦海加拿大多伦多大学心理教练证书.jpg', '多伦多大学焦点解决教练认证')">
+                    <img src="images/certs/秦海加拿大多伦多大学心理教练证书.jpg" alt="多伦多大学教练证书" loading="lazy" />
+                    <div class="cert-label">多伦多大学 · 焦点解决教练认证</div>
                 </div>
             </div>
         </div>
@@ -567,6 +630,13 @@
         <p style="margin-top:6px;">&copy; 2026 秦海 · 心理咨询与督导</p>
     </footer>
 
+    <!-- ═══ Lightbox ═══ -->
+    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+        <span class="lb-close">&times;</span>
+        <img src="" alt="" id="lb-img" />
+        <p class="lb-label" id="lb-label"></p>
+    </div>
+
     <!-- ═══ Mobile Nav Toggle ═══ -->
     <script>
         function toggleNav() {
@@ -576,6 +646,19 @@
             link.addEventListener('click', () => {
                 document.getElementById('navLinks').classList.remove('open');
             });
+        });
+        function openLightbox(src, label) {
+            document.getElementById('lb-img').src = src;
+            document.getElementById('lb-label').textContent = label;
+            document.getElementById('lightbox').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.remove('active');
+            document.body.style.overflow = '';
+        }
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape') closeLightbox();
         });
     </script>
 
