@@ -1,11 +1,16 @@
 ---
 name: translate-english-pdf-book
-description: 将英文 PDF 书籍完整翻译为简体中文学习译稿，并交付经结构、漏译、术语、排版和逐页渲染校验的 DOCX、PDF、TXT/Markdown；适用于“把这本英文 PDF 全书翻成中文”“按章节翻译并排版成中文版”“translate this English PDF book into Chinese”等长篇整书任务。也适用于学术专著、带注释和索引的非虚构书。不要用于只翻译几页、只做摘要/拆书、已有正式中文版的逐字复制，或用户无权处理的受限材料。
+version: "2.0"
+description: 将英文 PDF 书籍完整翻译为简体中文学习译稿，并交付经结构、漏译、术语、排版和逐页渲染校验的 DOCX、PDF、TXT/Markdown；适用于“把这本英文 PDF 全书翻成中文”“按章节翻译并排版成中文版”“translate this English PDF book into Chinese”等长篇整书任务。也适用于学术专著、双栏期刊论文、带注释和索引的非虚构书。不要用于只翻译几页、只做摘要/拆书、已有正式中文版的逐字复制，或用户无权处理的受限材料。
 ---
 
-# 英文 PDF 全书中译
+# 英文 PDF 全书中译（技能 v2.0）
 
 把整书翻译视为可恢复、可审计的出版流水线。任何阶段都不得用“读起来顺”代替完整性验证。
+
+**2.0 新增**：双栏/多栏版式坐标提取（`scripts/extract_columns.py`）、宋体 DOCX 生成
+（`scripts/build_docx.py`）、单文件译文源合并（`scripts/build_translations.py`）、
+LibreOffice 无头渲染与文本层等价质检。详见 [column-layout.md](references/column-layout.md)。
 
 ## 输入与交付
 
@@ -15,18 +20,24 @@ description: 将英文 PDF 书籍完整翻译为简体中文学习译稿，并�
 
 ## 必须先读
 
-开始前读取 [translation-guide.md](references/translation-guide.md)。遇到复杂注释、参考文献、索引、图表或 OCR 时，再读 [qa-checklist.md](references/qa-checklist.md) 和 [project-schema.md](references/project-schema.md)。
+开始前读取 [translation-guide.md](references/translation-guide.md)。遇到双栏/多栏 PDF 时再读
+[column-layout.md](references/column-layout.md)；遇到复杂注释、参考文献、索引、图表或 OCR 时，再读
+[qa-checklist.md](references/qa-checklist.md) 和 [project-schema.md](references/project-schema.md)。
 
 ## 工作流
 
 ### 1. 建档与可翻译性检查
 
 1. 确认文件可读、未加密、页数、语言、目录和文本层质量。
-2. 使用本技能的 `scripts/extract_pdf_book.py` 建项目并提取 layout/raw 文本；扫描本交给 PDF/OCR 流程后重新检查。
-3. 浏览封面、版权页、目录、正文开头/中段/结尾、注释和索引代表页，建立书籍结构。
+2. 判断版式：单栏书用 `scripts/extract_pdf_book.py` 提取 layout/raw 文本；
+   双栏/多栏（APA 论文等）用 `scripts/extract_columns.py` 按坐标分栏提取
+   （先 `--analyze` 看块分布取栏线）。扫描本交给 PDF/OCR 流程后重新检查。
+3. 浏览封面、版权页、目录、正文开头/中段/结尾、注释和索引代表页，建立书籍结构；
+   留意页缘版权水印，确认其非正文内容。
 4. 记录来源版本和 SHA-256；不要把未核实的网络版本混入。
 
-完成标准：`project.json`、带页码标记的提取文本和初步结构齐全；乱码、缺页或 OCR 风险已处理或明确标注。
+完成标准：`project.json`、带页码标记的提取文本（单栏 layout/raw，双栏 segments.jsonl）
+和初步结构齐全；乱码、缺页或 OCR 风险已处理或明确标注。
 
 ### 2. 结构化与术语准备
 
@@ -69,19 +80,28 @@ description: 将英文 PDF 书籍完整翻译为简体中文学习译稿，并�
 
 ### 6. 合并与出版排版
 
-1. 运行 `scripts/assemble_book_markdown.py` 生成全书 Markdown，并检查目录顺序。
-2. 调用可用的文档技能生成 DOCX；统一中文字体、标题层级、首行缩进、行距、页眉页脚和分页规则。
-3. 调用可用的 PDF 技能从最终 DOCX 或同一结构源生成 PDF，避免维护两套不同正文。
+1. 译文可来自逐章 JSONL 或单文件译文源（`scripts/build_translations.py`，可把
+   参考文献段按 `--verbatim-from` 直接复制英文原文）。校验后运行
+   `scripts/assemble_book_markdown.py` 生成全书 Markdown，并检查目录顺序。
+2. 用 `scripts/build_docx.py` 从 Markdown 生成宋体 DOCX（正文 12pt、标题 16pt、
+   1.5 倍行距、首行缩进 2 字符、三个 rFonts 均设宋体）；有其他文档技能时按该技能排版。
+3. 用 LibreOffice 无头渲染 DOCX→PDF（`soffice --headless --convert-to pdf`），
+   避免维护两套不同正文；macOS 无 SimSun 时会自动替换中文字体，属正常。
 4. 加入“AI 辅助个人学习译稿、非正式出版物、学术引用以英文原版为准”等真实用途说明，不伪称授权译本。
 
 完成标准：全书版与分章版内容同源；文件名、元数据和目录清楚；不存在丢字字体或格式分叉。
 
 ### 7. 渲染与最终验收
 
-1. 按文档技能要求渲染 DOCX；按 PDF 技能要求把 PDF 全部页面转成图片。
-2. 先检查封面、目录、每章首页、图表页、注释/参考文献/索引页和末页，再用接触表快速扫全书；异常页放大复查。
-3. 运行文本 QA：页数、文件大小、可复制文本、目录顺序、段落计数、注释连续性、残留英文和半成品标记。
+1. 用 LibreOffice 渲染的 PDF 逐页转图（pdftoppm），先检查封面、目录、每章首页、
+   图表页、注释/参考文献/索引页和末页，再用接触表快速扫全书；异常页放大复查。
+2. 无视觉能力（模型无法读图）时改用文本层等价质检：`pdftotext -layout` 渲染 PDF，
+   检查页数、无空页、无乱码（含 `�`/替换字符）、章节标题齐全、关键词覆盖、文末
+   免责声明在位；再 `pdffonts` 确认 CJK 字体落地。
+3. 运行文本 QA：页数、文件大小、可复制文本、目录顺序、段落计数、注释连续性、
+   残留英文（参考文献整段英文属预期）和半成品标记。
 4. 抽取至少 5 个分布在全书的样本与英文对照；高风险学术书增加抽样。
+5. 清理 LibreOffice 渲染产生的 `.~*` 锁文件残留。
 
 完成标准：没有裁切、重叠、空白异常、孤行标题、乱码或漏章；QA 报告明确通过项、警告和已知局限。
 
@@ -102,4 +122,15 @@ description: 将英文 PDF 书籍完整翻译为简体中文学习译稿，并�
 
 ## 来源与可信度
 
-本流程来自 2026 年《The Hidden Spring》395 页英文 PDF 全书中译任务：分成 19 个正文/后置部分，交付全书和分章 DOCX、PDF、TXT。已验证的关键经验是段落 ID 防漏译、分章持久化、术语表、注释连续性检查、参考文献保留原文、索引页码说明，以及 DOCX/PDF 全页渲染质检。对其他版式、语言和扫描质量的外推置信度为中高，仍需按来源调整。
+本流程来自两轮已验证任务：
+
+1. **2026 年《The Hidden Spring》395 页英文 PDF 全书中译**：分成 19 个正文/后置部分，
+   交付全书和分章 DOCX、PDF、TXT。关键经验是段落 ID 防漏译、分章持久化、术语表、
+   注释连续性检查、参考文献保留原文、索引页码说明，以及 DOCX/PDF 全页渲染质检。
+2. **2026 年 Baskin-Sommers 等 2014 两栏 APA 论文（11 页）**：`pdftotext -layout` 交错
+   左右栏不可用，改用 PyMuPDF 块坐标分栏，按 y 过滤页眉页脚、按 x 分栏、第 1 页区分
+   眉题/脚注/正文；块合并还原拆行标题；行断连字符需 `CORRECTIONS` 还原复合词；APA
+   版权水印被文本层排除。183 段译文通过结构校验，正文中文数词须保留源文阿拉伯数字
+   （案例标注如 `(Case Study #1)` 不可省略），参考文献段英文原文触发 `english_heavy`
+   警告属预期。DOCX 用 python-docx 宋体排版，LibreOffice 无头渲染 PDF 后以文本层做
+   等价质检（无视觉模型时）。双栏外推置信度为中高，其余版式仍按来源调整。
