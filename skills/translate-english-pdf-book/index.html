@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>英文 PDF 全书中译 · translate-english-pdf-book</title>
+<style>
+*,*::before,*::after { box-sizing:border-box; margin:0; padding:0; }
+body {
+  font-family:-apple-system,"Noto Sans SC","PingFang SC","Microsoft YaHei",sans-serif;
+  background:linear-gradient(135deg,#eaf4f9 0%,#f5f0eb 50%,#f0e6db 100%);
+  color:#2c3e50; min-height:100vh; padding:32px 20px;
+}
+.container { max-width:860px; width:100%; margin:0 auto; }
+.back { display:inline-block; margin-bottom:20px; color:#2c6e8f; text-decoration:none; font-size:.9rem; }
+.header { text-align:center; margin-bottom:32px; }
+.header h1 { font-size:1.8rem; color:#1a1a2e; letter-spacing:1px; }
+.subtitle { color:#5a7a8a; margin-top:8px; line-height:1.6; }
+.divider { width:50px; height:3px; margin:20px auto 0; border-radius:2px; background:linear-gradient(90deg,#2c6e8f,#8faaaf); }
+.card {
+  background:rgba(255,255,255,.88); border-radius:20px; padding:28px 30px;
+  border:1px solid rgba(255,255,255,.5); box-shadow:0 4px 20px rgba(0,0,0,.04); margin-bottom:20px;
+}
+.card h2 { font-size:1.15rem; color:#1a1a2e; margin-bottom:12px; }
+.card p,.card li { font-size:.92rem; color:#42505f; line-height:1.75; }
+.card ul { padding-left:20px; }
+.tag { display:inline-block; font-size:.78rem; padding:3px 12px; border-radius:20px; background:#e8f0f5; color:#2c6e8f; margin-bottom:12px; }
+.step { color:#2c6e8f; font-weight:600; }
+.actions { display:flex; gap:12px; flex-wrap:wrap; }
+.button { display:inline-block; padding:10px 16px; border-radius:10px; text-decoration:none; font-size:.9rem; background:#2c6e8f; color:white; }
+.button.secondary { background:#e8f0f5; color:#2c6e8f; }
+.files { list-style:none; padding-left:0 !important; }
+.files li { display:flex; justify-content:space-between; gap:18px; align-items:center; padding:11px 4px; border-bottom:1px dashed #e3e8ec; }
+.files li:last-child { border-bottom:none; }
+.fname { color:#1a1a2e; font-weight:500; }
+.fdesc { color:#8a9aaa; font-size:.82rem; margin-top:2px; }
+.files a { color:#2c6e8f; text-decoration:none; font-size:.82rem; white-space:nowrap; }
+code { background:#eef3f6; padding:2px 6px; border-radius:5px; }
+.note { margin-top:12px; color:#8a9aaa !important; font-size:.82rem !important; }
+.footer { text-align:center; margin-top:24px; color:#8a9a9a; font-size:.82rem; }
+.footer a { color:#2c6e8f; text-decoration:none; }
+@media (max-width:600px) { .card { padding:23px 20px; } .files li { align-items:flex-start; } }
+</style>
+</head>
+<body>
+<div class="container">
+  <a class="back" href="https://qinhaic.github.io/">← 返回心理茶馆首页</a>
+  <div class="header">
+    <h1>英文 PDF 全书中译</h1>
+    <p class="subtitle">translate-english-pdf-book · 把长篇英文书做成可校验、可续做的中文学习译稿</p>
+    <div class="divider"></div>
+  </div>
+
+  <div class="card">
+    <span class="tag">Codex Skill</span>
+    <h2>用途</h2>
+    <p>将英文 PDF 书籍完整翻译为简体中文，按章节持续保存，并交付经过漏译、术语、结构、排版与逐页渲染检查的 DOCX、PDF、TXT 或 Markdown。适合学术专著以及带注释、参考文献和索引的长篇非虚构书。</p>
+  </div>
+
+  <div class="card">
+    <h2>核心流程</h2>
+    <ul>
+      <li><span class="step">1. 来源核验</span>：检查页数、加密、文本层、OCR 质量和文件指纹。</li>
+      <li><span class="step">2. 结构建档</span>：识别章节和后置内容，为每个源段落建立稳定 ID。</li>
+      <li><span class="step">3. 术语冻结</span>：代表性试译后确定术语表、专名规则和中文语体。</li>
+      <li><span class="step">4. 分章翻译</span>：按语义边界分批，批批检查缺失、重复和空译文。</li>
+      <li><span class="step">5. 四遍复核</span>：分别检查完整性、准确性、中文表达和全书连续性。</li>
+      <li><span class="step">6. 分类处理</span>：注释核对编号，参考文献保留检索性，索引注明原版页码。</li>
+      <li><span class="step">7. 同源排版</span>：从同一最终正文生成 Word、PDF 与纯文本版本。</li>
+      <li><span class="step">8. 最终验收</span>：把全书逐页渲染，检查裁切、乱码、空白、漏章和格式分叉。</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>安装与调用</h2>
+    <div class="actions">
+      <a class="button" href="../translate-english-pdf-book.zip" download>下载完整 Skill ZIP</a>
+      <a class="button secondary" href="./SKILL.md" target="_blank" rel="noopener">查看 SKILL.md</a>
+    </div>
+    <p class="note">安装后可以说：使用 <code>$translate-english-pdf-book</code>，把这本英文 PDF 完整翻译成中文学习版，给我 Word 和 PDF。</p>
+  </div>
+
+  <div class="card">
+    <h2>技能文件</h2>
+    <ul class="files">
+      <li><div><div class="fname">SKILL.md</div><div class="fdesc">触发条件、完整工作流、判停与版权边界</div></div><a href="./SKILL.md">查看</a></li>
+      <li><div><div class="fname">references/translation-guide.md</div><div class="fdesc">试译、术语、分批提示和忠实度复核规范</div></div><a href="./references/translation-guide.md">查看</a></li>
+      <li><div><div class="fname">references/qa-checklist.md</div><div class="fdesc">来源、结构、译文、排版和交付检查清单</div></div><a href="./references/qa-checklist.md">查看</a></li>
+      <li><div><div class="fname">references/project-schema.md</div><div class="fdesc">跨会话恢复所需的项目目录与状态格式</div></div><a href="./references/project-schema.md">查看</a></li>
+      <li><div><div class="fname">scripts/extract_pdf_book.py</div><div class="fdesc">非破坏式建档、文本提取和 OCR 风险初检</div></div><a href="./scripts/extract_pdf_book.py">查看</a></li>
+      <li><div><div class="fname">scripts/segment_book_text.py</div><div class="fdesc">按版式生成带页码的稳定段落 ID</div></div><a href="./scripts/segment_book_text.py">查看</a></li>
+      <li><div><div class="fname">scripts/validate_translation.py</div><div class="fdesc">检测漏段、重复、空译、提示词残留和数字差异</div></div><a href="./scripts/validate_translation.py">查看</a></li>
+      <li><div><div class="fname">scripts/assemble_book_markdown.py</div><div class="fdesc">把已验证的分章译稿合并成唯一全书正文</div></div><a href="./scripts/assemble_book_markdown.py">查看</a></li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>验证记录</h2>
+    <p>本技能由《The Hidden Spring》395 页英文原书的全书翻译经验蒸馏而来。真实试跑完整提取 395 页，并生成 3,174 个可追踪段落；漏段失败、跨页连续、章节合并和独立盲测均已通过。</p>
+    <p class="note">适用于个人学习译稿。若用于正式出版、公开传播或商业发行，请另行确认版权授权，并加入专业译者和学科专家审校。</p>
+  </div>
+
+  <div class="footer">
+    <p>© 2026 秦海 · <a href="https://qinhaic.github.io/">心理茶馆</a> · <a href="https://github.com/qinhaic/qinhaic.github.io">GitHub 仓库</a></p>
+  </div>
+</div>
+</body>
+</html>

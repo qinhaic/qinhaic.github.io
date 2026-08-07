@@ -1,0 +1,4 @@
+interface:
+  display_name: "英文 PDF 全书中译"
+  short_description: "将英文 PDF 分章翻译、校验并排版为完整中文书稿"
+  default_prompt: "Use $translate-english-pdf-book to translate this English PDF book into a verified Chinese reading edition."
