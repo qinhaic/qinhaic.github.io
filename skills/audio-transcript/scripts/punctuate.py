@@ -2,8 +2,8 @@
 """手动句读模板：为每轮对话按语气/停顿添加全角标点，并做逐字保真校验。
 
 用法：
-1. 把 turns_final.json 中每轮原文逐条人工加全角标点，填入下方 PUNCT（键为轮次索引）。
-2. 运行本脚本：校验通过则写出 turns_punct.json，不通过则打印差异。
+1. 以步骤 4 纠错后的 turns_corrected.json 为底本，逐条人工加全角标点，填入 PUNCT 字典。
+2. 运行本脚本：校验通过与 turns_corrected.json 比对（去标点后），通过则写出 turns_punct.json。
 
 只允许加标点，不允许增删改字（不编造原则）。标点一律全角（，。？！；：……——）。
 """
@@ -18,7 +18,7 @@ PUNCT = {
 
 STRIP = re.compile(r"[\s，。？；：、！……——\-–（）()“”‘’\"'\.,\?;:!]")
 
-turns = json.load(open("turns_final.json", encoding="utf-8"))
+turns = json.load(open("turns_corrected.json", encoding="utf-8"))
 errors, out = [], []
 for i, t in enumerate(turns):
     if i not in PUNCT:
