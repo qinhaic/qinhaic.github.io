@@ -46,28 +46,29 @@ code { background:#eef3f6; padding:2px 6px; border-radius:5px; }
 <div class="container">
   <a class="back" href="https://qinhaic.github.io/">← 返回心理茶馆首页</a>
   <div class="header">
-    <h1>英文 PDF 全书中译</h1>
-    <p class="subtitle">translate-english-pdf-book · 把长篇英文书做成可校验、可续做的中文学习译稿</p>
+    <h1>英文 PDF 全书中译 <span class="tag" style="vertical-align:middle">v2.0</span></h1>
+    <p class="subtitle">translate-english-pdf-book · 把长篇英文书或双栏论文做成可校验、可续做的中文学习译稿</p>
     <div class="divider"></div>
   </div>
 
   <div class="card">
     <span class="tag">Codex Skill</span>
     <h2>用途</h2>
-    <p>将英文 PDF 书籍完整翻译为简体中文，按章节持续保存，并交付经过漏译、术语、结构、排版与逐页渲染检查的 DOCX、PDF、TXT 或 Markdown。适合学术专著以及带注释、参考文献和索引的长篇非虚构书。</p>
+    <p>将英文 PDF 书籍完整翻译为简体中文，按章节持续保存，并交付经过漏译、术语、结构、排版与逐页渲染检查的 DOCX、PDF、TXT 或 Markdown。适合学术专著、双栏期刊论文（APA 样式）以及带注释、参考文献和索引的长篇非虚构书。</p>
+    <p class="note">v2.0 新增：双栏/多栏坐标提取（extract_columns.py）、宋体 Word 生成（build_docx.py）、单文件译文源合并与参考文献保留原文（build_translations.py）、LibreOffice 无头渲染质检。</p>
   </div>
 
   <div class="card">
     <h2>核心流程</h2>
     <ul>
-      <li><span class="step">1. 来源核验</span>：检查页数、加密、文本层、OCR 质量和文件指纹。</li>
+      <li><span class="step">1. 来源核验</span>：检查页数、加密、文本层、OCR 质量和文件指纹；判断版式，双栏走坐标分栏提取。</li>
       <li><span class="step">2. 结构建档</span>：识别章节和后置内容，为每个源段落建立稳定 ID。</li>
       <li><span class="step">3. 术语冻结</span>：代表性试译后确定术语表、专名规则和中文语体。</li>
       <li><span class="step">4. 分章翻译</span>：按语义边界分批，批批检查缺失、重复和空译文。</li>
       <li><span class="step">5. 四遍复核</span>：分别检查完整性、准确性、中文表达和全书连续性。</li>
       <li><span class="step">6. 分类处理</span>：注释核对编号，参考文献保留检索性，索引注明原版页码。</li>
-      <li><span class="step">7. 同源排版</span>：从同一最终正文生成 Word、PDF 与纯文本版本。</li>
-      <li><span class="step">8. 最终验收</span>：把全书逐页渲染，检查裁切、乱码、空白、漏章和格式分叉。</li>
+      <li><span class="step">7. 同源排版</span>：从同一最终正文生成宋体 Word、PDF 与纯文本版本。</li>
+      <li><span class="step">8. 最终验收</span>：渲染 PDF 逐页检查裁切、乱码、空白、漏章和格式分叉。</li>
     </ul>
   </div>
 
@@ -87,16 +88,21 @@ code { background:#eef3f6; padding:2px 6px; border-radius:5px; }
       <li><div><div class="fname">references/translation-guide.md</div><div class="fdesc">试译、术语、分批提示和忠实度复核规范</div></div><a href="./references/translation-guide.md">查看</a></li>
       <li><div><div class="fname">references/qa-checklist.md</div><div class="fdesc">来源、结构、译文、排版和交付检查清单</div></div><a href="./references/qa-checklist.md">查看</a></li>
       <li><div><div class="fname">references/project-schema.md</div><div class="fdesc">跨会话恢复所需的项目目录与状态格式</div></div><a href="./references/project-schema.md">查看</a></li>
-      <li><div><div class="fname">scripts/extract_pdf_book.py</div><div class="fdesc">非破坏式建档、文本提取和 OCR 风险初检</div></div><a href="./scripts/extract_pdf_book.py">查看</a></li>
+      <li><div><div class="fname">references/column-layout.md</div><div class="fdesc">双栏/多栏坐标提取阈值与验收规范（v2.0 新增）</div></div><a href="./references/column-layout.md">查看</a></li>
+      <li><div><div class="fname">scripts/extract_pdf_book.py</div><div class="fdesc">单栏书非破坏式建档、文本提取和 OCR 风险初检</div></div><a href="./scripts/extract_pdf_book.py">查看</a></li>
+      <li><div><div class="fname">scripts/extract_columns.py</div><div class="fdesc">双栏/多栏坐标分栏提取，含页眉页脚过滤与连字符还原（v2.0 新增）</div></div><a href="./scripts/extract_columns.py">查看</a></li>
       <li><div><div class="fname">scripts/segment_book_text.py</div><div class="fdesc">按版式生成带页码的稳定段落 ID</div></div><a href="./scripts/segment_book_text.py">查看</a></li>
       <li><div><div class="fname">scripts/validate_translation.py</div><div class="fdesc">检测漏段、重复、空译、提示词残留和数字差异</div></div><a href="./scripts/validate_translation.py">查看</a></li>
       <li><div><div class="fname">scripts/assemble_book_markdown.py</div><div class="fdesc">把已验证的分章译稿合并成唯一全书正文</div></div><a href="./scripts/assemble_book_markdown.py">查看</a></li>
+      <li><div><div class="fname">scripts/build_translations.py</div><div class="fdesc">合并单文件译文源，参考文献段保留英文原文（v2.0 新增）</div></div><a href="./scripts/build_translations.py">查看</a></li>
+      <li><div><div class="fname">scripts/build_docx.py</div><div class="fdesc">Markdown 生成宋体 Word，标题层级与首行缩进（v2.0 新增）</div></div><a href="./scripts/build_docx.py">查看</a></li>
     </ul>
   </div>
 
   <div class="card">
     <h2>验证记录</h2>
-    <p>本技能由《The Hidden Spring》395 页英文原书的全书翻译经验蒸馏而来。真实试跑完整提取 395 页，并生成 3,174 个可追踪段落；漏段失败、跨页连续、章节合并和独立盲测均已通过。</p>
+    <p>v1.0：由《The Hidden Spring》395 页英文原书的全书翻译经验蒸馏而来，真实试跑完整提取 395 页并生成 3,174 个可追踪段落；漏段失败、跨页连续、章节合并和独立盲测均已通过。</p>
+    <p>v2.0：由 Baskin-Sommers 等 2014 两栏 APA 论文（11 页）实战验证——坐标分栏提取 183 段，全流程（提取→翻译→校验→宋体 Word→LibreOffice 渲染→文本层质检）端到端通过；macOS 无 SimSun 时渲染自动替换中文字体属正常。</p>
     <p class="note">适用于个人学习译稿。若用于正式出版、公开传播或商业发行，请另行确认版权授权，并加入专业译者和学科专家审校。</p>
   </div>
 
