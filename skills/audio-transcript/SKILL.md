@@ -1,7 +1,7 @@
 ---
 name: audio-transcript
 description: 此技能用于把音频/录音转写成带说话人标注与开始时间戳的对话稿 Word 文档。当用户要求「把录音转成对话稿」「音频转 word」「整理录音文字」「转写音频成对话稿」「转录录音」等时使用。
-version: 1.0.0
+version: 1.1.0
 ---
 
 # 音频转写为对话稿 Word
@@ -14,7 +14,7 @@ version: 1.0.0
 
 ## 完整流程（最终改进版）
 
-对每个音频按以下 8 步执行：
+对每个音频按以下 9 步执行：
 
 **1. 转写** — 用 faster-whisper（medium 模型、int8、CPU）
 ```
@@ -28,20 +28,27 @@ venv/bin/python scripts/diarize.py <音频> <full_transcript.json> <turns.json>
 ```
 要点：2s 滑窗/0.5s 步长、RMS 过滤静音；按首次出现顺序标「说话人1/说话人2」，不推断身份；相邻同说话人段合并为轮次。
 
-**3. 人工核查说话人误标** — 听对话语境，按语法/语义连续性修正错标，再合并相邻同说话人轮次。
+**3. 人工核查说话人误标** — 听对话语境，按语法/语义连续性修正错标，再合并相邻同说话人轮次。输出 turns_final.json。
 
-**4. 手动加句读（全角标点）** — 逐句按语气与停顿加标点。不要用自动加标点（基于停顿/时间戳的自动方案会过度标点，如「你还好吗?。」）。
+**4. LLM 转录纠错** — 逐轮扫描，修正 faster-whisper 的声调/同音字/近音词误识（如「贪气→叹气」「清白→清华」）。遵循保守原则：只修正确信为误识的片段，不确定不改；保留口语特征、方言、个人表达。
+```
+# LLM 生成 corrections.json 后：
+venv/bin/python scripts/correct_transcript.py turns_final.json corrections.json turns_corrected.json
+```
+要点：单字替换为主，不允许大段改写。常见误识类型参见 references/pipeline-details.md。
 
-**5. 逐字保真校验** — 用 STRIP 正则去掉标点后与原文比对，只允许加标点，不允许增删改字（不编造原则）。见 scripts/punctuate.py。
+**5. 手动加句读（全角标点）** — 以 turns_corrected.json 为底本，逐句按语气与停顿加标点。不要用自动加标点（基于停顿/时间戳的自动方案会过度标点，如「你还好吗?。」）。
 
-**6. 全角标点检查** — 扫描半角标点（,.;:?!()" 等），必须全部为全角。见 scripts/check_fullwidth.py。
+**6. 逐字保真校验** — 用 STRIP 正则去掉标点后与步骤 4 纠错文本比对，只允许加标点，不允许增删改字（不编造原则）。见 scripts/punctuate.py。
 
-**7. 生成 Word** — python-docx，宋体排版
+**7. 全角标点检查** — 扫描半角标点（,.;:?!()" 等），必须全部为全角。见 scripts/check_fullwidth.py。
+
+**8. 生成 Word** — python-docx，宋体排版
 ```
 venv/bin/python scripts/generate_doc.py <turns_punct.json> <输出.docx> <标题> <副标题> <文末说明>
 ```
 
-**8. 交付** — 输出到桌面；保留旧版本不覆盖；告知用户文件路径。
+**9. 交付** — 输出到桌面；保留旧版本不覆盖；告知用户文件路径。
 
 ## 交付格式（用户硬性偏好）
 - 字体宋体：正文小四 12pt、标题 16pt、时间戳灰色 10.5pt。
@@ -54,8 +61,9 @@ venv/bin/python scripts/generate_doc.py <turns_punct.json> <输出.docx> <标题
 
 ## 关键原则
 - 不编造：句读只改标点，不改字；不确定就明说不确定。
-- 保留中间产物（full_transcript.json、turns_final.json、turns_punct.json）便于复查。
+- 纠错保守：whisper 误识修正限于声调/同音字等确定错误，不润色不改方言不改个人表达。
+- 保留中间产物（full_transcript.json、turns_final.json、turns_corrected.json、turns_punct.json）便于复查。
 
 ## 附加资源
 - references/pipeline-details.md — 每步参数、改进原因、踩坑记录、完整依赖清单。
-- scripts/transcribe.py、diarize.py、punctuate.py、check_fullwidth.py、generate_doc.py — 可复用脚本（均为已验证的最终版）。
+- scripts/transcribe.py、diarize.py、correct_transcript.py、punctuate.py、check_fullwidth.py、generate_doc.py — 可复用脚本（均为已验证的最终版）。
