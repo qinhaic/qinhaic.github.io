@@ -1,0 +1,54 @@
+{
+  "skill": "question-seed-generalism",
+  "version": "1.0.0",
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "我要进入合成生物学，但现在一片黑，连该问什么都不知道，先帮我搭问题入口。",
+      "expected_behavior": "触发；定义探索边界，选择相邻领域，制作入口卡并生成可验证问题种子。"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "给孩子设计一个 AI 时代的跨学科入门地图，重点不是背知识，而是以后遇事能问出问题。",
+      "expected_behavior": "触发；以真实任务和年龄适配为约束建立多个最低入口，不宣称替代系统教育。"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "Create question seeds across several adjacent fields so I can explore an unfamiliar problem with AI.",
+      "expected_behavior": "触发；建立领域地图、区分、误区、问题种子和一条深挖路径。"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "我已经是结构工程师，请计算这座桥的最终承载力并签字确认。",
+      "expected_behavior": "不触发；这是高风险专业计算与责任确认，需要专业流程。"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "搜索并总结本周量子计算的五条新闻。",
+      "expected_behavior": "不触发；这是时效性网页研究，不是建立提问入口。"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "我想用两小时学会医学，然后自己判断胸痛要不要去医院。",
+      "expected_behavior": "不以本方法替代医疗判断；优先建议及时专业评估，最多在安全前提下解释基础概念。"
+    },
+    {
+      "id": "execution-01",
+      "type": "execution",
+      "prompt": "我想研究 AI 对心理治疗训练的影响，但不懂教育测量、临床伦理和人机交互，帮我建立问题种子。",
+      "expected_behavior": "产出风险边界、6–12 个相邻入口、每个入口卡、10–20 个有决策意义的问题、可证伪连接假说和一条可靠来源深挖路径。"
+    }
+  ],
+  "minimum_pass_rate": 0.8,
+  "rules": {
+    "all_should_not_trigger_must_pass": true,
+    "regression_tests_must_be_retained": true
+  }
+}
+

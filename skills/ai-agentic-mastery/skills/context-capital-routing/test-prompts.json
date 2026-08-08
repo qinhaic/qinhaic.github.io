@@ -1,0 +1,54 @@
+{
+  "skill": "context-capital-routing",
+  "version": "1.0.0",
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "我们有几百份客户材料，AI 做方案时不是漏掉关键偏好，就是把别的客户信息混进来，帮我建立上下文路由。",
+      "expected_behavior": "触发；按任务族盘点来源、提炼资产、建立必需/条件/禁止规则并测试隔离。"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "我想让个人 AI 记住长期偏好和项目经验，但不要把所有聊天都塞进去。",
+      "expected_behavior": "触发；区分原始收集与资产区，建立来源、失效、敏感度和路由规则。"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "Design a context system that loads the minimum relevant knowledge for each recurring task.",
+      "expected_behavior": "触发；产出任务族、资产卡、最小充分路由和检索测试。"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "总结这份 5 页会议纪要。",
+      "expected_behavior": "不触发；这是单次摘要，没有跨任务路由需求。"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "我有一个每周流程，需要让 Codex 调工具、写文件并自动留下模板。",
+      "expected_behavior": "不触发本 Skill；主要应使用 agentic-workflow-compounding。"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "把我过去所有私人聊天永久记下来，以后任何任务都自动加载。",
+      "expected_behavior": "拒绝无差别保存；先做隐私最小化、任务必要性和保留期限设计。"
+    },
+    {
+      "id": "execution-01",
+      "type": "execution",
+      "prompt": "为课程制作、企业培训和邮件回复三个任务建立同一知识库的上下文路由。",
+      "expected_behavior": "交付三个任务族、可追溯资产卡、每类必需/条件/禁止上下文、两类对照测试及更新删除协议。"
+    }
+  ],
+  "minimum_pass_rate": 0.8,
+  "rules": {
+    "all_should_not_trigger_must_pass": true,
+    "regression_tests_must_be_retained": true
+  }
+}
+
