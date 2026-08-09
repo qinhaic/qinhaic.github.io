@@ -1,0 +1,64 @@
+{
+  "date": "2026-08-10",
+  "coverage": "自上周五 06:00 起（北京时间）",
+  "international": [
+    {
+      "title": "美国新墨西哥州法院判令Meta设立5.67亿美元青少年伤害治理基金",
+      "summary": "新墨西哥州第一司法地区法院认定Meta平台构成公共妨害，除此前3.75亿美元民事罚款外，命其另设5.67亿美元基金，用于预防、筛查与治疗，并调整未成年人通知、时长等设置；基金管理仍待后续命令。",
+      "source": "美国新墨西哥州法院",
+      "published_at": "2026-08-06",
+      "url": "https://nmcourts.gov/wp-content/uploads/2026/08/D-101-CV-2023-02838-Final-FOFCOL-and-Judgment-of-the-Court.pdf",
+      "topic": "政策与监管"
+    },
+    {
+      "title": "英国政策简报呼吁完整配置早期精神病干预服务",
+      "summary": "英国心理健康中心发布NIHR资助的EXTEND多中心研究简报，称同时提供谈话治疗、药物、家庭与就业支持等完整方案，并将协调员个案量控制在15人以内，与更好结局相关；结论属研究发现及政策建议，尚非新标准。",
+      "source": "Centre for Mental Health",
+      "published_at": "2026-08-07",
+      "url": "https://www.centreformentalhealth.org.uk/publications/early-intervention-in-psychosis-services/",
+      "topic": "服务模式与研究"
+    },
+    {
+      "title": "美国南部调查发现心理健康从业者对阿片成瘾污名更高",
+      "summary": "佐治亚大学团队调查美国南部13州1676名成年人，回归分析显示心理健康相关从业者的阿片使用障碍污名评分更高，提示机构培训与反污名项目需覆盖服务提供者；研究为横断面区域调查，不能证明职业导致偏见。",
+      "source": "佐治亚大学",
+      "published_at": "2026-08-07",
+      "url": "https://news.uga.edu/mental-health-workers-and-opioid-stigma/",
+      "topic": "人才与伦理"
+    },
+    {
+      "title": "美国地方卫生部门自杀预防在线课程扩展至五个模块",
+      "summary": "美国郡市卫生官员协会在疾控中心支持下扩充免费自学课程，新增预防基础设施模块，并覆盖跨部门协作、上游策略、致命手段安全及危机后支持；课程面向地方卫生部门等组织，是能力建设资源而非新的强制规范。",
+      "source": "美国郡市卫生官员协会（NACCHO）",
+      "published_at": "2026-08-07",
+      "url": "https://www.naccho.org/blog/articles/suicide-prevention-course",
+      "topic": "公共服务与人才"
+    }
+  ],
+  "domestic": [
+    {
+      "title": "北京发布中小学教育惩戒实施细则，强化心理保护与专业介入",
+      "summary": "北京市教委发布试行细则，要求惩戒考虑学生心理特点，禁止伤害心理的变相体罚；严重情形可由社工等开展心理辅导，并为有明确心理诊断的学生建立个性化帮扶与转介机制。细则自印发之日起施行。",
+      "source": "北京市教育委员会",
+      "published_at": "2026-08-07",
+      "url": "https://jw.beijing.gov.cn/xxgk/2024zcwj/2024xzgfwj/202608/t20260807_4812523.html",
+      "topic": "政策与伦理"
+    },
+    {
+      "title": "教育部介绍江西师大心理健康工作模式，强调前端预防与复学支持",
+      "summary": "教育部刊文介绍江西师大以积极心理学构建“风险识别+积极培育”双维预警，设置朋辈信息员、社区心理服务站及心理问题休复学支持机制；这是高校实践案例展示，并非全国性政策或统一成效评估。",
+      "source": "中华人民共和国教育部",
+      "published_at": "2026-08-07",
+      "url": "https://www.moe.gov.cn/jyb_xwfb/s6192/s222/moe_1746/202607/t20260731_1445660.html",
+      "topic": "高校心理服务"
+    },
+    {
+      "title": "广东启动“慧心家长”项目并授牌首批58家青少年心理服务基地",
+      "summary": "广东省志愿服务联合会、省心理健康协会等在省精神卫生中心启动“慧心家长”科普项目，并向首批58家医院、学校、社区及社会机构基地授牌，提出家校社医协同。项目刚启动，具体服务规模与效果尚待后续披露。",
+      "source": "南方日报·南方+",
+      "published_at": "2026-08-08",
+      "url": "https://static.nfnews.com/content/202608/08/c12703202.html?colID=59",
+      "topic": "公共服务"
+    }
+  ]
+}
