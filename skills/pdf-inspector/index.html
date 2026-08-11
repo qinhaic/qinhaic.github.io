@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>精神分析文献阅读 · pdf-inspector</title>
+<style>
+*,*::before,*::after { box-sizing:border-box; margin:0; padding:0; }
+body {
+  font-family:-apple-system,"Noto Sans SC","PingFang SC","Microsoft YaHei",sans-serif;
+  background:linear-gradient(135deg,#eaf4f9 0%,#f5f0eb 50%,#f0e6db 100%);
+  color:#2c3e50; min-height:100vh; padding:32px 20px;
+}
+.container { max-width:860px; width:100%; margin:0 auto; }
+.back { display:inline-block; margin-bottom:20px; color:#2c6e8f; text-decoration:none; font-size:.9rem; }
+.header { text-align:center; margin-bottom:32px; }
+.header h1 { font-size:1.8rem; color:#1a1a2e; letter-spacing:1px; }
+.subtitle { color:#5a7a8a; margin-top:8px; line-height:1.6; }
+.divider { width:50px; height:3px; margin:20px auto 0; border-radius:2px; background:linear-gradient(90deg,#2c6e8f,#8faaaf); }
+.card {
+  background:rgba(255,255,255,.88); border-radius:20px; padding:28px 30px;
+  border:1px solid rgba(255,255,255,.5); box-shadow:0 4px 20px rgba(0,0,0,.04); margin-bottom:20px;
+}
+.card h2 { font-size:1.15rem; color:#1a1a2e; margin-bottom:12px; }
+.card p,.card li { font-size:.92rem; color:#42505f; line-height:1.75; }
+.card ul { padding-left:20px; }
+.tag { display:inline-block; font-size:.78rem; padding:3px 12px; border-radius:20px; background:#e8f0f5; color:#2c6e8f; margin-bottom:12px; }
+.step { color:#2c6e8f; font-weight:600; }
+.actions { display:flex; gap:12px; flex-wrap:wrap; }
+.button { display:inline-block; padding:10px 16px; border-radius:10px; text-decoration:none; font-size:.9rem; background:#2c6e8f; color:white; }
+.button.secondary { background:#e8f0f5; color:#2c6e8f; }
+.files { list-style:none; padding-left:0 !important; }
+.files li { display:flex; justify-content:space-between; gap:18px; align-items:center; padding:11px 4px; border-bottom:1px dashed #e3e8ec; }
+.files li:last-child { border-bottom:none; }
+.fname { color:#1a1a2e; font-weight:500; }
+.fdesc { color:#8a9aaa; font-size:.82rem; margin-top:2px; }
+.files a { color:#2c6e8f; text-decoration:none; font-size:.82rem; white-space:nowrap; }
+code { background:#eef3f6; padding:2px 6px; border-radius:5px; }
+.note { margin-top:12px; color:#8a9aaa !important; font-size:.82rem !important; }
+.footer { text-align:center; margin-top:24px; color:#8a9a9a; font-size:.82rem; }
+.footer a { color:#2c6e8f; text-decoration:none; }
+@media (max-width:600px) { .card { padding:23px 20px; } .files li { align-items:flex-start; } }
+</style>
+</head>
+<body>
+<div class="container">
+  <a class="back" href="https://qinhaic.github.io/">← 返回心理茶馆首页</a>
+  <div class="header">
+    <h1>精神分析文献阅读</h1>
+    <p class="subtitle">pdf-inspector · 本地快速检查 PDF 文本层、定位扫描页与分栏，并提取文本与 Markdown</p>
+    <div class="divider"></div>
+  </div>
+
+  <div class="card">
+    <span class="tag">Claude Code Skill</span>
+    <h2>用途</h2>
+    <p>阅读精神分析文献 PDF 前，先判断这份 PDF 是文本型还是扫描件、哪些页需要 OCR、有没有分栏和表格；随后本地提取纯文本、Markdown 或带坐标字体的文本。全部本地解析，不联网、不依赖 OCR，单份 PDF 几十毫秒完成。</p>
+  </div>
+
+  <div class="card">
+    <h2>功能</h2>
+    <ul>
+      <li><span class="step">类型检测</span>：文本型 / 扫描件 / 图片型 / 混合型，附置信度。</li>
+      <li><span class="step">OCR 路由</span>：列出需要 OCR 的页及原因，快速决定是否走 OCR。</li>
+      <li><span class="step">版式识别</span>：定位含表格的页、含分栏的页，提示复杂版式。</li>
+      <li><span class="step">提取</span>：纯文本、带标题层级的 Markdown、带坐标与字体的位置化文本。</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>安装与调用</h2>
+    <div class="actions">
+      <a class="button" href="../pdf-inspector.zip" download>下载完整 Skill ZIP</a>
+      <a class="button secondary" href="./SKILL.md" target="_blank" rel="noopener">查看 SKILL.md</a>
+    </div>
+    <p class="note">需要 Python 3.11+ 与 pdf-inspector 库（uv venv 安装）。安装后可以对任何 PDF 说：检查这份 PDF 的类型、哪些页需要 OCR、有没有分栏，再提取成 Markdown。</p>
+  </div>
+
+  <div class="card">
+    <h2>技能文件</h2>
+    <ul class="files">
+      <li><div><div class="fname">SKILL.md</div><div class="fdesc">用途、安装、用法与工作流配合</div></div><a href="./SKILL.md">查看</a></li>
+      <li><div><div class="fname">scripts/inspect_pdf.py</div><div class="fdesc">inspect / text / markdown / positions 四种模式</div></div><a href="./scripts/inspect_pdf.py">查看</a></li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>验证记录</h2>
+    <p>用 Baskin-Sommers 等 2014《Empathy in Narcissistic Personality Disorder》双栏 APA 论文（11 页）实测：识别为文本型（置信度 100%），11 页仅 37ms 完成，无需 OCR 的页，准确定位含分栏的页并提取出 18,391 字符的 Markdown。同名 skill 已安装在本机 Claude 环境中。</p>
+    <p class="note">pdf-inspector 做本地启发式解析，表格与标题识别非完美；复杂版式仍建议抽查原文。</p>
+  </div>
+
+  <div class="footer">
+    <p>© 2026 秦海 · <a href="https://qinhaic.github.io/">心理茶馆</a> · <a href="https://github.com/qinhaic/qinhaic.github.io">GitHub 仓库</a></p>
+  </div>
+</div>
+</body>
+</html>
