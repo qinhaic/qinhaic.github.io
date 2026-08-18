@@ -1,0 +1,72 @@
+{
+  "date": "2026-08-19",
+  "coverage": "过去 36 小时",
+  "international": [
+    {
+      "title": "美国HHS拨款9670万美元加强精神健康与自杀预防服务",
+      "summary": "美国卫生与公众服务部通过SAMHSA宣布9670万美元拨款，覆盖无家可归严重精神疾病人群服务、青少年自杀预防、精神病高风险早期干预及专业培训等。资金已进入授予阶段，将扩充多类社区行为健康服务。",
+      "source": "美国卫生与公众服务部",
+      "published_at": "2026-08-17",
+      "url": "https://www.hhs.gov/press-room/hhs-awards-96-million-mental-health-suicide-prevention-substance-use-services.html",
+      "topic": "政策投资与公共服务"
+    },
+    {
+      "title": "美国将两项同伴支持方案纳入联邦儿童福利报销清单",
+      "summary": "美国HHS将Family-Based Recovery和WRAP纳入Title IV-E预防服务信息库，达到证据标准后，各州可在获批计划中申报联邦配套报销。该变化拓宽成瘾与心理健康同伴支持的公共支付路径，艾奥瓦已率先采用。",
+      "source": "美国卫生与公众服务部",
+      "published_at": "2026-08-18",
+      "url": "https://www.hhs.gov/press-room/hhs-expands-peer-support-addiction-recovery-families-foster-care.html",
+      "topic": "支付政策与同伴支持"
+    },
+    {
+      "title": "大样本研究提示远程精神科服务需按诊断分层",
+      "summary": "伦敦国王学院团队分析南伦敦五年、逾10万份精神科记录，发现远程咨询对多数诊断未见更差结局，但在精神分裂症相关障碍中与住院和急诊评估小幅上升相关。研究为回顾性观察，不能证明因果，提示服务模式需分层配置。",
+      "source": "伦敦国王学院",
+      "published_at": "2026-08-18",
+      "url": "https://www.kcl.ac.uk/news/study-examines-how-remote-mental-health-care-is-working-in-practice",
+      "topic": "数字心理健康研究"
+    },
+    {
+      "title": "中美青少年数据绘制执行功能发展基准",
+      "summary": "《Nature Mental Health》研究基于33622名中国11—18岁青少年，并在11549名美国青少年中复现，发现低于年龄基准的执行功能与多类行为和心理困难相关，早青春期关联更明显。结果属群体观察，不能用于个体诊断。",
+      "source": "Nature Mental Health",
+      "published_at": "2026-08-17",
+      "url": "https://www.nature.com/articles/s44220-026-00711-8",
+      "topic": "儿童青少年心理研究"
+    }
+  ],
+  "domestic": [
+    {
+      "title": "中国心理卫生协会启动首期能力评价纸质证书发放",
+      "summary": "中国心理卫生协会宣布首期心理咨询师职业能力水平评价合格者纸质证书陆续发放，并开放官网与二维码核验。该证书反映协会依据团体标准开展的能力评价，并非国家职业资格或行政执业许可，行业使用边界仍需清晰说明。",
+      "source": "中国心理卫生协会心理咨询师职业能力水平评价项目",
+      "published_at": "2026-08-18",
+      "url": "https://www.cert-camh.org.cn/#/articleDetail?id=1535281097225940992",
+      "topic": "人才评价与专业规范"
+    },
+    {
+      "title": "奈曼旗四部门共建心理咨询服务站点",
+      "summary": "奈曼旗团委、妇联、司法局和退役军人事务局联合挂牌心理咨询服务站，计划面向青少年、妇女、社区矫正对象和退役军人开展心理疏导与科普。此举补充基层社会心理服务触点，后续服务质量仍取决于人员资质、转介与督导机制。",
+      "source": "通辽市人民政府",
+      "published_at": "2026-08-18",
+      "url": "https://www.tongliao.gov.cn/xwzx/qxdt/202608/t20260818_1066763.html",
+      "topic": "基层社会心理服务"
+    },
+    {
+      "title": "青岛市精神卫生中心升级一站式综合服务中心",
+      "summary": "青岛市精神卫生中心整合挂号、结算、取药、慢特病审核、出入院及陪诊等窗口业务，并设置“难事直通窗”。升级主要改善精神专科患者就医流程和医保办理效率，属于服务组织优化，未涉及新增诊疗技术或疗效结论。",
+      "source": "健康报",
+      "published_at": "2026-08-18",
+      "url": "https://www.jkb.com.cn/hyfz/yy_hyzx/2026/0818/513019.html",
+      "topic": "精神专科服务"
+    },
+    {
+      "title": "曲靖市第三人民医院完成系统式家庭治疗专项培训",
+      "summary": "曲靖市第三人民医院依托云南省赵旭东专家工作站，完成第二期系统式家庭治疗培训，采用理论讲授与案例示教，计划建立持续督导并将方法纳入临床流程。该项目着眼区域心理治疗人才梯队建设，公开信息尚未提供培训效果评估。",
+      "source": "曲靖珠江网",
+      "published_at": "2026-08-18",
+      "url": "https://www.zjw.cn/info-231365.html",
+      "topic": "心理治疗人才培养"
+    }
+  ]
+}
