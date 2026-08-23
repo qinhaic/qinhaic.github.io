@@ -1,0 +1,88 @@
+{
+  "date": "2026-08-24",
+  "coverage": "自上周五06:00起（北京时间）",
+  "international": [
+    {
+      "title": "马里兰州启动法院监督的辅助门诊治疗项目",
+      "summary": "马里兰州卫生部宣布启动由州立法授权的辅助门诊治疗项目，为难以坚持自愿治疗的严重精神疾病患者提供法庭监督下的社区照护与协调服务，首期覆盖巴尔的摩市、安妮阿伦德尔县和东海岸地区，计划2027年7月全州推行，9月起开展公众宣传。",
+      "source": "马里兰州卫生部",
+      "published_at": "2026-08-20",
+      "url": "https://health.maryland.gov/newsroom/Pages/Maryland-Department-of-Health-announces-launch-of-Assisted-Outpatient-Treatment-program.aspx",
+      "topic": "政策与公共服务"
+    },
+    {
+      "title": "科威特卫生部新规禁止无科学依据的心理治疗",
+      "summary": "科威特卫生部长签发第225/2026号决定，为公立和私营部门的心理治疗与心理咨询建立执业规范，要求从业者具备经认可学历并申领许可，同时禁止提供或推广雷基疗法、能量疗法等缺乏科学依据的做法。具体条款仍以官方正式文本为准。",
+      "source": "科威特卫生部（经多家国际媒体报道核验）",
+      "published_at": "2026-08-21",
+      "url": "https://www.khaleejtimes.com/world/gulf/kuwait-bans-reiki-healing-eft-other-non-scientific-methods-of-psychotherapy",
+      "topic": "政策与监管"
+    },
+    {
+      "title": "澳大利亚Medicare心理健康中心已开放56家",
+      "summary": "澳大利亚精神健康助理部长通报，全国Medicare心理健康中心已开放56家，居民无需预约或转介即可免费获得心理支持，当日可完成接诊或初始评估；网络仍在扩展中，官方尚未公布完整服务量与疗效评估数据。",
+      "source": "澳大利亚卫生部",
+      "published_at": "2026-08-21",
+      "url": "https://www.health.gov.au/ministers/the-hon-emma-mcbride-mp/media/tv-interview-with-assistant-minister-mcbride-news24-politics-now-21-august-2026",
+      "topic": "公共服务"
+    },
+    {
+      "title": "德国《自杀预防法》草案进入行业听证",
+      "summary": "德国联邦卫生部《自杀预防法》草案进入行业听证阶段，拟设立联邦自杀预防专业机构并推动全国统一危机热线号码；联邦医师协会、心理治疗师协会等批评草案多为意向表述，要求保障可持续融资和覆盖全国的危机服务体系。",
+      "source": "Medscape德国（univadis）",
+      "published_at": "2026-08-23",
+      "url": "https://www.univadis.de/viewarticle/gamechanger-suizidpr%C3%A4ventionsgesetz-verb%C3%A4nde-sind-2026a1000t8j",
+      "topic": "政策与监管"
+    },
+    {
+      "title": "纽约州圣约瑟夫精神科住院医师项目获ACGME认证",
+      "summary": "纽约州圣约瑟夫健康系统宣布，其新设精神科住院医师项目获美国毕业后医学教育认证委员会正式认证，项目每年招收6名住院医师，拟于2026年内迎来首批学员，以扩充纽约中部精神科医生队伍。项目尚处招生阶段。",
+      "source": "圣约瑟夫健康系统",
+      "published_at": "2026-08-20",
+      "url": "https://www.sjhsyr.org/press-releases/st-josephs-health-gains-acgme-accreditation-new-psychiatry-residency-program",
+      "topic": "人才培养"
+    }
+  ],
+  "domestic": [
+    {
+      "title": "中西部精神医学专科联盟在渝成立，首批成员102家",
+      "summary": "重庆医科大学附属第一医院牵头在渝成立中西部精神医学专科联盟，首批102家成员单位覆盖13个省份，将依托远程医疗平台开展疑难转诊会诊、心理危机干预、基层人才培养与多中心科研；会上同时成立西部精神医学教学联盟。",
+      "source": "中新网重庆（中国甘肃网转载）",
+      "published_at": "2026-08-21",
+      "url": "https://news.gscn.com.cn/system/2026/08/22/013544597.shtml",
+      "topic": "机构合作与区域联盟"
+    },
+    {
+      "title": "惠州医保新结算办法细化精神类住院床日付费",
+      "summary": "惠州市医保局等三部门印发《惠州市医疗保障基金结算管理办法》，明确康复、精神类等长期住院且日均费用稳定的病种可按床日分值结算，精神专科医疗机构相关病种单独结算、不设系数；办法自9月1日起施行，属地方医保支付机制细化。",
+      "source": "惠州市人民政府",
+      "published_at": "2026-08-21",
+      "url": "http://www.huizhou.gov.cn/zwgk/hzsz/zwyw/content/post_5836405.html",
+      "topic": "医保支付政策"
+    },
+    {
+      "title": "山东省医师协会启动青年精神科医师培训计划",
+      "summary": "山东省医师协会精神科医师分会发布第二届青年精神科医师培训项目“儒医雏鹰成长计划”，面向35周岁以下、已规培的精神科执业医师，开展为期三年的理论与临床带教，首期面授定于9月16日至20日，推荐报送8月27日截止。",
+      "source": "山东省医师协会",
+      "published_at": "2026-08-21",
+      "url": "http://www.sdmda.org.cn/cn/index/505_2468130_77148",
+      "topic": "人才培养与协会公告"
+    },
+    {
+      "title": "教育部部署教师节工作，优化“育英心坊”心理支持平台",
+      "summary": "教育部办公厅印发庆祝第42个教师节通知，明确优化“中国教师”小程序“育英心坊”平台，推出心理科普短视频与心理健康指导手册，为教师提供专业化心理支持。该条属于通知中的惠师部署，平台功能优化尚未落地，属待实施安排。",
+      "source": "教育部办公厅",
+      "published_at": "2026-08-21",
+      "url": "http://www.moe.gov.cn/srcsite/A10/s7002/202608/t20260821_1447456.html",
+      "topic": "公共服务与教师支持"
+    },
+    {
+      "title": "常州武进三院与基层卫生院共建心理门诊",
+      "summary": "武进第三人民医院（武进区精神卫生中心）与武进第五人民医院达成医共体合作，在乡镇开设常态化心理门诊，由三院资深精神心理专科医生每周四常驻坐诊，覆盖各年龄段常见心理与精神健康问题；门诊刚启动，实际服务量有待观察。",
+      "source": "常州市武进区人民政府",
+      "published_at": "2026-08-21",
+      "url": "https://www.wj.gov.cn/html/czwj/2026/FAOKPMFH_0821/560751.html",
+      "topic": "基层精神卫生服务"
+    }
+  ]
+}
