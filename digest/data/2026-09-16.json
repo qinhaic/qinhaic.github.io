@@ -1,0 +1,64 @@
+{
+  "date": "2026-09-16",
+  "coverage": "过去 36 小时（北京时间）",
+  "international": [
+    {
+      "title": "全球150余家机构发布“布拉格协议”呼吁融资挂钩精神卫生战略",
+      "summary": "英国皇家精神科医学院牵头的150余家精神科协会和心理健康机构9月15日发布倡议，呼吁世界银行、国际货币基金组织等将发展融资与国家跨部门精神卫生战略及实施计划相联系。该协议属于行业倡议，不具强制约束力。",
+      "source": "英国皇家精神科医学院",
+      "published_at": "2026-09-15",
+      "url": "https://www.rcpsych.ac.uk/news-and-features/latest-news/detail/2026/09/15/over-150-organisations-call-on-global-financiers-to-help-address--5-trillion-cost-of-mental-illness",
+      "topic": "全球倡议与政策"
+    },
+    {
+      "title": "澳大利亚维多利亚州开放精神卫生从业者奖学金申请",
+      "summary": "维多利亚州9月15日开放2026—27年度精神卫生与福祉人才奖学金，面向精神卫生护士及有亲历经验的从业者，资助档位包括3000澳元、最高2.3万澳元全额课程费和最高1.3万澳元大学奖学金，申请截至10月27日。",
+      "source": "维多利亚州卫生部",
+      "published_at": "2026-09-15",
+      "url": "https://www.health.vic.gov.au/news/mental-health-and-wellbeing-workforce-scholarships-are-now-open",
+      "topic": "人才培养"
+    },
+    {
+      "title": "美国缅因州路易斯顿24小时危机接收中心投入服务",
+      "summary": "Spurwink于9月15日启用路易斯顿危机中心，获缅因州卫生与公众服务部350万美元合同支持，面向14岁及以上人群提供自愿、全天候危机评估、短期稳定、同伴支持和后续转介，作为急诊和执法介入之外的低限制替代服务。",
+      "source": "Spurwink Services",
+      "published_at": "2026-09-15",
+      "url": "https://spurwink.org/spurwink-to-open-lewiston-crisis-center-september-15/",
+      "topic": "危机服务"
+    },
+    {
+      "title": "健康志愿者研究提示氯胺酮可能改变缰核负性加工",
+      "summary": "牛津团队在《Current Biology》发表功能磁共振研究：健康志愿者接受氯胺酮后，缰核对不愉快刺激的反应降低，并出现影响负性记忆的初步信号。研究未纳入抑郁症患者，不能证明该变化就是临床抗抑郁机制，患者研究仍待开展。",
+      "source": "牛津健康NHS基金会信托",
+      "published_at": "2026-09-15",
+      "url": "https://oxfordhealth.nhs.uk/news/study-sheds-new-light-on-how-ketamine-may-act-rapidly-in-the-human-brain/",
+      "topic": "研究进展"
+    }
+  ],
+  "domestic": [
+    {
+      "title": "江苏成立省级中小学生心理健康工作咨询委员会",
+      "summary": "江苏省中小学生心理健康工作咨询委员会9月15日在南京师范大学成立，设置心育资源建设、工作体系建设两个专项组和开放式专家库，承担调研评估、政策咨询、资源开发及体系优化等职能，并计划每学年开展区域评估，实际成效仍待落地检验。",
+      "source": "新华日报·交汇点新闻",
+      "published_at": "2026-09-15",
+      "url": "https://jsnews.jschina.com.cn/jsyw/202609/t20260915_s6aa9511fe4b0f22f853ce03a.shtml",
+      "topic": "学生心理健康"
+    },
+    {
+      "title": "深圳福田确定残疾人社会心理服务项目承接方",
+      "summary": "深圳市福田区残疾人综合服务中心9月15日公布社会心理服务项目采购结果，预算40万元，成交金额39.44578万元，由当地公益心理咨询机构承接。这标志着面向残疾人的社会心理服务进入采购落地阶段，但公告尚未披露服务周期、覆盖人数和质量指标。",
+      "source": "福田政府在线",
+      "published_at": "2026-09-15",
+      "url": "https://www.szft.gov.cn/xxgk/bmtzgg/content/post_12982324.html",
+      "topic": "公共心理服务"
+    },
+    {
+      "title": "中华预防医学会发布公共精神卫生学术会议安排",
+      "summary": "中华预防医学会精神卫生分会9月15日发布第一轮通知，计划10月16日至18日在青岛举行年度学术会议，议题覆盖社会心理服务、严重精神障碍管理、社区康复、心理援助与危机干预，并同步征集可推广的社会心理服务案例；目前处于会议通知和征集阶段。",
+      "source": "中华预防医学会",
+      "published_at": "2026-09-15",
+      "url": "https://www.cpma.org.cn/zhyfyxh/tzgg/202609/3c79a10b65da492d8ecd4dd810e95200.shtml",
+      "topic": "专业交流"
+    }
+  ]
+}
