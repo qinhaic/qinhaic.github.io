@@ -397,7 +397,8 @@ body {{
 </header>
 {"".join(items_html)}
 <footer class="footer">
-<p>每日自动更新 · 来源：ScienceDaily / Google News</p>
+<p><a href="../index.html">🏠 心理茶馆首页</a> · <a href="index.html">🗂️ 动态归档</a> · <a href="../profile.html">👤 个人简介</a> · <a href="../news/today.html">📰 今日新闻</a></p>
+<p style="margin-top:6px;">每天北京时间 08:30 更新 · 来源：ScienceDaily / Google News</p>
 <p style="margin-top:4px;"><a href="#">返回顶部 ↑</a></p>
 </footer>
 </div>
@@ -472,7 +473,10 @@ body {{
 <div class="archive">
 {"".join(cards) if cards else '<div class="empty">暂无内容</div>'}
 </div>
-<div class="footer"><p>每日自动更新</p></div>
+<div class="footer">
+<p><a href="../index.html">🏠 心理茶馆首页</a> · <a href="../profile.html">👤 个人简介</a> · <a href="../news/today.html">📰 今日新闻</a> · <a href="today.html">📅 最新一期</a></p>
+<p style="margin-top:8px;">每天北京时间 08:30 自动更新 · © 2026 秦海</p>
+</div>
 </div>
 </body>
 </html>"""
