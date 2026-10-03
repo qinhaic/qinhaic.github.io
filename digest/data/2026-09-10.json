@@ -1,0 +1,72 @@
+{
+  "date": "2026-09-10",
+  "coverage": "过去36小时（2026年9月8日18:00至9月10日06:00，北京时间）",
+  "international": [
+    {
+      "title": "美国HHS拨款3.834亿美元强化988与行为健康服务",
+      "summary": "美国卫生与公众服务部通过SAMHSA宣布已授予3.834亿美元，其中2.52亿美元用于988热线、自杀预防和移动危机服务，其余覆盖成瘾治疗及心理健康项目。资金已经授予，不是征求意见，将直接扩充州、部落及社区危机响应能力。",
+      "source": "美国卫生与公众服务部",
+      "published_at": "2026-09-08",
+      "url": "https://www.hhs.gov/press-room/hhs-awards-380-million-988-suicide-prevention-behavioral-health.html",
+      "topic": "公共资金与危机服务"
+    },
+    {
+      "title": "美国劳工部明确心理健康保险平等执法重点",
+      "summary": "美国劳工部福利保障局9月8日发布FAB 2026-03，将单独服务限制、医疗必要性及审核流程、网络准入与提供者报销列为非定量治疗限制的重点执法领域。该文件属于执法指引，不是新立法，但会改变保险计划合规审查重点。",
+      "source": "美国劳工部",
+      "published_at": "2026-09-08",
+      "url": "https://beta.dol.gov/policy-regulations/pay-benefits/health-plans/mental-health-and-substance-use-disorder-parity/identifying-potential-problems-possible-mhpaea-compliance-problems",
+      "topic": "政策与监管"
+    },
+    {
+      "title": "JAMA研究比较视频、电话与面诊心理照护结果",
+      "summary": "一项覆盖81万余名美国退伍军人的回顾性比较研究发现，视频心理照护与较低的精神科住院、急诊及自杀行为记录和更高的预约完成率相关，差异幅度较小。研究无法完全消除视频组更健康、资源更多等混杂，不能据此认定因果或普遍优于面诊。",
+      "source": "JAMA Network Open",
+      "published_at": "2026-09-08",
+      "url": "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2853801",
+      "topic": "数字心理健康研究"
+    },
+    {
+      "title": "耶鲁批准CMND-100早期试验进入患者招募",
+      "summary": "Clearmind称，耶鲁伦理审查委员会已批准CMND-100 I/II期试验B、C部分招募，使耶鲁加入约翰斯·霍普金斯等研究中心评估酒精使用障碍候选药。当前仅为早期安全性、耐受性和药代研究，尚无疗效结论或上市批准。",
+      "source": "Clearmind Medicine",
+      "published_at": "2026-09-08",
+      "url": "https://www.clearmindmedicine.com/news-release/clearmind-medicine-receives-yale-irb-approval-enabling-patient-recruitment-for-parts-b-and-c-of-cmnd-100-phase-i-ii-trial-following-positive-safety-results",
+      "topic": "药物研发"
+    }
+  ],
+  "domestic": [
+    {
+      "title": "中科院心理所招募全国学生心理健康追踪调查伙伴",
+      "summary": "中科院心理所启动2026—2028年全国学生心理健康三年追踪调查合作招募，面向中小学生和大学生，要求统一培训、年度测评和持续联系。项目目前处于合作单位与调查员招募阶段，若按设计完成，可为国民心理健康趋势及学校服务决策提供纵向数据。",
+      "source": "中国科学院心理研究所",
+      "published_at": "2026-09-09",
+      "url": "https://psych.cas.cn/tzgg/202609/t20260909_8279900.html",
+      "topic": "研究与数据"
+    },
+    {
+      "title": "中华医学会精神医学学术会议在长沙举行",
+      "summary": "中华医学会第二十四次精神医学学术会议9月9日至12日在长沙举行，围绕精神障碍防治、基础研究、服务体系建设以及人工智能、脑机接口等技术展开交流，并设基层精神卫生服务专场。会议是行业学术交流平台，不代表相关技术已形成临床标准。",
+      "source": "中华医学会精神医学分会",
+      "published_at": "2026-09-09",
+      "url": "https://csp2026.cnconf.com/msite/main/cn",
+      "topic": "专业会议与人才"
+    },
+    {
+      "title": "上海宝山拟建含临床心理专业的社区卫生服务站",
+      "summary": "上海宝山区卫健委公示拟设金富门社区卫生服务站，诊疗科目包括预防保健、全科、精神科临床心理专业和中医科，面向社会服务。当前仅为9月9日至15日的设置前公示，尚不等于获批或开诊，但显示临床心理服务拟进一步进入基层站点。",
+      "source": "上海市宝山区卫生健康委员会",
+      "published_at": "2026-09-09",
+      "url": "https://xxgk.shbsq.gov.cn/article.html?infoid=9cfbb9fe-b813-4537-927f-b4ac80de324a",
+      "topic": "基层服务"
+    },
+    {
+      "title": "重庆12355与西南大学披露青少年心理服务协同进展",
+      "summary": "西南大学心理学部与重庆团市委披露12355青少年心理健康校地协同进展：学生团队在专业咨询师督导下参与热线与危机干预，并在16个区县开展团体辅导。项目把高校训练接入公共热线和社区服务，但公布数据来自主办方总结，服务质量仍需持续评估。",
+      "source": "西南大学心理学部",
+      "published_at": "2026-09-09",
+      "url": "https://psy.swu.edu.cn/info/1086/4801.htm",
+      "topic": "公共服务与人才"
+    }
+  ]
+}

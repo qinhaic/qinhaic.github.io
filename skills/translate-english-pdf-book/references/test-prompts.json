@@ -1,0 +1,53 @@
+{
+  "skill": "translate-english-pdf-book",
+  "version": "1.0.0",
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "把这本 380 页的英文 PDF 完整翻译成简体中文，并给我可打印的 PDF 和 Word。",
+      "expected_behavior": "建立整书项目，分章翻译和校验，交付 DOCX/PDF 及 QA。"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "Please turn this English academic monograph PDF into a complete Chinese reading edition, including notes and index.",
+      "expected_behavior": "处理正文、注释、参考文献和索引，并保持结构可追溯。"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "这本扫描版英文书分章节翻译，术语要统一，最后合成中文版。",
+      "expected_behavior": "先判断 OCR 质量，再启动分章、术语和合并流程。"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "帮我翻译这个 PDF 的第 3 页。",
+      "expected_behavior": "使用普通短文或页面翻译流程，不启动整书工程。"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "把这本英文书蒸馏成几个可以安装的 Skill。",
+      "expected_behavior": "选择内容蒸馏技能，而不是制作全书译本。"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "这本书网上有正式中文版，你帮我找到并复制成 PDF。",
+      "expected_behavior": "不复制受版权保护的正式中文版；说明边界并询问是否处理用户有权提供的英文原本。"
+    },
+    {
+      "id": "execution-01",
+      "type": "execution",
+      "prompt": "翻译一本带 12 章、473 条注释和索引的英文 PDF，要求中途可恢复。",
+      "expected_behavior": "段落 ID、章节状态、术语表、注释连续性、索引页码说明、逐章持久化和最终渲染 QA 均纳入流程。"
+    }
+  ],
+  "minimum_pass_rate": 0.8,
+  "rules": {
+    "all_should_not_trigger_must_pass": true,
+    "regression_tests_must_be_retained": true
+  }
+}

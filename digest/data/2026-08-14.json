@@ -1,0 +1,64 @@
+{
+  "date": "2026-08-14",
+  "coverage": "过去36小时（北京时间）",
+  "international": [
+    {
+      "title": "伊利诺伊州新法将911心理危机来电接入行为健康响应",
+      "summary": "伊利诺伊州新法要求911接警中心按批准流程识别行为健康危机，并在适当情形转介非警务危机响应；警校培训也须纳入相关制度。法律2027年1月1日生效，落地仍依赖地方协议和资源配置。",
+      "source": "美国伊利诺伊州参议院民主党团",
+      "published_at": "2026-08-13",
+      "url": "https://www.illinoissenatedemocrats.com/caucus-news/41-senator-robert-peters-news/7102-peters-law-to-bridge-gap-between-mental-health-crisis-and-treatment",
+      "topic": "政策与监管"
+    },
+    {
+      "title": "儿童国家医院综述呼吁平衡孕期抑郁治疗风险",
+      "summary": "《JAMA Psychiatry》综述于8月12日上线，认为对中重度孕期抑郁停止治疗可能带来风险，现有累积证据显示SSRI严重不良结局风险较低。作者强调应平衡未治疗疾病与用药风险，而非作个体处方结论。",
+      "source": "美国儿童国家医院",
+      "published_at": "2026-08-13",
+      "url": "https://innovationdistrict.childrensnational.org/new-review-prioritizes-maternal-mental-health-during-pregnancy/",
+      "topic": "研究与临床实践"
+    },
+    {
+      "title": "戈申学院扩大学生心理咨询与远程服务网络",
+      "summary": "美国戈申学院与两家社区医疗机构建立正式合作，并引入UWill虚拟咨询，为无保险学生提供滑动收费、低价就诊和远程心理服务。校内仅3名持证咨询师，扩容旨在缓解预约与交通门槛。",
+      "source": "美国戈申学院",
+      "published_at": "2026-08-12",
+      "url": "https://www.goshen.edu/2026/08/12/goshen-college-expands-medical-and-mental-health-services-for-students/",
+      "topic": "高校心理服务"
+    }
+  ],
+  "domestic": [
+    {
+      "title": "上海松江部署ADHD家校社医协同支持机制",
+      "summary": "上海松江区8月12日启动家校社医协同ADHD培训与工作部署，拟通过教师行为观察表、心理教师跟岗督导、绿色转诊和家长团辅建立校医衔接。该机制用于识别和转介支持，不替代医学诊断。",
+      "source": "上海教育新闻网",
+      "published_at": "2026-08-13",
+      "url": "https://www.shedunews.net/detailArticle/28450688_31573_dyjy.html",
+      "topic": "儿童青少年心理服务"
+    },
+    {
+      "title": "淄博启动两年制心理剧临床骨干培训",
+      "summary": "淄博市精神卫生中心启动为期两年的心理剧专业培训，面向全市二级以上精神科、心理科及区县精防机构骨干，分三期训练并配套调研和临床干预研究。项目体现地方社会心理服务人才体系化培养。",
+      "source": "中国山东网",
+      "published_at": "2026-08-13",
+      "url": "https://news.iqilu.com/shandong/shandonggedi/20260813/5935793.shtml",
+      "topic": "人才培养"
+    },
+    {
+      "title": "德州精神专科医院与省精神卫生中心启动托管共建",
+      "summary": "德州市第六人民医院披露与山东省精神卫生中心托管合作方案，计划引入常驻专家、建设8至10个精神科亚专科并开展不少于20项特色技术。目标明确，但学科和人才建设仍处实施期。",
+      "source": "齐鲁晚报·齐鲁壹点",
+      "published_at": "2026-08-13",
+      "url": "https://m.sohu.com/a/1062420323_121218495",
+      "topic": "机构合作"
+    },
+    {
+      "title": "北大六院展示青少年DBT智能学习平台",
+      "summary": "北大六院团队在医药协同创新大会展示基于DBT的青少年技能学习小程序，报告已完成约600例随机试验，并拟加入AI陪伴和自适应推荐。现有结果来自团队大会披露，产品落地与独立验证状态尚不明确。",
+      "source": "中国医药创新促进会",
+      "published_at": "2026-08-12",
+      "url": "https://www.phirda.com/artilce_43476.html?module=trackingCodeGenerator",
+      "topic": "数字心理健康"
+    }
+  ]
+}

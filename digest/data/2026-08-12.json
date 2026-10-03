@@ -1,0 +1,40 @@
+{
+  "date": "2026-08-12",
+  "coverage": "过去36小时（北京时间）",
+  "international": [
+    {
+      "title": "NIH研究提示家庭环境不可预测性可补充儿童心理风险筛查",
+      "summary": "美国国立卫生研究院介绍一项约3万名儿童研究：在传统逆境筛查中加入家庭作息与照护可预测性指标，可提升抑郁、睡眠等风险识别；结果属观察性关联，仍需后续验证如何用于干预。",
+      "source": "美国国立卫生研究院",
+      "published_at": "2026-08-11",
+      "url": "https://www.nih.gov/news-events/nih-research-matters/childhood-screen-detects-mental-health-risks",
+      "topic": "研究与筛查"
+    },
+    {
+      "title": "加州通报15个行为健康设施项目达到建设或启用节点",
+      "summary": "加州政府通报，第二季度15个行为健康基础设施项目已动工或剪彩，覆盖危机、住院、青少年与部落服务；项目沿用既有BHCIP及一号提案资金，属于建设进展汇总，并非本轮新增拨款。",
+      "source": "美国加利福尼亚州州长办公室",
+      "published_at": "2026-08-11",
+      "url": "https://www.gov.ca.gov/2026/08/11/governor-newsoms-mental-health-reform-continues-to-deliver-announcing-15-new-projects-expanding-care-across-the-state/",
+      "topic": "公共服务与投资"
+    },
+    {
+      "title": "北达科他州获600万美元联邦拨款扩展儿童行为健康服务",
+      "summary": "北达科他州获SAMHSA儿童心理健康项目两年600万美元拨款，将在迈诺特和詹姆斯敦扩展0至21岁社区服务体系；项目拟延续至2030年，但后续年度仍取决于联邦资金可用性。",
+      "source": "北达科他州卫生与公共服务部",
+      "published_at": "2026-08-10",
+      "url": "https://www.hhs.nd.gov/news/north-dakota-receives-6-million-federal-grant-expand-childrens-behavioral-health-services",
+      "topic": "公共服务与投资"
+    }
+  ],
+  "domestic": [
+    {
+      "title": "铜仁跨部门心理健康宣讲已覆盖3400余人次",
+      "summary": "铜仁市第三人民医院联合团市委、市总工会及贵州师范大学心理专家，今年已在两区八县开展38场“梵净心语”宣讲，覆盖3400余人次；模式体现医校与群团协作下沉，但披露的是服务进展，未报告效果评估。",
+      "source": "铜仁市第三人民医院",
+      "published_at": "2026-08-11",
+      "url": "https://www.tongren.gov.cn/2026/0811/351885.shtml",
+      "topic": "公共心理服务"
+    }
+  ]
+}

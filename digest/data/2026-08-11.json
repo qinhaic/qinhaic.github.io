@@ -1,0 +1,64 @@
+{
+  "date": "2026-08-11",
+  "coverage": "过去 36 小时（北京时间）",
+  "international": [
+    {
+      "title": "纽约州投入2100万美元扩建精神科综合急诊项目",
+      "summary": "纽约州向七家医院网络拨付约2100万美元，新建3个并改造4个综合精神科急诊项目；项目提供24小时急诊、危机外展及最长72小时观察，资金已授予，具体建设与投用仍待推进。",
+      "source": "纽约市公立医院系统",
+      "published_at": "2026-08-10",
+      "url": "https://www.nychealthandhospitals.org/pressrelease/governor-hochul-announces-21-million-to-expand-emergency-programs-for-individuals-experiencing-a-mental-health-crisis/",
+      "topic": "公共服务与投资"
+    },
+    {
+      "title": "美国密歇根州预算支持杰克逊县移动心理危机服务车",
+      "summary": "密歇根州议员宣布新州预算为社区心理健康机构LifeWays安排21万美元，用于购置配有远程医疗设备的移动危机服务车，计划提供筛查、评估及短期干预；车辆尚处采购建设阶段。",
+      "source": "密歇根州众议院共和党团",
+      "published_at": "2026-08-10",
+      "url": "https://gophouse.org/posts/lifeways-getting-new-van-to-help-mental-health-services-in-jackson",
+      "topic": "公共服务与数字健康"
+    },
+    {
+      "title": "美国基金会发布有色族裔青少年心理健康项目设计指南",
+      "summary": "安妮·凯西基金会资助的新指南总结14项项目要素，强调让青少年与社区参与决策、结合文化情境、采用优势视角并提前规划可持续性；该指南基于研究和实践者意见，不是临床疗效标准。",
+      "source": "安妮·凯西基金会",
+      "published_at": "2026-08-10",
+      "url": "https://www.aecf.org/blog/what-effective-youth-mental-health-programs-have-in-common",
+      "topic": "服务模式与研究"
+    },
+    {
+      "title": "美国俄克拉何马城动工建设32床心理危机中心",
+      "summary": "俄克拉何马城为MAPS 4心理危机中心举行奠基，项目以约1227万美元公共资金及300万美元基金会捐助建设，规划最多32张危机稳定床，由州精神卫生部门运营；项目投用时间仍以官方后续进度为准。",
+      "source": "KOCO 5",
+      "published_at": "2026-08-10",
+      "url": "https://www.koco.com/article/oklahoma-city-mental-health-crisis-center-groundbreaking-maps-4/73395388",
+      "topic": "公共服务与投资"
+    }
+  ],
+  "domestic": [
+    {
+      "title": "成都高新区拟培训180名心理健康教师并安排医院跟岗",
+      "summary": "成都高新区教育体育局就心理健康教师能力提升培训询价，拟于9—10月组织约180人，含5天集中培训及3天三甲医院跟岗，主题为家校社医协同；目前仍处供应商调研阶段。",
+      "source": "成都高新区管理委员会",
+      "published_at": "2026-08-10",
+      "url": "https://www.cdht.gov.cn/cdht/c139819/2026-08/10/content_2966c8b7f24c42f08ba6d1c3a60e2683.shtml",
+      "topic": "人才培养"
+    },
+    {
+      "title": "东莞沙田试点共享式员工心理援助工作室",
+      "summary": "东莞沙田镇以大泥村试点建设共享式员工心理援助工作室，设置个体咨询、团体辅导和危机初筛转介，并对接持证机构与精神科团队；项目正推进常态运营，全年计划服务至少10家企业、300人次以上。",
+      "source": "东莞市人力资源和社会保障局",
+      "published_at": "2026-08-10",
+      "url": "https://dghrss.dg.gov.cn/xwzx/xwdt/content/post_4570775.html",
+      "topic": "职场心理服务"
+    },
+    {
+      "title": "辽宁省精神卫生中心公示34名拟聘人员",
+      "summary": "辽宁省精神卫生中心完成2026年集中公开招聘主要流程，公示34名拟聘人员，公示期5个工作日；这是省级精神卫生机构的人才补充进展，名单仍处公示阶段，最终聘用以程序完成为准。",
+      "source": "辽宁省卫生健康委员会",
+      "published_at": "2026-08-10",
+      "url": "https://wsjk.ln.gov.cn/wsjk/index/gsgg/2026081010254761601/index.shtml",
+      "topic": "人才队伍"
+    }
+  ]
+}

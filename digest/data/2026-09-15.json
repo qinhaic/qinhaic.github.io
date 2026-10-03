@@ -1,0 +1,64 @@
+{
+  "date": "2026-09-15",
+  "coverage": "过去 36 小时（北京时间）",
+  "international": [
+    {
+      "title": "FDA就致幻药物在监督支持环境中的治疗用途举行公开听证",
+      "summary": "美国FDA与联邦伙伴9月14日举行公开听证，征集致幻物质药品未来在监督和支持性环境中用于治疗的意见，书面评论截至10月5日。此次为监管听证与信息收集，并非批准任何疗法或产品。",
+      "source": "美国食品药品监督管理局",
+      "published_at": "2026-09-14",
+      "url": "https://www.fda.gov/news-events/fda-meetings-conferences-and-workshops/considerations-potential-future-therapeutic-use-psychedelic-drugs-public-hearing-09142026",
+      "topic": "政策与监管"
+    },
+    {
+      "title": "日本团队报告AI区分双相抑郁与单相抑郁的探索结果",
+      "summary": "浜松医科大学等以表情、语音、视线及睡眠等多模态信息训练AI，在研究样本中区分双相抑郁发作与单相抑郁的准确率为79%、AUC为75%。团队正开发诊断辅助软件，尚未取得医疗器械批准，仍需外部验证。",
+      "source": "浜松医科大学",
+      "published_at": "2026-09-14",
+      "url": "https://www.hama-med.ac.jp/topics/2026/33067.html",
+      "topic": "研究与数字心理健康"
+    },
+    {
+      "title": "北卡罗来纳州更新行为健康机构入网与认证要求",
+      "summary": "北卡Medicaid更新社区干预及创新豁免服务机构的入网规则：部分机构被列为高风险，除非同址同服务已有国家认证，否则需现场检查和指纹采集；并调整可选认证机构与服务类型。公告汇总的是已于7—8月生效的规则变化。",
+      "source": "北卡罗来纳州Medicaid",
+      "published_at": "2026-09-14",
+      "url": "https://medicaid.ncdhhs.gov/blog/2026/09/14/recent-behavioral-health-enrollment-updates-organizations",
+      "topic": "机构监管"
+    },
+    {
+      "title": "俄亥俄一地将行为健康急诊转入24小时综合危机中心",
+      "summary": "俄亥俄州The Centers自9月14日起把原两处行为健康急诊转至Glick康复园区，面向成年人提供24小时步入式危机支持、精神稳定和戒断管理，并衔接基层与门诊服务；儿童青少年不再使用该步入式急诊，改由专门团队或合作机构承接。",
+      "source": "The Centers",
+      "published_at": "2026-09-14",
+      "url": "https://thecentersohio.org/integrated-health-and-wellness/behavioral-health/behavioral-health-urgent-care/",
+      "topic": "危机服务"
+    }
+  ],
+  "domestic": [
+    {
+      "title": "湘潭五院获批儿童青少年心理健康市级管理基地",
+      "summary": "湘潭市第五人民医院近日获批国家“五健行动”心理健康市级管理基地。医院称将依托既有筛查、心理危机绿色通道和医校协作，承担区域儿童青少年心理服务体系建设；目前公开信息主要为基地授牌和后续规划，成效仍待持续评估。",
+      "source": "大众卫生报·新湖南客户端",
+      "published_at": "2026-09-14",
+      "url": "https://www.hunantoday.cn/news/xhn/202609/33747870.html",
+      "topic": "儿童青少年心理健康"
+    },
+    {
+      "title": "岳阳完成首期稳定期精神障碍者自助互助培训",
+      "summary": "湖南省、市、县三级残联指导的岳阳市首期稳定期精神障碍者及亲友自助互助培训9月13日结业，课程覆盖康复成长、同伴互助和家庭照护。该项目由省级重点联系基地承办，为基层社区康复引入同伴支持与家庭协同的实践样本。",
+      "source": "新湖南客户端",
+      "published_at": "2026-09-14",
+      "url": "https://www.hunantoday.cn/news/xhn/202609/33749585.html",
+      "topic": "社区康复"
+    },
+    {
+      "title": "重庆巴南投用职工服务中心并纳入心理支持",
+      "summary": "重庆巴南区职工服务中心9月12日揭牌投用，由区总工会建设，设置心理健康咨询区域，提供心理评估、压力疏导和情绪管理，并与维权、培训等服务整合。它代表心理支持进入综合职工公共服务阵地，具体服务规模尚未披露。",
+      "source": "巴南新闻网",
+      "published_at": "2026-09-14",
+      "url": "https://www.bn.cq.cn/web/article/1549082199139385344/web/content_1549082199139385344.html",
+      "topic": "职工心理服务"
+    }
+  ]
+}

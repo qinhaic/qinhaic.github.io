@@ -1,0 +1,72 @@
+{
+  "date": "2026-09-01",
+  "coverage": "过去36小时及9月1日正式生效事项（截至9月1日21:00，北京时间）",
+  "international": [
+    {
+      "title": "北卡罗来纳州Medicaid更新行为健康治疗服务合规提醒",
+      "summary": "北卡罗来纳州Medicaid于8月31日发布更新公告，替代8月5日版本，重申研究型行为健康治疗的辅助人员认证、督导比例、治疗计划再授权及部分远程服务取消等要求。公告反映修订后的生效安排，相关机构需据此调整用工、督导与报销流程。",
+      "source": "北卡罗来纳州卫生与公共服务部 Medicaid",
+      "published_at": "2026-08-31",
+      "url": "https://medicaid.ncdhhs.gov/blog/2026/08/31/updated-reminder-requirements-research-based-behavioral-health-treatment-service-delivery-aug-31",
+      "topic": "政策与监管"
+    },
+    {
+      "title": "俄克拉荷马州三类行为健康执业规则9月1日起更新",
+      "summary": "俄克拉荷马州行为健康执照委员会公布的专业咨询师、婚姻家庭治疗师和行为执业者规则修订于9月1日生效，涉及研究生课程认定、申请材料、受督实践及督导条件等。官网同时提示变更文件并非完整规则文本，执业者仍须对照正式法规。",
+      "source": "俄克拉荷马州行为健康执照委员会",
+      "published_at": "2026-09-01",
+      "url": "https://oklahoma.gov/behavioralhealth/acts-and-regulations.html",
+      "topic": "执业监管"
+    },
+    {
+      "title": "英格兰新版学校关系与健康教育法定指南正式实施",
+      "summary": "英国教育部新版关系、性与健康教育法定指南于9月1日在英格兰学校启用，覆盖小学和中学的身体健康与心理福祉教育。指南依法要求各类学校予以遵循，偏离明确的“应当/不应当”条款须有充分理由，将直接影响校园心理健康课程与治理安排。",
+      "source": "英国教育部",
+      "published_at": "2026-09-01",
+      "url": "https://www.gov.uk/government/publications/relationships-education-relationships-and-sex-education-rse-and-health-education",
+      "topic": "学校心理健康"
+    },
+    {
+      "title": "密歇根州Medicaid启用有限执照行为健康人员新报销规则",
+      "summary": "密歇根州Medicaid第MMP 26-30号公告于9月1日生效，要求多类硕士层级有限执照心理与行为健康人员单独注册并在索赔中标识实际服务者，同时关联同专业全执照督导者。现有人员须在11月1日前补全关联信息，否则可能面临退保或拒付。",
+      "source": "密歇根州卫生与公众服务部",
+      "published_at": "2026-09-01",
+      "url": "https://www.michigan.gov/mdhhs/-/media/Project/Websites/mdhhs/Assistance-Programs/Medicaid-BPHASA/2026-Bulletins/Final-Bulletin-MMP-26-30-BH.pdf?hash=56C8F351CC57982DA3FDFF71053F2D37&rev=eeb45af59cfd41ab9db33dd78c33a8ac",
+      "topic": "医保与人才监管"
+    }
+  ],
+  "domestic": [
+    {
+      "title": "国家卫健委老年人认知障碍预防干预技术标准开始实施",
+      "summary": "国家卫健委推荐性行业标准WS/T 875—2026于9月1日起实施，适用于基层医疗、专业公卫、健康管理及医养结合机构。标准提出认知评估原则、预防与干预内容、每6个月随访及双向转诊要求，为老年认知障碍服务提供统一技术框架。",
+      "source": "国家卫生健康委员会",
+      "published_at": "2026-09-01",
+      "url": "https://www.nhc.gov.cn/wjw/c100310/202603/84b6a17122cb497382cd710faf6784c1/files/WST%20875%E2%80%942026-20260318095339426.pdf",
+      "topic": "行业标准"
+    },
+    {
+      "title": "苏州唯亭精神康复驿站完善社区全程支持模式",
+      "summary": "苏州工业园区9月1日披露，唯亭街道精神康复驿站已为辖区在册康复者完成家庭档案建档，并由专业心理社工机构提供健康管理、能力训练、心理疏导、家庭支持和社区融合服务。该模式强调动态随访与医社联动，为基层精康融合提供可观察样本。",
+      "source": "苏州工业园区管理委员会",
+      "published_at": "2026-09-01",
+      "url": "https://www.sipac.gov.cn/szgyyq/jsdt/202609/fca49fc050ae436ea047cc320a103841.shtml",
+      "topic": "社区精神康复"
+    },
+    {
+      "title": "上海虹口推进学生心理健康研究中心与校家社协同机制",
+      "summary": "上海虹口区9月1日通报，区级部门调研心理健康教育研究中心和家庭教育指导中心建设，并召开学生心理健康专题座谈会。当地提出摸清问题底数、加强专业队伍培训、运用数字平台并建立家校社常态协同机制，后续成效仍取决于具体资源和执行。",
+      "source": "上海市虹口区人民政府",
+      "published_at": "2026-09-01",
+      "url": "https://www.shhk.gov.cn/xwzx/002003/20260901/97d39f04-ac9c-46b8-8dc9-a758e7c655e5.html",
+      "topic": "学校心理健康"
+    },
+    {
+      "title": "湖南医教协同训练营为96名校园心理工作者开展临床实训",
+      "summary": "湖南省第二人民医院第四期“心育同行”训练营近日结营，来自全省50余所学校的96名心理教师和辅导员完成两周分组临床见习，并新增团体辅导全流程训练。该项目自2020年起累计培训近500人，体现精神专科资源向校园识别、干预与转介能力延伸。",
+      "source": "中新网湖南（湖南省第二人民医院）",
+      "published_at": "2026-09-01",
+      "url": "https://www.hn.chinanews.com.cn/news/kjww/2026/0901/533199.html",
+      "topic": "人才培养"
+    }
+  ]
+}

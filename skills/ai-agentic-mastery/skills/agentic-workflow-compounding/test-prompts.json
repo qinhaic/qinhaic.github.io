@@ -1,0 +1,54 @@
+{
+  "skill": "agentic-workflow-compounding",
+  "version": "1.0.0",
+  "test_cases": [
+    {
+      "id": "should-trigger-01",
+      "type": "should_trigger",
+      "prompt": "我每周都让 AI 做竞品周报，但每次都要重新贴公司背景，做完还要复制到文档，帮我改成会积累的流程。",
+      "expected_behavior": "触发；审计重复任务，判断迁移价值，建立持久输入输出、工具、检查点和回放。"
+    },
+    {
+      "id": "should-trigger-02",
+      "type": "should_trigger",
+      "prompt": "不要只告诉我怎么做，让 Codex 真的把这批访谈整理、校验并留下以后能复用的模板。",
+      "expected_behavior": "触发；把多步任务放入 agent 工作区，保留人工复核并沉淀资产。"
+    },
+    {
+      "id": "should-trigger-03",
+      "type": "should_trigger",
+      "prompt": "How do I turn this recurring chat-based process into an agentic workflow that compounds over time?",
+      "expected_behavior": "触发；按持久上下文、工具、产物和重复性评估并设计流程。"
+    },
+    {
+      "id": "should-not-trigger-01",
+      "type": "should_not_trigger",
+      "prompt": "用三句话解释什么是量子纠缠。",
+      "expected_behavior": "不触发；这是一次性知识解释，不需要持久行动或产物。"
+    },
+    {
+      "id": "should-not-trigger-02",
+      "type": "should_not_trigger",
+      "prompt": "我已经有一堆项目资料，但不同任务应该加载哪些完全没有规则，帮我整理路由。",
+      "expected_behavior": "不触发本 Skill；优先选择 context-capital-routing。"
+    },
+    {
+      "id": "edge-01",
+      "type": "edge_case",
+      "prompt": "我偶尔让 AI 帮我润色一封邮件，有必要做成 agent 吗？",
+      "expected_behavior": "评估后通常不迁移；说明只有在重复、需资料/工具/留存时才值得。"
+    },
+    {
+      "id": "execution-01",
+      "type": "execution",
+      "prompt": "把每月播客发布流程从聊天改成 agent：转写、生成标题说明、人工确认、上传，并保留模板。",
+      "expected_behavior": "产出任务卡、迁移判断、脚手架和权限表、新流程、持久资产清单及第二次回放指标；上传前保留人工确认。"
+    }
+  ],
+  "minimum_pass_rate": 0.8,
+  "rules": {
+    "all_should_not_trigger_must_pass": true,
+    "regression_tests_must_be_retained": true
+  }
+}
+

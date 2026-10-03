@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>语音转写技能 · audio-transcript</title>
+<style>
+*,*::before,*::after { box-sizing:border-box; margin:0; padding:0; }
+body {
+  font-family: -apple-system,"Noto Sans SC","PingFang SC","Microsoft YaHei",sans-serif;
+  background: linear-gradient(135deg, #eaf4f9 0%, #f5f0eb 50%, #f0e6db 100%);
+  color: #2c3e50;
+  min-height: 100vh;
+  padding: 32px 20px;
+}
+.container { max-width: 860px; width: 100%; margin: 0 auto; }
+.header { text-align: center; margin-bottom: 32px; }
+.header h1 { font-size: 1.8rem; font-weight: 700; color: #1a1a2e; letter-spacing: 1px; }
+.header .subtitle { font-size: 1rem; color: #5a7a8a; margin-top: 8px; }
+.header .divider { width: 50px; height: 3px; background: linear-gradient(90deg, #2c6e8f, #8faaaf); border-radius: 2px; margin: 20px auto 0; }
+.back { display:inline-block; margin-bottom: 20px; font-size: 0.9rem; color:#2c6e8f; text-decoration:none; }
+.card {
+  background: rgba(255,255,255,0.88);
+  border-radius: 20px;
+  padding: 28px 30px;
+  border: 1px solid rgba(255,255,255,0.5);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+  margin-bottom: 20px;
+}
+.card h2 { font-size: 1.15rem; font-weight: 600; color: #1a1a2e; margin-bottom: 12px; }
+.card p, .card li { font-size: 0.92rem; color: #42505f; line-height: 1.75; }
+.card ul { padding-left: 20px; }
+.card ul ul { margin-top: 4px; }
+.card .note { font-size: 0.82rem; color: #8a9aaa; margin-top: 10px; }
+.step { font-weight: 600; color:#2c6e8f; }
+.files { list-style:none; padding-left:0 !important; }
+.files li {
+  display:flex; justify-content:space-between; align-items:center;
+  padding: 10px 4px; border-bottom: 1px dashed #e3e8ec; font-size: 0.9rem;
+}
+.files li:last-child { border-bottom:none; }
+.files .fname { color:#1a1a2e; font-weight:500; }
+.files .fdesc { color:#8a9aaa; font-size:0.82rem; margin-top:2px; }
+.files a { color:#2c6e8f; text-decoration:none; font-size:0.82rem; white-space:nowrap; margin-left:12px; }
+.files a:hover { text-decoration:underline; }
+.tag { display:inline-block; font-size:0.78rem; font-weight:500; padding:3px 12px; border-radius:20px; background:#e8f0f5; color:#2c6e8f; margin-bottom:12px; }
+.footer { text-align:center; margin-top: 24px; font-size: 0.82rem; color: #8a9a9a; }
+.footer a { color: #2c6e8f; text-decoration: none; }
+code { background:#eef3f6; padding:1px 6px; border-radius:5px; font-size:0.86em; }
+</style>
+</head>
+<body>
+<div class="container">
+  <a class="back" href="https://qinhaic.github.io/">← 返回心理茶馆首页</a>
+  <div class="header">
+    <h1>语音转写技能 · audio-transcript</h1>
+    <p class="subtitle">把录音转写成带说话人标注与时间戳的对话稿 Word 文档</p>
+    <div class="divider"></div>
+  </div>
+
+  <div class="card">
+    <span class="tag">Claude Code 技能</span>
+    <h2>用途</h2>
+    <p>将音频/录音（m4a、mp3、wav 等）转写成按说话轮次组织的对话稿，输出宋体排版的 Word 文档。支持说话人标注、开始时间戳、全角标点、逐字保真校验。</p>
+  </div>
+
+  <div class="card">
+    <h2>完整流程（最终改进版）</h2>
+    <ul>
+      <li><span class="step">1. 转写</span>：faster-whisper medium 模型、int8、CPU（不用 small 模型，中文口语质量差）。</li>
+      <li><span class="step">2. 说话人分离</span>：resemblyzer 声纹 + KMeans(k=2) 聚类，按首次出现顺序标「说话人1/说话人2」，不推断身份。</li>
+      <li><span class="step">3. 人工核查</span>：按语法/语义连续性修正说话人误标，再合并相邻同说话人轮次。</li>
+      <li><span class="step">4. 手动加句读</span>：逐句按语气与停顿加全角标点（放弃自动加标点方案，其会过度标点、错位）。</li>
+      <li><span class="step">5. 逐字保真校验</span>：去标点后与原文比对，只允许加标点，不允许增删改字（不编造原则）。</li>
+      <li><span class="step">6. 全角标点检查</span>：扫描半角标点，必须全部为全角。</li>
+      <li><span class="step">7. 生成 Word</span>：python-docx，宋体、正文 12pt、标题 16pt、时间戳灰色小字、只记开始时间戳、1.5 倍行距、文末识别误差说明。</li>
+      <li><span class="step">8. 交付</span>：输出到桌面，保留旧版本不覆盖。</li>
+    </ul>
+    <p class="note">详细参数、改进原因与踩坑记录见下方「流水线详情」。</p>
+  </div>
+
+  <div class="card">
+    <h2>技能文件</h2>
+    <ul class="files">
+      <li>
+        <div>
+          <div class="fname">SKILL.md</div>
+          <div class="fdesc">技能主文件：触发条件、8 步流程、交付格式</div>
+        </div>
+        <a href="./SKILL.md" target="_blank" rel="noopener">查看 / 下载</a>
+      </li>
+      <li>
+        <div>
+          <div class="fname">references/pipeline-details.md</div>
+          <div class="fdesc">每步参数、改进原因、踩坑记录、完整依赖清单</div>
+        </div>
+        <a href="./references/pipeline-details.md" target="_blank" rel="noopener">查看 / 下载</a>
+      </li>
+      <li>
+        <div>
+          <div class="fname">scripts/transcribe.py</div>
+          <div class="fdesc">faster-whisper 转写（medium、VAD、字级时间戳）</div>
+        </div>
+        <a href="./scripts/transcribe.py" target="_blank" rel="noopener">查看 / 下载</a>
+      </li>
+      <li>
+        <div>
+          <div class="fname">scripts/diarize.py</div>
+          <div class="fdesc">resemblyzer 声纹 + KMeans 说话人分离与轮次合并</div>
+        </div>
+        <a href="./scripts/diarize.py" target="_blank" rel="noopener">查看 / 下载</a>
+      </li>
+      <li>
+        <div>
+          <div class="fname">scripts/punctuate.py</div>
+          <div class="fdesc">手动句读模板 + 逐字保真校验</div>
+        </div>
+        <a href="./scripts/punctuate.py" target="_blank" rel="noopener">查看 / 下载</a>
+      </li>
+      <li>
+        <div>
+          <div class="fname">scripts/check_fullwidth.py</div>
+          <div class="fdesc">全角标点检查</div>
+        </div>
+        <a href="./scripts/check_fullwidth.py" target="_blank" rel="noopener">查看 / 下载</a>
+      </li>
+      <li>
+        <div>
+          <div class="fname">scripts/generate_doc.py</div>
+          <div class="fdesc">python-docx 宋体 Word 文档生成</div>
+        </div>
+        <a href="./scripts/generate_doc.py" target="_blank" rel="noopener">查看 / 下载</a>
+      </li>
+    </ul>
+    <p class="note">提示：本页文件为纯文本直出。若要获得更友好的 Markdown 渲染，请在下方 GitHub 仓库中查看。</p>
+  </div>
+
+  <div class="footer">
+    <p>© 2026 秦海 · <a href="https://qinhaic.github.io/">心理茶馆</a> · <a href="https://github.com/qinhaic/qinhaic.github.io" target="_blank" rel="noopener">GitHub 仓库</a></p>
+  </div>
+</div>
+</body>
+</html>

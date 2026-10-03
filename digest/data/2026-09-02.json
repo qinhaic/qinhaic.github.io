@@ -1,0 +1,48 @@
+{
+  "date": "2026-09-02",
+  "coverage": "过去36小时（截至9月2日08:45，北京时间）",
+  "international": [
+    {
+      "title": "美国HHS拨款7700万美元加强社区心理健康与危机服务",
+      "summary": "美国卫生与公众服务部通过SAMHSA正式授予7700万美元新资金，其中2180万美元用于社区心理健康，940万美元用于自杀预防和危机服务，并覆盖儿童创伤、婴幼儿心理健康及988事后随访。资金已获奖拨，体现联邦资源向社区连续支持倾斜。",
+      "source": "美国卫生与公众服务部",
+      "published_at": "2026-08-31",
+      "url": "https://www.hhs.gov/press-room/samhsa-awards-77-million-substance-use-mental-health-suicide-prevention.html",
+      "topic": "公共资金与服务"
+    },
+    {
+      "title": "澳大利亚投入300万澳元建设男性心理健康研究中心",
+      "summary": "澳大利亚政府宣布投入300万澳元，支持弗林德斯大学建设WellMen男孩与男性心理健康与福祉研究中心，联合行业伙伴在学校、体育俱乐部和线上场景共创促进策略。该项目属于NHMRC研究卓越中心资助，当前是科研与能力建设，并非疗效批准。",
+      "source": "澳大利亚卫生、残障与老龄事务部",
+      "published_at": "2026-09-02",
+      "url": "https://www.health.gov.au/ministers/the-hon-dan-repacholi-mp/media/3-million-boost-to-support-mens-health?language=en",
+      "topic": "研究与人才"
+    },
+    {
+      "title": "美国怀俄明与田纳西启用咨询师跨州执业资格",
+      "summary": "美国咨询契约委员会确认，怀俄明州和田纳西州分别于8月31日、9月1日开始签发跨州执业资格，成为第8和第9个实际运行该契约的州。符合条件的执业咨询师可在参与州申请执业权限，扩大跨州服务可及性，同时仍受契约的公共保护规则约束。",
+      "source": "美国咨询契约委员会",
+      "published_at": "2026-09-01",
+      "url": "https://counselingcompact.gov/tennessee-will-become-ninth-state/",
+      "topic": "执业监管"
+    },
+    {
+      "title": "澳新精神科医师学院公开长期心理动力治疗证据评估",
+      "summary": "澳新精神科医师学院9月1日公开安娜·弗洛伊德中心关于心境障碍长期心理动力心理治疗的完整证据评估，并列为“最佳实践支持资源”。报告汇集系统综述、荟萃分析和质性研究，但学院明确其不是临床实践指南，患者选择与具体疗程等证据仍有限。",
+      "source": "澳大利亚和新西兰皇家精神科医师学院",
+      "published_at": "2026-09-01",
+      "url": "https://www.ranzcp.org/clinical-guidelines-publications/clinical-guidelines-publications-library/mood-disorders-psychodynamic-psychotherapy-evidence-review-report",
+      "topic": "心理治疗证据"
+    }
+  ],
+  "domestic": [
+    {
+      "title": "中青报调查精神障碍等群体公职与社会监护服务缺口",
+      "summary": "中国青年报9月2日调查上海、北京等地监护实践，涉及无近亲属的失智、精神障碍及心智障碍者。报道显示居委会、法院、公证和社会组织已探索兜底模式，但职责边界、医疗与财产决策凭证、监督机制及专业机构供给仍不统一，提示康复与社会支持链条亟待补强。",
+      "source": "中国青年报",
+      "published_at": "2026-09-02",
+      "url": "https://m.cyol.com/gb/news/articles/2026-09/02/content_qboZXGhZbg.html",
+      "topic": "权益保障与社会支持"
+    }
+  ]
+}

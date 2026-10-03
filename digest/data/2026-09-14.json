@@ -1,0 +1,64 @@
+{
+  "date": "2026-09-14",
+  "coverage": "上周五 06:00 至今日（北京时间）",
+  "international": [
+    {
+      "title": "阿拉斯加拟建立社区行为健康诊所前瞻性支付规则",
+      "summary": "阿拉斯加州卫生部拟在州法规中新增认证社区行为健康诊所前瞻性支付办法，按联邦CCBHC示范项目PPS-3方法向州批准诊所付费，意见征集至10月30日；目前仍属拟议规则，落地后将影响Medicaid机构结算。",
+      "source": "阿拉斯加州卫生部",
+      "published_at": "2026-09-11",
+      "url": "https://aws.state.ak.us/OnlinePublicNotices/Notices/View.aspx?id=225115",
+      "topic": "政策与支付"
+    },
+    {
+      "title": "美国追加老年行为健康循证项目培训资金",
+      "summary": "美国社区生活管理局拟向LECOM现有BRIDGES老年行为健康项目追加108.4718万美元，使2024—2027年总额增至434.5417万美元，用于扩大循证项目培训、技术援助和跨服务协调；公告为单一来源追加资助。",
+      "source": "美国《联邦公报》",
+      "published_at": "2026-09-14",
+      "url": "https://www.federalregister.gov/documents/2026/09/14/2026-18729/announcing-the-intent-to-award-a-single-source-supplement-for-expanding-outreach-and-professional",
+      "topic": "公共服务"
+    },
+    {
+      "title": "美国医学会更新医师心理健康询问改革简报",
+      "summary": "美国医学会更新医师福祉政策简报：截至2026年5月，44个医疗执照委员会及3300余家医院等机构已删除侵入性心理健康或物质使用询问，覆盖逾335万名临床人员，并提供多州立法和资质审查表修改范例。",
+      "source": "美国医学会",
+      "published_at": "2026-09-11",
+      "url": "https://www.ama-assn.org/health-care-advocacy/advocacy-update/sept-11-2026-state-advocacy-update",
+      "topic": "人才与伦理"
+    },
+    {
+      "title": "英国残障体验者参与改进青少年数字转介工具",
+      "summary": "大曼彻斯特精神卫生NHS基金会称，残障体验者参与测试后，儿童青少年心理服务数字转介工具已重做多因素认证、屏幕阅读替代文本、知情同意和导航；研究样本未纳入以英国手语为第一语言者，结论仍有限。",
+      "source": "大曼彻斯特精神卫生NHS基金会",
+      "published_at": "2026-09-11",
+      "url": "https://www.gmmh.nhs.uk/news/people-with-disabilities-helped-design-new-youth-mental-health-referral-tool-8182",
+      "topic": "数字心理健康"
+    }
+  ],
+  "domestic": [
+    {
+      "title": "国家精神医学质控中心调研宁夏服务体系",
+      "summary": "国家精神医学专业质控中心9月9日至10日赴宁夏调研，指出区域服务不均、人才和床位不足、质控网络不完善等短板，要求质控下沉基层、加强规培与转岗培训并规范关键诊疗行为；自治区方面表示将逐项整改。",
+      "source": "宁夏回族自治区宁安医院",
+      "published_at": "2026-09-11",
+      "url": "https://www.nxjswsw.com/index.php?a=index&aid=1337&c=View&m=home",
+      "topic": "质量管理"
+    },
+    {
+      "title": "西北农林科技大学统一平台开展新生心理普查",
+      "summary": "西北农林科技大学启动2026级本科生、研究生心理普查，9月14日至19日统一使用全国高校大学生心理健康综合服务平台实施，并要求学院指定负责人、保障参测质量；这是校级筛查安排，不等同于临床诊断。",
+      "source": "西北农林科技大学",
+      "published_at": "2026-09-12",
+      "url": "https://xuegong.nwafu.edu.cn/tzgg/76e74f96254b4ea9af026868882b32c8.htm",
+      "topic": "学生心理健康"
+    },
+    {
+      "title": "教育心理学年会聚焦AI与学校实践转化",
+      "summary": "中国心理学会教育心理专业委员会2026年学术年会在西北师范大学召开，350余名高校、科研院所和基础教育代表围绕AI时代学习、心理健康教育及人才培养研讨，重点关注数智技术与教育心理研究向学校实践转化。",
+      "source": "西北师范大学",
+      "published_at": "2026-09-12",
+      "url": "https://www.nwnu.edu.cn/2026/0912/c8722a283521/page.htm",
+      "topic": "行业会议"
+    }
+  ]
+}

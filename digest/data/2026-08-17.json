@@ -1,0 +1,56 @@
+{
+  "date": "2026-08-17",
+  "coverage": "自上周五06:00起（北京时间）",
+  "international": [
+    {
+      "title": "世卫组织与国际狮子会合作扩展约旦和尼泊尔心理服务",
+      "summary": "世卫组织与国际狮子会基金会签署三年协议：约旦将增设咨询并加强医院急性照护，尼泊尔将在10家区级医院设心理支持点并推进学校心理健康框架。项目实施至2028年底，实际覆盖与成效待跟踪。",
+      "source": "世界卫生组织",
+      "published_at": "2026-08-14",
+      "url": "https://www.who.int/news/item/14-08-2026-who-lions-clubs-partner-to-expand-mental-health-services-in-jordan-and-nepal",
+      "topic": "机构合作与公共服务"
+    },
+    {
+      "title": "澳大利亚塔州第四家免费步入式心理健康中心即将开放",
+      "summary": "澳大利亚政府宣布格莱诺基Medicare心理健康中心将在数周内开放，配备心理师、咨询师、社工和同伴工作者，免费步入且无需转诊预约。该中心将成为塔州第4家，正式服务量仍待开业后观察。",
+      "source": "澳大利亚卫生、残障与老龄事务部",
+      "published_at": "2026-08-14",
+      "url": "https://www.health.gov.au/ministers/the-hon-emma-mcbride-mp/media/new-medicare-mental-health-centre-to-open-in-tasmania?language=en",
+      "topic": "公共心理服务"
+    },
+    {
+      "title": "美国新墨西哥州批准五个农村地区行为健康计划",
+      "summary": "新墨西哥州行为健康执行委员会批准罗斯威尔等五个地区、合计逾4000万美元的服务重建计划，重点包括学校服务、危机响应和人才建设。全州13个区域目前7个获批，资金实施及其余方案仍待推进。",
+      "source": "Source New Mexico",
+      "published_at": "2026-08-14",
+      "url": "https://sourcenm.com/2026/08/14/new-mexico-behavioral-health-committee-approves-40m-in-funding-for-rural-behavioral-health-plans/",
+      "topic": "政策投资与基层服务"
+    }
+  ],
+  "domestic": [
+    {
+      "title": "深圳龙华启动心理危机干预系列培训，首期聚焦ACT基础",
+      "summary": "深圳龙华区举办2026年心理危机干预系列培训首期课程，50余名基层心理服务人员接受ACT理论、模拟会谈、危机案例研讨和督导。区里计划形成“基础普及+进阶提升”常态培养，本期仅属能力建设进展。",
+      "source": "深圳市龙华区卫生健康局",
+      "published_at": "2026-08-14",
+      "url": "https://www.szlhq.gov.cn/bmdt/content/post_12936940.html",
+      "topic": "人才培养与危机干预"
+    },
+    {
+      "title": "烟台启动学生心理健康与家庭教育公益讲座",
+      "summary": "烟台市教育局8月16日启动全市学生心理健康与家庭教育公益讲座，首场面向黄渤海新区初中家长，侧重科学育儿、亲子沟通与情绪疏导，并推动家校社协同。当前披露的是项目启动，覆盖规模和效果尚未公布。",
+      "source": "烟台市教育局",
+      "published_at": "2026-08-16",
+      "url": "https://jyj.yantai.gov.cn/col/col17130/art/2026/art_38c0285bfdad464fb4083f235441ebb3.html",
+      "topic": "学校与家庭心理服务"
+    },
+    {
+      "title": "雅安精神专科医院与天全县共建县级精神卫生服务中心",
+      "summary": "雅安市第四人民医院与天全县政府8月13日签约，拟设天全分院并加挂县精神卫生服务中心，联动乡镇卫生院建设预防、治疗、康复及双向转诊网络。合作仍处协议落地阶段，机构建设与服务成效待后续披露。",
+      "source": "川观新闻·四川雅安",
+      "published_at": "2026-08-14",
+      "url": "https://cbgc.scol.com.cn/news/7850542",
+      "topic": "机构合作与基层服务"
+    }
+  ]
+}
