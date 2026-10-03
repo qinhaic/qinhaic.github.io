@@ -2,3 +2,6 @@
 .claude/
 IMGL1798.JPG
 images/photo.jpg
+
+__pycache__/
+*.pyc
